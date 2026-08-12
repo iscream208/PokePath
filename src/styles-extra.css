@@ -1,0 +1,119 @@
+.field-map {
+  position: relative;
+  min-height: 18rem;
+  overflow: hidden;
+  border-block: 0.0625rem solid var(--rule);
+}
+
+.map-node {
+  position: absolute;
+  z-index: 2;
+  display: grid;
+  width: 4.5rem;
+  aspect-ratio: 1;
+  place-items: center;
+  border: 0.0625rem solid var(--leaf-dark);
+  border-radius: 50%;
+  color: var(--leaf-dark);
+  background: var(--paper);
+  font-size: 0.75rem;
+  font-weight: 760;
+}
+
+.node-a { top: 35%; left: 4%; }
+.node-b { top: 8%; left: 34%; }
+.node-c { right: 29%; bottom: 10%; }
+.node-target { top: 16%; right: 2%; color: var(--paper); background: var(--leaf-dark); }
+
+.map-line {
+  position: absolute;
+  height: 0.0625rem;
+  transform-origin: left center;
+  background: var(--leaf);
+}
+
+.map-line-a { top: 48%; left: 11%; width: 30%; transform: rotate(-24deg); }
+.map-line-b { top: 25%; left: 40%; width: 35%; transform: rotate(31deg); }
+.map-line-c { right: 7%; bottom: 31%; width: 29%; transform: rotate(-39deg); }
+
+.map-note {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: 20ch;
+  color: var(--ink-muted);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.challenge-desk {
+  display: grid;
+  gap: var(--space-2xl);
+  padding-block: var(--space-3xl);
+  border-top: 0.125rem solid var(--ink);
+}
+
+.challenge-desk h2 {
+  margin-bottom: var(--space-md);
+  font-family: "STSong", "Songti SC", serif;
+  font-size: clamp(2rem, 6vw, 4rem);
+  letter-spacing: -0.055em;
+  line-height: 1;
+}
+
+.challenge-desk > div > p:last-child {
+  max-width: 34rem;
+  color: var(--ink-muted);
+  line-height: 1.65;
+}
+
+.challenge-form { align-self: end; }
+.challenge-form label { display: block; margin-bottom: var(--space-sm); font-size: 0.875rem; font-weight: 760; }
+.input-row { display: flex; flex-direction: column; gap: var(--space-sm); }
+
+.input-row input {
+  width: 100%;
+  min-height: 3rem;
+  border: 0;
+  border-bottom: 0.125rem solid var(--ink);
+  border-radius: 0;
+  padding: 0.75rem 0;
+  color: var(--ink);
+  background: transparent;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+}
+
+.input-row input::placeholder { color: oklch(52% 0.025 104); }
+.form-message { min-height: 3rem; margin-top: 0.75rem; color: var(--ink-muted); font-size: 0.875rem; line-height: 1.5; }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding-block: var(--space-xl);
+  border-top: 0.0625rem solid var(--rule);
+  color: var(--ink-muted);
+  font-size: 0.75rem;
+}
+
+@media (min-width: 48rem) {
+  .hero { grid-template-columns: minmax(0, 1.15fr) minmax(20rem, 0.85fr); align-items: center; }
+  .challenge-desk { grid-template-columns: minmax(0, 1fr) minmax(22rem, 0.8fr); }
+  .input-row { flex-direction: row; align-items: end; }
+  .input-row .button { flex: 0 0 auto; }
+  footer { flex-direction: row; justify-content: space-between; }
+}
+
+@media (hover: hover) {
+  .button:hover:not(:disabled) { transform: translateY(-0.125rem); }
+  .button-primary:hover:not(:disabled) { background: var(--leaf); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

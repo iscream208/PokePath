@@ -1,0 +1,13 @@
+{
+  "datasetVersion": 1,
+  "count": 1025,
+  "profileDocumentCount": 1025,
+  "descriptionDocumentCount": 3477,
+  "duplicateDescriptionsRemoved": 0,
+  "chineseDescriptionCount": 722,
+  "missing": {
+    "name": [],
+    "image": [],
+    "description": []
+  }
+}

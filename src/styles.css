@@ -1,0 +1,152 @@
+:root {
+  font-family: "Segoe UI Variable", "Microsoft YaHei UI", sans-serif;
+  color: oklch(24% 0.025 112);
+  background: oklch(91% 0.025 92);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  --paper: oklch(94% 0.022 92);
+  --paper-deep: oklch(88% 0.032 92);
+  --ink: oklch(24% 0.025 112);
+  --ink-muted: oklch(46% 0.035 104);
+  --leaf: oklch(47% 0.105 139);
+  --leaf-dark: oklch(32% 0.08 139);
+  --signal: oklch(65% 0.16 55);
+  --rule: oklch(73% 0.035 101);
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+* { box-sizing: border-box; }
+
+html {
+  min-width: 20rem;
+  background: var(--paper-deep);
+}
+
+body {
+  margin: 0;
+  min-width: 20rem;
+  min-height: 100vh;
+  background:
+    linear-gradient(90deg, transparent 0 3.9rem, oklch(72% 0.08 32 / 0.35) 4rem, transparent 4.05rem),
+    repeating-linear-gradient(0deg, transparent 0 1.47rem, oklch(73% 0.035 101 / 0.2) 1.5rem),
+    var(--paper);
+}
+
+button, input { font: inherit; }
+button { min-height: 2.75rem; }
+
+button:focus-visible,
+input:focus-visible,
+a:focus-visible {
+  outline: 0.1875rem solid var(--signal);
+  outline-offset: 0.1875rem;
+}
+
+.skip-link {
+  position: fixed;
+  top: var(--space-md);
+  left: var(--space-md);
+  z-index: 10;
+  padding: 0.75rem 1rem;
+  color: var(--paper);
+  background: var(--ink);
+  transform: translateY(-200%);
+}
+
+.skip-link:focus { transform: translateY(0); }
+
+.app-shell {
+  width: min(100% - 2rem, 76rem);
+  margin-inline: auto;
+  padding:
+    max(var(--space-md), env(safe-area-inset-top))
+    max(var(--space-md), env(safe-area-inset-right))
+    max(var(--space-xl), env(safe-area-inset-bottom))
+    max(var(--space-md), env(safe-area-inset-left));
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-lg);
+  padding-block: var(--space-sm) var(--space-xl);
+  border-bottom: 0.0625rem solid var(--rule);
+}
+
+.wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  color: var(--ink);
+  font-size: 1.25rem;
+  font-weight: 760;
+  letter-spacing: -0.025em;
+  text-decoration: none;
+}
+
+.wordmark-mark { color: var(--leaf); font-size: 1.6rem; }
+
+.build-label,
+.section-index,
+.eyebrow {
+  color: var(--ink-muted);
+  font-size: 0.75rem;
+  font-weight: 720;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero {
+  display: grid;
+  gap: var(--space-2xl);
+  padding-block: clamp(3rem, 10vw, 7.5rem);
+}
+
+.hero-copy { max-width: 42rem; }
+.eyebrow { margin: 0 0 var(--space-lg); }
+h1, h2, p { margin-top: 0; }
+
+h1 {
+  max-width: 12ch;
+  margin-bottom: var(--space-lg);
+  font-family: "STSong", "Songti SC", serif;
+  font-size: clamp(3rem, 12vw, 7.5rem);
+  font-weight: 700;
+  letter-spacing: -0.07em;
+  line-height: 0.93;
+}
+
+.hero-intro {
+  max-width: 35rem;
+  margin-bottom: var(--space-xl);
+  color: var(--ink-muted);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  line-height: 1.7;
+}
+
+.primary-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.button {
+  border: 0;
+  padding: 0.75rem 1.125rem;
+  font-weight: 720;
+  cursor: pointer;
+  transition: transform 140ms var(--ease-out), background-color 140ms var(--ease-out);
+}
+
+.button:active:not(:disabled) { transform: translateY(0.125rem); }
+.button:disabled { cursor: not-allowed; opacity: 0.55; }
+.button-primary { color: var(--paper); background: var(--leaf-dark); }
+.button-quiet { color: var(--ink); background: transparent; box-shadow: inset 0 0 0 0.0625rem var(--rule); }
+.button-dark { color: var(--paper); background: var(--ink); }
