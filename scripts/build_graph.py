@@ -168,6 +168,31 @@ def nearest_neighbors(scores: np.ndarray, k: int = 20) -> list[list[int]]:
     ]
 
 
+def normalize_layout(embedding: np.ndarray) -> np.ndarray:
+    """Normalize an Nx2 embedding into stable 0..1 drawing coordinates."""
+    minimum = embedding.min(axis=0)
+    span = np.ptp(embedding, axis=0)
+    return ((embedding - minimum) / np.clip(span, 1e-12, None)).astype(np.float32)
+
+
+def graph_layout(scores: np.ndarray) -> np.ndarray:
+    """Project the complete similarity field once; browsers only render the result."""
+    from umap import UMAP
+
+    distances = 1.0 - np.clip(scores, 0.0, 1.0)
+    np.fill_diagonal(distances, 0.0)
+    embedding = UMAP(
+        n_components=2,
+        n_neighbors=20,
+        min_dist=0.16,
+        metric="precomputed",
+        init="spectral",
+        random_state=42,
+        n_jobs=1,
+    ).fit_transform(distances)
+    return normalize_layout(embedding)
+
+
 def edge_reasons(
     a: dict[str, Any],
     b: dict[str, Any],
@@ -220,6 +245,7 @@ def main() -> None:
         description_embeddings,
         description_available,
     )
+    layout = graph_layout(scores)
     directed = nearest_neighbors(scores)
     graph = nx.DiGraph()
     graph.add_nodes_from(range(len(pokemon)))
@@ -252,7 +278,18 @@ def main() -> None:
     GAME_ROOT.mkdir(parents=True, exist_ok=True)
     (GAME_ROOT / "graph.json").write_text(
         json.dumps(
-            {"graphVersion": GRAPH_VERSION, "neighbors": output},
+            {
+                "graphVersion": GRAPH_VERSION,
+                "layout": {
+                    "version": 1,
+                    "method": "umap-precomputed",
+                    "positions": {
+                        str(item["id"]): [round(float(x), 5), round(float(y), 5)]
+                        for item, (x, y) in zip(pokemon, layout, strict=True)
+                    },
+                },
+                "neighbors": output,
+            },
             ensure_ascii=False,
             separators=(",", ":"),
         ),
@@ -292,6 +329,13 @@ def main() -> None:
         "weaklyConnected": nx.is_weakly_connected(graph),
         "directed": True,
         "neighborsPerPokemon": len(directed[0]),
+        "layout": {
+            "version": 1,
+            "method": "umap-precomputed",
+            "dimensions": 2,
+            "minimum": layout.min(axis=0).tolist(),
+            "maximum": layout.max(axis=0).tolist(),
+        },
         "bridgesAdded": [],
         "outDegree": {
             "min": min(out_degrees),

@@ -2,6 +2,7 @@ import { FormEvent, useMemo, useState } from "react";
 import { generateChallenge, randomIdentity, type Challenge } from "./game/challenge";
 import { neighbors, pokemonById, type Neighbor, type Pokemon } from "./game/data";
 import { decodeChallenge, encodeChallenge, seedFromDate, type ChallengeIdentity } from "./game/prng";
+import PathMap from "./PathMap";
 import "./game.css";
 
 type Screen = "home" | "start" | "playing" | "won";
@@ -297,18 +298,23 @@ function App() {
 
       {won ? (
         <section className="result-panel">
-          <p className="kicker">路径完成</p>
-          <h1>抵达 {target.name}</h1>
-          <p>你用了 {path.length - 1} 步；从所选起点出发的最短路径是 {challenge.distances[path[0]]} 步。</p>
-          <div className="path-ribbon result-path">{path.map((id) => <PokemonImage key={id + "-result"} pokemon={pokemonById.get(id)!} />)}</div>
-          <div className="home-actions">
-            <button className="action primary" onClick={shareChallenge}>复制挑战链接</button>
-            <button className="action secondary" onClick={() => openChallenge(randomIdentity(createSeed(), challenge.identity.difficulty))}>再来一局</button>
+          <div className="result-copy">
+            <div>
+              <p className="kicker">路径完成</p>
+              <h1>抵达 {target.name}</h1>
+              <p>你用了 {path.length - 1} 步；从所选起点出发的最短路径是 {challenge.distances[path[0]]} 步。</p>
+            </div>
+            <div className="home-actions">
+              <button className="action primary" onClick={shareChallenge}>复制挑战链接</button>
+              <button className="action secondary" onClick={() => openChallenge(randomIdentity(createSeed(), challenge.identity.difficulty))}>再来一局</button>
+            </div>
           </div>
+          <PathMap path={path} revealGraph />
           <p className="success-text" aria-live="polite">{shareMessage}</p>
         </section>
       ) : (
-        <section className="next-section">
+        <>
+          <section className="next-section">
             <div className="next-heading"><div><p className="section-number">下一步</p><h2>选择一个相似节点</h2></div><button className="text-action" onClick={undo} disabled={path.length <= 1}>撤回上一步</button></div>
             <div className="neighbor-browser">
               <button
@@ -363,9 +369,12 @@ function App() {
               <span>{String(visibleNeighborPage + 1).padStart(2, "0")} / {String(neighborPageCount).padStart(2, "0")}</span>
               <span>{visibleNeighborStart + 1}—{visibleNeighborStart + visibleNeighbors.length} / {currentNeighbors.length} 个相似节点</span>
             </p>
-        </section>
+          </section>
+          <div className="live-path-map">
+            <PathMap path={path} revealGraph={false} compact />
+          </div>
+        </>
       )}
-      <div className="path-dock"><span>路径</span><div className="path-ribbon">{path.map((id, index) => <PokemonImage key={id + "-" + index} pokemon={pokemonById.get(id)!} />)}</div></div>
     </main>
   );
 }

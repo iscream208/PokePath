@@ -1,6 +1,11 @@
 import numpy as np
 
-from scripts.build_graph import name_similarity_matrix, nearest_neighbors, score_matrices
+from scripts.build_graph import (
+    name_similarity_matrix,
+    nearest_neighbors,
+    normalize_layout,
+    score_matrices,
+)
 
 
 def pokemon_fixture(pokemon_id: int) -> dict:
@@ -69,3 +74,11 @@ def test_nearest_neighbors_returns_exact_sorted_count() -> None:
         dtype=np.float32,
     )
     assert nearest_neighbors(scores, k=2) == [[2, 3], [3, 2], [0, 1], [1, 0]]
+
+
+def test_normalize_layout_fits_unit_square() -> None:
+    embedding = np.asarray([[-2.0, 4.0], [3.0, 8.0], [8.0, 6.0]], dtype=np.float32)
+    layout = normalize_layout(embedding)
+
+    assert np.allclose(layout.min(axis=0), [0.0, 0.0])
+    assert np.allclose(layout.max(axis=0), [1.0, 1.0])

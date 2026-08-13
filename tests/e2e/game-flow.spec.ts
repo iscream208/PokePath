@@ -59,6 +59,9 @@ test("opens a shared challenge and completes a valid path", async ({ page }) => 
   await expect(page.locator(".current-stage")).toHaveCount(0);
   await expect(page.locator(".pokemon-summary")).toHaveCount(2);
   await expect(page.locator(".pokemon-summary").first().locator("strong")).toHaveText(startName);
+  await expect(page.locator(".path-map--compact")).toBeVisible();
+  await expect(page.locator(".path-map--compact .map-path-node")).toHaveCount(1);
+  await expect(page.locator(".path-map--compact .map-context-node")).toHaveCount(0);
   await page.locator(".pokemon-summary").first().hover();
   await expect(page.locator(".header-pokemon-preview")).toBeVisible();
   await expect(page.locator(".preview-copy h2")).toHaveText(startName);
@@ -83,4 +86,7 @@ test("opens a shared challenge and completes a valid path", async ({ page }) => 
 
   await expect(page.getByText("路径完成")).toBeVisible();
   await expect(page.getByRole("heading", { name: new RegExp(targetName) })).toBeVisible();
+  await expect(page.locator(".path-map--complete")).toBeVisible();
+  await expect(page.locator(".path-map--complete .map-path-node")).toHaveCount(route.length);
+  await expect(page.locator(".path-map--complete .map-context-node")).toHaveCount(pokemon.length);
 });

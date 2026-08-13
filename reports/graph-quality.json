@@ -6,6 +6,19 @@
   "weaklyConnected": true,
   "directed": true,
   "neighborsPerPokemon": 20,
+  "layout": {
+    "version": 1,
+    "method": "umap-precomputed",
+    "dimensions": 2,
+    "minimum": [
+      0.0,
+      0.0
+    ],
+    "maximum": [
+      1.0,
+      1.0
+    ]
+  },
   "bridgesAdded": [],
   "outDegree": {
     "min": 20,
