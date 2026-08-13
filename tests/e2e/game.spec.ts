@@ -23,15 +23,15 @@ function shortestPath(startId: number, targetId: number): number[] {
 }
 
 test("opens a shared challenge and completes a valid path", async ({ page }) => {
-  const identity = randomIdentity(123456, "N");
+  const identity = randomIdentity(123456, "E");
   const challenge = generateChallenge(identity);
-  const route = shortestPath(challenge.startIds[0], challenge.targetId);
+  const route = shortestPath(challenge.startId, challenge.targetId);
 
   await page.goto("/?challenge=" + encodeChallenge(identity));
   await expect(page.getByRole("heading", { name: /从一只宝可梦/ })).toBeVisible();
-  await page.getByRole("button", { name: "使用链接中的挑战码" }).click();
+  await expect(page.locator("#challenge-code")).toHaveValue(encodeChallenge(identity));
   await page.getByRole("button", { name: "进入挑战" }).click();
-  await expect(page.getByText("选择路径起点")).toBeVisible();
+  await expect(page.getByText("本局路线")).toBeVisible();
 
   await page.getByRole("button", { name: new RegExp(pokemonById.get(route[0])!.name) }).click();
   for (const id of route.slice(1)) {

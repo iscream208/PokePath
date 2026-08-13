@@ -19,17 +19,23 @@ function shortestDistance(startId: number, targetId: number): number {
 
 describe("challenge generation", () => {
   it("is deterministic for the same identity", () => {
-    const identity = randomIdentity(123456, "N");
+    const identity = randomIdentity(123456, "E");
     expect(generateChallenge(identity)).toEqual(generateChallenge(identity));
   });
 
-  it("only creates reachable starts in the requested distance band", () => {
-    const challenge = generateChallenge(randomIdentity(987654, "N"));
-    expect(challenge.startIds).toHaveLength(5);
-    for (const startId of challenge.startIds) {
-      expect(challenge.distances[startId]).toBeGreaterThanOrEqual(5);
-      expect(challenge.distances[startId]).toBeLessThanOrEqual(6);
-      expect(shortestDistance(startId, challenge.targetId)).toBe(challenge.distances[startId]);
+  it("creates one distinct reachable start at least three steps away", () => {
+    const challenge = generateChallenge(randomIdentity(987654, "E"));
+    expect(challenge.startId).not.toBe(challenge.targetId);
+    expect(challenge.distances[challenge.startId]).toBeGreaterThanOrEqual(3);
+    expect(shortestDistance(challenge.startId, challenge.targetId))
+      .toBe(challenge.distances[challenge.startId]);
+  });
+
+  it("keeps the minimum-distance rule across many seeds", () => {
+    for (let seed = 0; seed < 250; seed += 1) {
+      const challenge = generateChallenge(randomIdentity(seed, "E"));
+      expect(challenge.startId).not.toBe(challenge.targetId);
+      expect(challenge.distances[challenge.startId]).toBeGreaterThanOrEqual(3);
     }
   });
 });

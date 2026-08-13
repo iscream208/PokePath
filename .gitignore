@@ -5,6 +5,7 @@ dist-gist/
 coverage/
 playwright-report/
 test-results/
+home-clean-v2.png
 .venv/
 __pycache__/
 *.py[cod]

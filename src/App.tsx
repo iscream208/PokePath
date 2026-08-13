@@ -8,9 +8,9 @@ import {
 
 const currentChallenge: ChallengeIdentity = {
   datasetVersion: 1,
-  graphVersion: 3,
-  algorithmVersion: 1,
-  difficulty: "N",
+  graphVersion: 6,
+  algorithmVersion: 2,
+  mode: "E",
   seed: seedFromDate(new Date().toISOString().slice(0, 10)),
 };
 
@@ -24,7 +24,7 @@ function App() {
     const parsed = decodeChallenge(challengeCode);
     setMessage(
       parsed
-        ? "挑战码有效。数据图完成后，这里会进入相同的目标和开局候选。"
+        ? "挑战码有效。这里会进入相同的随机起点与目标。"
         : "这个挑战码无法识别。请检查是否包含完整版本和种子。",
     );
   }
@@ -75,7 +75,7 @@ function App() {
           <p className="section-index">01 / CHALLENGE</p>
           <h2 id="challenge-title">带着同一个种子出发</h2>
           <p>
-            挑战码会固定目标、开局候选与顺序。把链接发给朋友，每个人面对的都是同一张地图。
+            挑战码会固定随机起点与目标。把链接发给朋友，每个人面对的都是同一张地图。
           </p>
         </div>
 
@@ -86,7 +86,7 @@ function App() {
               id="challenge-code"
               value={challengeCode}
               onChange={(event) => setChallengeCode(event.target.value)}
-              placeholder="P1-G6-A1-N-7K4M2Q"
+              placeholder="例如：P1-G6-A2-E-002N9C"
               spellCheck={false}
               autoComplete="off"
             />

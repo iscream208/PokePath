@@ -1,7 +1,8 @@
 import { FormEvent, useMemo, useState } from "react";
 import { generateChallenge, randomIdentity, type Challenge } from "./game/challenge";
 import { neighbors, pokemonById, type Neighbor, type Pokemon } from "./game/data";
-import { decodeChallenge, encodeChallenge, seedFromDate, type ChallengeIdentity } from "./game/prng";
+import { decodeChallenge, encodeChallenge, type ChallengeIdentity } from "./game/prng";
+import { buildChallengeShareText } from "./game/share";
 import PathMap from "./PathMap";
 import "./game.css";
 
@@ -9,6 +10,7 @@ type Screen = "home" | "start" | "playing" | "won";
 type HeaderPreview = "current" | "target";
 
 const NEIGHBORS_PER_PAGE = 5;
+const DEPLOYED_GAME_URL = "https://iscream208.github.io/PokePath/";
 
 const TYPE_ZH: Record<string, string> = {
   normal: "一般", fire: "火", water: "水", electric: "电", grass: "草",
@@ -46,7 +48,9 @@ function App() {
   const [screen, setScreen] = useState<Screen>("home");
   const [challenge, setChallenge] = useState<Challenge | null>(null);
   const [path, setPath] = useState<number[]>([]);
-  const [challengeCode, setChallengeCode] = useState("");
+  const [challengeCode, setChallengeCode] = useState(
+    () => new URLSearchParams(window.location.search).get("challenge") ?? "",
+  );
   const [error, setError] = useState("");
   const [lastEdge, setLastEdge] = useState<Neighbor | null>(null);
   const [shareMessage, setShareMessage] = useState("");
@@ -56,6 +60,9 @@ function App() {
   const [pinnedPreview, setPinnedPreview] = useState<HeaderPreview | null>(null);
 
   const target = challenge ? pokemonById.get(challenge.targetId)! : null;
+  const start = challenge ? pokemonById.get(challenge.startId)! : null;
+  const hasMap = challenge?.identity.mode !== "H";
+  const modeName = hasMap ? "简单模式" : "困难模式";
   const currentId = path.at(-1);
   const current = currentId ? pokemonById.get(currentId)! : null;
   const currentNeighbors = current ? neighbors[String(current.id)] ?? [] : [];
@@ -78,6 +85,7 @@ function App() {
       setHoveredPreview(null);
       setFocusedPreview(null);
       setPinnedPreview(null);
+      setShareMessage("");
       setError("");
       setScreen("start");
       const url = new URL(window.location.href);
@@ -90,6 +98,10 @@ function App() {
 
   function submitCode(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    if (!challengeCode.trim()) {
+      setError("请先输入挑战码，或点击左侧按钮生成一个新挑战。");
+      return;
+    }
     const identity = decodeChallenge(challengeCode);
     if (!identity) {
       setError("这个挑战码无法识别，请检查是否完整复制。 ");
@@ -98,9 +110,11 @@ function App() {
     openChallenge(identity);
   }
 
-  function chooseStart(id: number) {
-    setPath([id]);
+  function beginChallenge() {
+    if (!challenge) return;
+    setPath([challenge.startId]);
     setNeighborPage(0);
+    setShareMessage("");
     setScreen("playing");
   }
 
@@ -111,6 +125,7 @@ function App() {
     setHoveredPreview(null);
     setFocusedPreview(null);
     setPinnedPreview(null);
+    setShareMessage("");
     setPath((previous) => [...previous, edge.id]);
     if (edge.id === challenge.targetId) setScreen("won");
   }
@@ -120,6 +135,7 @@ function App() {
     setPath((previous) => previous.slice(0, -1));
     setLastEdge(null);
     setNeighborPage(0);
+    setShareMessage("");
   }
 
   function changeNeighborPage(direction: -1 | 1) {
@@ -130,12 +146,18 @@ function App() {
   }
 
   async function shareChallenge() {
-    if (!challenge) return;
-    const url = new URL(window.location.href);
+    if (!challenge || !start || !target) return;
+    const url = new URL(DEPLOYED_GAME_URL);
     url.searchParams.set("challenge", encodeChallenge(challenge.identity));
-    const text = "宝可梦链挑战 " + encodeChallenge(challenge.identity) + "\n" + url.toString();
+    const text = buildChallengeShareText({
+      startName: start.name,
+      targetName: target.name,
+      steps: Math.max(0, path.length - 1),
+      won: screen === "won",
+      url: url.toString(),
+    });
     await navigator.clipboard.writeText(text);
-    setShareMessage("挑战链接已复制");
+    setShareMessage(screen === "won" ? "通关结果与挑战链接已复制" : "当前进度与挑战链接已复制");
   }
 
   const distanceTrend = useMemo(() => {
@@ -145,9 +167,6 @@ function App() {
     return after < before ? "更接近目标" : after > before ? "暂时绕远了" : "与目标距离不变";
   }, [challenge, path]);
 
-  const queryCode = new URLSearchParams(window.location.search).get("challenge");
-  const dailyIdentity = randomIdentity(seedFromDate(new Date().toISOString().slice(0, 10)), "N");
-
   if (screen === "home") {
     return (
       <main id="main-content" className="game-shell home-screen">
@@ -155,45 +174,46 @@ function App() {
           <span className="brand"><i aria-hidden="true">◉</i> PokéPath</span>
           <span className="edition">全国图鉴 · 图谱 01</span>
         </header>
-        <section className="home-hero">
-          <div>
+        <div className="home-workspace">
+          <section className="home-hero">
+            <div className="home-hero__copy">
             <p className="kicker">宝可梦关系探索</p>
             <h1>从一只宝可梦，<br />走到另一只。</h1>
-            <p className="lead">沿着图鉴描述、生态与属性形成的联系不断跳转，找到通往目标的路径。</p>
-            <div className="home-actions">
-              <button className="action primary" onClick={() => openChallenge(randomIdentity(createSeed(), "N"))}>生成随机挑战</button>
-              <button className="action secondary" onClick={() => openChallenge(dailyIdentity)}>开始今日挑战</button>
+            <p className="lead">从随机起点出发，沿着图鉴描述、生态与属性形成的联系，寻找通往目标的路径。</p>
+            <div className="mode-actions" aria-label="选择游戏模式">
+              <button className="mode-button mode-button--easy" onClick={() => openChallenge(randomIdentity(createSeed(), "E"))}>
+                <span><strong>简单模式</strong><small>显示关系地图</small></span>
+                <i aria-hidden="true">E</i>
+              </button>
+              <button className="mode-button mode-button--hard" onClick={() => openChallenge(randomIdentity(createSeed(), "H"))}>
+                <span><strong>困难模式</strong><small>隐藏关系地图</small></span>
+                <i aria-hidden="true">H</i>
+              </button>
             </div>
-          </div>
-          <div className="orbit-sketch" aria-hidden="true">
-            <span className="orbit-node orbit-one">起点</span>
-            <span className="orbit-node orbit-two">相似</span>
-            <span className="orbit-node orbit-three">转折</span>
-            <span className="orbit-node orbit-goal">目标</span>
-          </div>
-        </section>
-        <section className="code-panel">
-          <div>
-            <p className="section-number">01 / 挑战码</p>
-            <h2>带着同一个种子出发</h2>
-            <p>目标、开局候选和顺序都会固定。朋友打开相同链接，就会面对同一局。</p>
-          </div>
-          <form onSubmit={submitCode}>
-            <label htmlFor="challenge-code">挑战码</label>
-            <div className="code-entry">
-              <input id="challenge-code" value={challengeCode} onChange={(event) => setChallengeCode(event.target.value)} placeholder="P1-G6-A1-N-7K4M2Q" />
-              <button className="action dark" type="submit">进入挑战</button>
             </div>
-            {queryCode && <button className="text-action" type="button" onClick={() => setChallengeCode(queryCode)}>使用链接中的挑战码</button>}
-            <p className="error-text" aria-live="polite">{error}</p>
-          </form>
-        </section>
+          </section>
+          <section className="code-panel">
+            <div>
+              <p className="section-number">挑战码</p>
+              <h2>复现同一条出发线</h2>
+              <p>挑战码会固定随机起点与目标。朋友打开相同链接，就会面对同一局。</p>
+            </div>
+            <form onSubmit={submitCode}>
+              <label htmlFor="challenge-code">输入挑战码</label>
+              <div className="code-entry">
+                <input id="challenge-code" value={challengeCode} onChange={(event) => setChallengeCode(event.target.value)} placeholder="例如：P1-G6-A2-E-002N9C" />
+                <button className="action dark" type="submit">进入挑战</button>
+              </div>
+              <p className="error-text" aria-live="polite">{error}</p>
+            </form>
+          </section>
+        </div>
         <footer><span>免费、非商业的非官方同人实验</span><span>数据来源 PokéAPI</span></footer>
       </main>
     );
   }
 
-  if (!challenge || !target) return null;
+  if (!challenge || !target || !start) return null;
 
   if (screen === "start") {
     return (
@@ -202,25 +222,32 @@ function App() {
           <button className="brand brand-button" onClick={() => setScreen("home")}>◉ PokéPath</button>
           <span className="edition">{encodeChallenge(challenge.identity)}</span>
         </header>
-        <section className="target-strip">
-          <div><p className="kicker">本局目标</p><h1>{target.name}</h1><TypeLabels pokemon={target} /></div>
-          <PokemonImage pokemon={target} className="target-image" />
-        </section>
-        <section className="start-section">
-          <p className="section-number">选择路径起点</p>
-          <h2>你准备从哪里出发？</h2>
-          <p className="supporting">每个选项都能抵达目标，但路线长度和转折各不相同。</p>
-          <div className="pokemon-grid">
-            {challenge.startIds.map((id, index) => {
-              const item = pokemonById.get(id)!;
-              return (
-                <button className="pokemon-choice" key={id} onClick={() => chooseStart(id)} style={{ "--order": index } as React.CSSProperties}>
-                  <PokemonImage pokemon={item} />
-                  <strong>{item.name}</strong>
-                  <TypeLabels pokemon={item} />
-                </button>
-              );
-            })}
+        <section className="route-preview">
+          <div className="route-preview__heading">
+            <p className="kicker">本局路线</p>
+            <h1>从这里，走到那里。</h1>
+          </div>
+          <div className="route-pair">
+            <article className="route-specimen route-specimen--start">
+              <span className="route-label">随机起点</span>
+              <PokemonImage pokemon={start} />
+              <div><h2>{start.name}</h2><TypeLabels pokemon={start} /><p>{firstDescriptionSentence(start)}</p></div>
+            </article>
+            <span className="route-arrow" aria-hidden="true">→</span>
+            <article className="route-specimen route-specimen--target">
+              <span className="route-label">目标</span>
+              <PokemonImage pokemon={target} />
+              <div><h2>{target.name}</h2><TypeLabels pokemon={target} /><p>{firstDescriptionSentence(target)}</p></div>
+            </article>
+          </div>
+          <div className="route-actions">
+            <span><strong>{modeName}</strong> · {hasMap ? "游玩时显示关系地图" : "游玩时不显示关系地图"} · 理论最短路径至少 3 步</span>
+            <div className="route-action-buttons">
+              <button className="action secondary" type="button" onClick={shareChallenge}>复制挑战链接</button>
+              <button className="action secondary" type="button" onClick={() => openChallenge(randomIdentity(createSeed(), challenge.identity.mode))}>随机重选</button>
+              <button className="action primary" type="button" onClick={beginChallenge}>从这里出发</button>
+            </div>
+            <p className="share-feedback" aria-live="polite">{shareMessage}</p>
           </div>
         </section>
       </main>
@@ -272,7 +299,7 @@ function App() {
             <span><small>目标</small><strong>{target.name}</strong></span>
           </button>
         </div>
-        <span className="step-count">{Math.max(0, path.length - 1)} 步</span>
+        <span className="step-count">{modeName} · {Math.max(0, path.length - 1)} 步</span>
         {activePreview && (
           <aside
             className={`header-pokemon-preview preview-${activePreview}`}
@@ -296,26 +323,38 @@ function App() {
         )}
       </header>
 
-      {won ? (
-        <section className="result-panel">
-          <div className="result-copy">
-            <div>
-              <p className="kicker">路径完成</p>
-              <h1>抵达 {target.name}</h1>
-              <p>你用了 {path.length - 1} 步；从所选起点出发的最短路径是 {challenge.distances[path[0]]} 步。</p>
-            </div>
-            <div className="home-actions">
-              <button className="action primary" onClick={shareChallenge}>复制挑战链接</button>
-              <button className="action secondary" onClick={() => openChallenge(randomIdentity(createSeed(), challenge.identity.difficulty))}>再来一局</button>
-            </div>
-          </div>
-          <PathMap path={path} revealGraph />
-          <p className="success-text" aria-live="polite">{shareMessage}</p>
-        </section>
-      ) : (
-        <>
+      <div className={"play-workspace " + (hasMap ? "with-map " : "without-map ") + (won ? "is-won" : "")}>
+        {hasMap && (
+          <aside className="graph-sidebar">
+            <PathMap path={path} targetId={target.id} />
+          </aside>
+        )}
+        <div className="play-primary">
+          {won ? (
+            <section className="result-panel">
+              <div className="result-copy">
+                <div>
+                  <p className="kicker">路径完成</p>
+                  <h1>抵达 {target.name}</h1>
+                  <p>你用了 {path.length - 1} 步；从所选起点出发的最短路径是 {challenge.distances[path[0]]} 步。</p>
+                </div>
+                <div className="home-actions">
+                  <button className="action primary" onClick={shareChallenge}>复制挑战链接</button>
+                  <button className="action secondary" onClick={() => openChallenge(randomIdentity(createSeed(), challenge.identity.mode))}>再来一局</button>
+                </div>
+              </div>
+              <p className="success-text" aria-live="polite">{shareMessage}</p>
+            </section>
+          ) : (
           <section className="next-section">
-            <div className="next-heading"><div><p className="section-number">下一步</p><h2>选择一个相似节点</h2></div><button className="text-action" onClick={undo} disabled={path.length <= 1}>撤回上一步</button></div>
+            <div className="next-heading">
+              <div><p className="section-number">下一步</p><h2>选择一个相似节点</h2></div>
+              <div className="next-heading-actions">
+                <button className="text-action" type="button" onClick={shareChallenge}>复制挑战链接</button>
+                <button className="text-action" onClick={undo} disabled={path.length <= 1}>撤回上一步</button>
+              </div>
+            </div>
+            <p className="share-feedback share-feedback--playing" aria-live="polite">{shareMessage}</p>
             <div className="neighbor-browser">
               <button
                 className="neighbor-page-button neighbor-previous"
@@ -370,11 +409,9 @@ function App() {
               <span>{visibleNeighborStart + 1}—{visibleNeighborStart + visibleNeighbors.length} / {currentNeighbors.length} 个相似节点</span>
             </p>
           </section>
-          <div className="live-path-map">
-            <PathMap path={path} revealGraph={false} compact />
-          </div>
-        </>
-      )}
+          )}
+        </div>
+      </div>
     </main>
   );
 }

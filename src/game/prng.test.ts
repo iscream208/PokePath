@@ -7,7 +7,7 @@ describe("challenge identity", () => {
       datasetVersion: 1,
       graphVersion: 2,
       algorithmVersion: 3,
-      difficulty: "N" as const,
+      mode: "H" as const,
       seed: 987654321,
     };
     expect(decodeChallenge(encodeChallenge(identity))).toEqual(identity);
@@ -15,6 +15,20 @@ describe("challenge identity", () => {
 
   it("rejects malformed codes", () => {
     expect(decodeChallenge("not-a-challenge")).toBeNull();
+  });
+
+  it("accepts the easy-mode challenge code shown in the interface", () => {
+    expect(decodeChallenge("P1-G6-A2-E-002N9C")).toEqual({
+      datasetVersion: 1,
+      graphVersion: 6,
+      algorithmVersion: 2,
+      mode: "E",
+      seed: Number.parseInt("002N9C", 36),
+    });
+  });
+
+  it("rejects retired N-mode challenge codes", () => {
+    expect(decodeChallenge("P1-G6-A2-N-002N9C")).toBeNull();
   });
 });
 

@@ -2,7 +2,7 @@ export interface ChallengeIdentity {
   datasetVersion: number;
   graphVersion: number;
   algorithmVersion: number;
-  difficulty: "E" | "N" | "H";
+  mode: "E" | "H";
   seed: number;
 }
 
@@ -23,13 +23,13 @@ export function encodeChallenge(identity: ChallengeIdentity): string {
     "P" + identity.datasetVersion,
     "G" + identity.graphVersion,
     "A" + identity.algorithmVersion,
-    identity.difficulty,
+    identity.mode,
     seed,
   ].join("-");
 }
 
 export function decodeChallenge(code: string): ChallengeIdentity | null {
-  const match = /^P(\d+)-G(\d+)-A(\d+)-(E|N|H)-([0-9A-Z]+)$/i.exec(code.trim());
+  const match = /^P(\d+)-G(\d+)-A(\d+)-(E|H)-([0-9A-Z]+)$/i.exec(code.trim());
   if (!match) return null;
   const seed = Number.parseInt(match[5], 36);
   if (!Number.isSafeInteger(seed) || seed < 0 || seed > 0xffffffff) return null;
@@ -37,7 +37,7 @@ export function decodeChallenge(code: string): ChallengeIdentity | null {
     datasetVersion: Number(match[1]),
     graphVersion: Number(match[2]),
     algorithmVersion: Number(match[3]),
-    difficulty: match[4].toUpperCase() as ChallengeIdentity["difficulty"],
+    mode: match[4].toUpperCase() as ChallengeIdentity["mode"],
     seed,
   };
 }
@@ -50,4 +50,3 @@ export function seedFromDate(date: string): number {
   }
   return hash >>> 0;
 }
-
