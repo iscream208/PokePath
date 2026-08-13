@@ -140,6 +140,7 @@ test("shows all five choices in one mobile viewport", async ({ page }) => {
 
   const choices = page.locator(".neighbor-choice");
   await expect(choices).toHaveCount(5);
+  await expect(page.locator(".neighbor-figure i")).toHaveCount(0);
   for (let index = 0; index < 5; index += 1) {
     await expect(choices.nth(index)).toBeVisible();
   }
@@ -171,6 +172,8 @@ test("shows all five choices in one mobile viewport", async ({ page }) => {
     ));
     expect(descriptions).toHaveLength(5);
     expect(descriptions.every(({ text }) => text.length > 0)).toBe(true);
+    expect(descriptions.every(({ text }) => /[\u3400-\u9fff]/.test(text))).toBe(true);
+    expect(descriptions.every(({ text }) => !/[A-Za-z]{3}/.test(text))).toBe(true);
     expect(descriptions.every(({ clientHeight, scrollHeight }) => scrollHeight <= clientHeight + 1)).toBe(true);
 
     if (pageIndex < 3) await page.locator(".neighbor-next").click();

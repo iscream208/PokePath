@@ -32,23 +32,35 @@ function TypeLabels({ pokemon }: { pokemon: Pokemon }) {
 }
 
 function firstDescriptionSentence(pokemon: Pokemon): string {
-  const description = pokemon.descriptions[0]?.replace(/\s+/g, " ").trim() ?? "暂无图鉴描述。";
+  const description = pokemon.descriptions
+    .find((value) => /[\u3400-\u9fff]/.test(value))
+    ?.replace(/\s+/g, " ")
+    .trim();
+  if (!description) return cardDescriptionSentence(pokemon);
   const chineseSentence = description.match(/^.*?[。！？]/)?.[0];
   if (chineseSentence) return chineseSentence;
-  return description.match(/^.*?[.!?](?=\s|$)/)?.[0] ?? description;
+  return description;
 }
 
 function cardDescriptionSentence(pokemon: Pokemon): string {
   const candidates = pokemon.descriptions
     .map((value) => value.replace(/\s+/g, " ").trim())
-    .filter(Boolean)
+    .filter((value) => /[\u3400-\u9fff]/.test(value))
     .map((description) => {
       const chineseSentence = description.match(/^.*?[。！？]/)?.[0];
       if (chineseSentence) return chineseSentence;
       return description.match(/^.*?[.!?](?=\s|$)/)?.[0] ?? description;
     });
 
-  if (candidates.length === 0) return firstDescriptionSentence(pokemon);
+  if (candidates.length === 0) {
+    const types = pokemon.types.map((type) => TYPE_ZH[type] ?? type).join("、");
+    const genus = pokemon.genus && /[\u3400-\u9fff]/.test(pokemon.genus)
+      ? pokemon.genus
+      : "宝可梦";
+    return pokemon.types.length > 0
+      ? pokemon.name + "是" + types + "属性的" + genus + "。"
+      : pokemon.name + "是" + genus + "。";
+  }
 
   const readingLength = (value: string) => Array.from(value).reduce(
     (total, character) => total + (/[^\u0000-\u00ff]/.test(character) ? 2 : 1),
@@ -336,7 +348,7 @@ function App() {
               <p className="kicker">{activePreview === "current" ? "当前已选" : "本局目标"}</p>
               <h2>{previewPokemon.name}</h2>
               <TypeLabels pokemon={previewPokemon} />
-              <p>{previewPokemon.descriptions[0]}</p>
+              <p>{firstDescriptionSentence(previewPokemon)}</p>
               {activePreview === "current" && lastEdge && (
                 <p className="edge-reason"><strong>{distanceTrend}</strong><br />{lastEdge.reasons.join("，")}</p>
               )}
@@ -405,7 +417,6 @@ function App() {
                     >
                       <span className="neighbor-figure">
                         <PokemonImage pokemon={item} />
-                        <i aria-hidden="true">{String(visibleNeighborStart + index + 1).padStart(2, "0")}</i>
                       </span>
                       <span className="neighbor-meta">
                         <strong>{item.name}</strong>

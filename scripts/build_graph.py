@@ -304,6 +304,7 @@ def main() -> None:
                 "nameEn",
                 "image",
                 "descriptions",
+                "genus",
                 "types",
                 "evolutionChainId",
             )
