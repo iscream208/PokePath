@@ -160,4 +160,19 @@ test("shows all five choices in one mobile viewport", async ({ page }) => {
   expect(Math.min(...layout.cardWidths)).toBeGreaterThan(80);
   expect(layout.nextBottom).toBeLessThanOrEqual(layout.viewportHeight);
   expect(layout.documentHeight).toBe(layout.viewportHeight);
+
+  for (let pageIndex = 0; pageIndex < 4; pageIndex += 1) {
+    const descriptions = await page.locator(".neighbor-description").evaluateAll((elements) => (
+      elements.map((element) => ({
+        clientHeight: element.clientHeight,
+        scrollHeight: element.scrollHeight,
+        text: element.textContent?.trim() ?? "",
+      }))
+    ));
+    expect(descriptions).toHaveLength(5);
+    expect(descriptions.every(({ text }) => text.length > 0)).toBe(true);
+    expect(descriptions.every(({ clientHeight, scrollHeight }) => scrollHeight <= clientHeight + 1)).toBe(true);
+
+    if (pageIndex < 3) await page.locator(".neighbor-next").click();
+  }
 });

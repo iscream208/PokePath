@@ -202,7 +202,7 @@
   .next-heading-actions { align-items: end; flex-direction: row; gap: .75rem; }
   .next-heading-actions .text-action { min-height: 2.25rem; padding-block: .25rem; font-size: .72rem; }
   .play-workspace { height: calc(100dvh - 7rem); overflow: hidden; }
-  .play-workspace.with-map { grid-template-rows: minmax(8rem, 20dvh) minmax(0, 1fr); }
+  .play-workspace.with-map { grid-template-rows: minmax(7rem, 17dvh) minmax(0, 1fr); }
   .play-workspace.without-map { grid-template-rows: minmax(0, 1fr); }
   .play-primary { min-height: 0; overflow: hidden; }
   .next-section { display: grid; grid-template-rows: auto auto minmax(0, 1fr) auto; height: 100%; min-height: 0; padding-block: .5rem; }
@@ -213,11 +213,11 @@
   .neighbor-choice:nth-child(even) { padding-top: 0; }
   .neighbor-choice:nth-child(4) { grid-column: 2 / 4; }
   .neighbor-choice:nth-child(5) { grid-column: 4 / 6; justify-self: stretch; width: 100%; padding-top: 0; }
-  .neighbor-figure { width: min(100%, 7.4rem); justify-self: center; min-height: 0; }
+  .neighbor-figure { width: min(100%, 5.75rem); justify-self: center; min-height: 0; }
   .neighbor-figure i { top: 1%; left: 0; min-width: 1.45rem; min-height: 1.45rem; font-size: .55rem; }
   .neighbor-meta { gap: .15rem; padding-top: .25rem; }
   .neighbor-meta strong { font-size: clamp(.86rem, 3.7vw, 1.05rem); }
-  .neighbor-description { min-height: 1.2em; font-size: .58rem; line-height: 1.2; -webkit-line-clamp: 1; }
+  .neighbor-description { min-height: 4.8em; font-size: .55rem; line-height: 1.2; -webkit-line-clamp: 4; }
   .neighbor-page-button { min-height: 2.7rem; }
   .neighbor-page-button span { font-size: 1.35rem; }
   .neighbor-page-status { margin-top: .2rem; font-size: .58rem; }

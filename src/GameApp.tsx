@@ -38,6 +38,28 @@ function firstDescriptionSentence(pokemon: Pokemon): string {
   return description.match(/^.*?[.!?](?=\s|$)/)?.[0] ?? description;
 }
 
+function cardDescriptionSentence(pokemon: Pokemon): string {
+  const candidates = pokemon.descriptions
+    .map((value) => value.replace(/\s+/g, " ").trim())
+    .filter(Boolean)
+    .map((description) => {
+      const chineseSentence = description.match(/^.*?[。！？]/)?.[0];
+      if (chineseSentence) return chineseSentence;
+      return description.match(/^.*?[.!?](?=\s|$)/)?.[0] ?? description;
+    });
+
+  if (candidates.length === 0) return firstDescriptionSentence(pokemon);
+
+  const readingLength = (value: string) => Array.from(value).reduce(
+    (total, character) => total + (/[^\u0000-\u00ff]/.test(character) ? 2 : 1),
+    0,
+  );
+
+  return candidates.reduce((shortest, candidate) => (
+    readingLength(candidate) < readingLength(shortest) ? candidate : shortest
+  ));
+}
+
 function createSeed(): number {
   const values = new Uint32Array(1);
   crypto.getRandomValues(values);
@@ -387,7 +409,7 @@ function App() {
                       </span>
                       <span className="neighbor-meta">
                         <strong>{item.name}</strong>
-                        <span className="neighbor-description">{firstDescriptionSentence(item)}</span>
+                        <span className="neighbor-description">{cardDescriptionSentence(item)}</span>
                       </span>
                     </button>
                   );
