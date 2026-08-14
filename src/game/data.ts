@@ -7,7 +7,6 @@ export interface Pokemon {
   nameEn: string;
   image: string;
   descriptions: string[];
-  genus: string | null;
   types: string[];
   evolutionChainId: number | null;
 }

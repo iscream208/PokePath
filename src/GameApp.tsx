@@ -43,24 +43,17 @@ function firstDescriptionSentence(pokemon: Pokemon): string {
 }
 
 function cardDescriptionSentence(pokemon: Pokemon): string {
-  const candidates = pokemon.descriptions
+  const allCandidates = pokemon.descriptions
     .map((value) => value.replace(/\s+/g, " ").trim())
-    .filter((value) => /[\u3400-\u9fff]/.test(value))
+    .filter(Boolean)
     .map((description) => {
       const chineseSentence = description.match(/^.*?[。！？]/)?.[0];
       if (chineseSentence) return chineseSentence;
       return description.match(/^.*?[.!?](?=\s|$)/)?.[0] ?? description;
     });
-
-  if (candidates.length === 0) {
-    const types = pokemon.types.map((type) => TYPE_ZH[type] ?? type).join("、");
-    const genus = pokemon.genus && /[\u3400-\u9fff]/.test(pokemon.genus)
-      ? pokemon.genus
-      : "宝可梦";
-    return pokemon.types.length > 0
-      ? pokemon.name + "是" + types + "属性的" + genus + "。"
-      : pokemon.name + "是" + genus + "。";
-  }
+  const chineseCandidates = allCandidates.filter((value) => /[\u3400-\u9fff]/.test(value));
+  const candidates = chineseCandidates.length > 0 ? chineseCandidates : allCandidates;
+  if (candidates.length === 0) return "暂无图鉴介绍。";
 
   const readingLength = (value: string) => Array.from(value).reduce(
     (total, character) => total + (/[^\u0000-\u00ff]/.test(character) ? 2 : 1),

@@ -172,8 +172,7 @@ test("shows all five choices in one mobile viewport", async ({ page }) => {
     ));
     expect(descriptions).toHaveLength(5);
     expect(descriptions.every(({ text }) => text.length > 0)).toBe(true);
-    expect(descriptions.every(({ text }) => /[\u3400-\u9fff]/.test(text))).toBe(true);
-    expect(descriptions.every(({ text }) => !/[A-Za-z]{3}/.test(text))).toBe(true);
+    expect(descriptions.every(({ text }) => !/属性的.*宝可梦/.test(text))).toBe(true);
     expect(descriptions.every(({ clientHeight, scrollHeight }) => scrollHeight <= clientHeight + 1)).toBe(true);
 
     if (pageIndex < 3) await page.locator(".neighbor-next").click();
