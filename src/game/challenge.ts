@@ -4,7 +4,7 @@ import {
   incomingNeighborIds,
   pokemon,
 } from "./data";
-import { mulberry32, type ChallengeIdentity } from "./prng";
+import { mulberry32, seedFromDate, type ChallengeIdentity } from "./prng";
 
 export interface Challenge {
   identity: ChallengeIdentity;
@@ -14,6 +14,17 @@ export interface Challenge {
 }
 
 const MINIMUM_START_DISTANCE = 3;
+const CHINA_STANDARD_TIME_OFFSET_MS = 8 * 60 * 60 * 1000;
+
+export function dailyChallengeDate(date = new Date()): string {
+  return new Date(date.getTime() + CHINA_STANDARD_TIME_OFFSET_MS)
+    .toISOString()
+    .slice(0, 10);
+}
+
+export function dailyChallengeIdentity(date = new Date()): ChallengeIdentity {
+  return randomIdentity(seedFromDate(dailyChallengeDate(date)), "E");
+}
 
 export function distancesFrom(targetId: number): Record<number, number> {
   const distances: Record<number, number> = { [targetId]: 0 };

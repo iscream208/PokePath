@@ -1,8 +1,14 @@
 import { FormEvent, useMemo, useState } from "react";
-import { generateChallenge, randomIdentity, type Challenge } from "./game/challenge";
+import {
+  dailyChallengeDate,
+  dailyChallengeIdentity,
+  generateChallenge,
+  randomIdentity,
+  type Challenge,
+} from "./game/challenge";
 import { neighbors, pokemonById, type Neighbor, type Pokemon } from "./game/data";
 import { decodeChallenge, encodeChallenge, type ChallengeIdentity } from "./game/prng";
-import { buildChallengeShareText } from "./game/share";
+import { buildChallengeShareText, buildPathShareText } from "./game/share";
 import PathMap from "./PathMap";
 import "./game.css";
 
@@ -88,6 +94,13 @@ function App() {
 
   const target = challenge ? pokemonById.get(challenge.targetId)! : null;
   const start = challenge ? pokemonById.get(challenge.startId)! : null;
+  const today = dailyChallengeDate();
+  const todayIdentity = dailyChallengeIdentity();
+  const isDailyChallenge = challenge?.identity.mode === "E"
+    && challenge.identity.seed === todayIdentity.seed
+    && challenge.identity.datasetVersion === todayIdentity.datasetVersion
+    && challenge.identity.graphVersion === todayIdentity.graphVersion
+    && challenge.identity.algorithmVersion === todayIdentity.algorithmVersion;
   const hasMap = challenge?.identity.mode !== "H";
   const modeName = hasMap ? "简单模式" : "困难模式";
   const currentId = path.at(-1);
@@ -187,6 +200,12 @@ function App() {
     setShareMessage(screen === "won" ? "通关结果与挑战链接已复制" : "当前进度与挑战链接已复制");
   }
 
+  async function copyCompletedPath() {
+    const names = path.map((id) => pokemonById.get(id)!.name);
+    await navigator.clipboard.writeText(buildPathShareText(names));
+    setShareMessage("完整路径已复制");
+  }
+
   const distanceTrend = useMemo(() => {
     if (!challenge || path.length < 2) return null;
     const before = challenge.distances[path[path.length - 2]];
@@ -208,6 +227,13 @@ function App() {
             <h1>从一只宝可梦，<br />走到另一只。</h1>
             <p className="lead">从随机起点出发，沿着图鉴描述、生态与属性形成的联系，寻找通往目标的路径。</p>
             <div className="mode-actions" aria-label="选择游戏模式">
+              <button className="mode-button mode-button--daily" onClick={() => openChallenge(dailyChallengeIdentity())}>
+                <span>
+                  <strong>每日挑战</strong>
+                  <small><time dateTime={today}>{today.replaceAll("-", ".")}</time> · 简单模式 · 今日同题</small>
+                </span>
+                <i aria-hidden="true">{today.slice(-2)}</i>
+              </button>
               <button className="mode-button mode-button--easy" onClick={() => openChallenge(randomIdentity(createSeed(), "E"))}>
                 <span><strong>简单模式</strong><small>显示关系地图</small></span>
                 <i aria-hidden="true">E</i>
@@ -247,16 +273,18 @@ function App() {
       <main id="main-content" className="game-shell challenge-screen">
         <header className="topbar">
           <button className="brand brand-button" onClick={() => setScreen("home")}>◉ PokéPath</button>
-          <span className="edition">{encodeChallenge(challenge.identity)}</span>
+          <span className="edition">
+            {isDailyChallenge ? "每日挑战 · " + today.replaceAll("-", ".") : encodeChallenge(challenge.identity)}
+          </span>
         </header>
         <section className="route-preview">
           <div className="route-preview__heading">
-            <p className="kicker">本局路线</p>
+            <p className="kicker">{isDailyChallenge ? "今日路线" : "本局路线"}</p>
             <h1>从这里，走到那里。</h1>
           </div>
           <div className="route-pair">
             <article className="route-specimen route-specimen--start">
-              <span className="route-label">随机起点</span>
+              <span className="route-label">{isDailyChallenge ? "今日起点" : "随机起点"}</span>
               <PokemonImage pokemon={start} />
               <div><h2>{start.name}</h2><TypeLabels pokemon={start} /><p>{firstDescriptionSentence(start)}</p></div>
             </article>
@@ -268,10 +296,15 @@ function App() {
             </article>
           </div>
           <div className="route-actions">
-            <span><strong>{modeName}</strong> · {hasMap ? "游玩时显示关系地图" : "游玩时不显示关系地图"} · 理论最短路径至少 3 步</span>
+            <span>
+              {isDailyChallenge && <><strong>每日挑战</strong> · </>}
+              <strong>{modeName}</strong> · {hasMap ? "游玩时显示关系地图" : "游玩时不显示关系地图"} · 理论最短路径至少 3 步
+            </span>
             <div className="route-action-buttons">
               <button className="action secondary" type="button" onClick={shareChallenge}>复制挑战链接</button>
-              <button className="action secondary" type="button" onClick={() => openChallenge(randomIdentity(createSeed(), challenge.identity.mode))}>随机重选</button>
+              <button className="action secondary" type="button" onClick={() => openChallenge(randomIdentity(createSeed(), challenge.identity.mode))}>
+                {isDailyChallenge ? "改玩随机挑战" : "随机重选"}
+              </button>
               <button className="action primary" type="button" onClick={beginChallenge}>从这里出发</button>
             </div>
             <p className="share-feedback" aria-live="polite">{shareMessage}</p>
@@ -360,16 +393,65 @@ function App() {
           {won ? (
             <section className="result-panel">
               <div className="result-copy">
-                <div>
-                  <p className="kicker">路径完成</p>
-                  <h1>抵达 {target.name}</h1>
-                  <p>你用了 {path.length - 1} 步；从所选起点出发的最短路径是 {challenge.distances[path[0]]} 步。</p>
+                <div
+                  className="result-achievement"
+                  aria-label={"从" + start.name + "出发，用 " + (path.length - 1) + " 步抵达" + target.name}
+                >
+                  <div className="result-endpoint result-endpoint--start">
+                    <small>起点</small>
+                    <span className="result-endpoint__figure"><PokemonImage pokemon={start} /></span>
+                    <strong>{start.name}</strong>
+                  </div>
+                  <div className="result-journey">
+                    <span aria-hidden="true">→</span>
+                    <strong>{path.length - 1} 步</strong>
+                    <small>最短 {challenge.distances[path[0]]} 步</small>
+                  </div>
+                  <div className="result-endpoint result-endpoint--target">
+                    <small>终点</small>
+                    <span className="result-endpoint__figure"><PokemonImage pokemon={target} /></span>
+                    <h1>{target.name}</h1>
+                  </div>
                 </div>
                 <div className="home-actions">
                   <button className="action primary" onClick={shareChallenge}>复制挑战链接</button>
+                  <button className="action secondary" onClick={copyCompletedPath}>复制完整路径</button>
                   <button className="action secondary" onClick={() => openChallenge(randomIdentity(createSeed(), challenge.identity.mode))}>再来一局</button>
                 </div>
               </div>
+              <section className="result-route" aria-labelledby="result-route-title">
+                <div className="result-route__heading">
+                  <div>
+                    <p className="section-number">实际行程</p>
+                    <h2 id="result-route-title">从起点到目标</h2>
+                  </div>
+                  <span>{path.length} 只宝可梦 · {path.length - 1} 步</span>
+                </div>
+                <ol className="result-route__trail">
+                  {path.map((id, index) => {
+                    const item = pokemonById.get(id)!;
+                    const isStart = index === 0;
+                    const isTarget = index === path.length - 1;
+                    const stepLabel = isStart
+                      ? "起点"
+                      : isTarget
+                        ? "第 " + index + " 步 · 目标"
+                        : "第 " + index + " 步";
+                    return (
+                      <li
+                        className={"result-route__node" + (isStart ? " is-start" : "") + (isTarget ? " is-target" : "")}
+                        key={id + "-" + index}
+                      >
+                        <small>{stepLabel}</small>
+                        <span className="result-route__figure">
+                          <PokemonImage pokemon={item} />
+                        </span>
+                        <strong>{item.name}</strong>
+                      </li>
+                    );
+                  })}
+                </ol>
+              </section>
               <p className="success-text" aria-live="polite">{shareMessage}</p>
             </section>
           ) : (

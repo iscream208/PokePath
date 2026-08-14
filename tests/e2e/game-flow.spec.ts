@@ -44,6 +44,19 @@ async function choosePagedNeighbor(page: Page, name: string): Promise<void> {
   throw new Error(`Could not find paged neighbor: ${name}`);
 }
 
+test("opens the stable Beijing-date daily challenge in easy mode", async ({ page }) => {
+  await page.goto("/");
+  const dailyButton = page.getByRole("button", { name: /每日挑战/ });
+  await expect(dailyButton).toContainText("简单模式");
+  await dailyButton.click();
+
+  await expect(page.locator(".edition")).toContainText("每日挑战");
+  await expect(page.getByText("今日路线")).toBeVisible();
+  await expect(page.getByText("今日起点")).toBeVisible();
+  await expect(page.getByText("简单模式", { exact: true })).toBeVisible();
+  await expect(page.getByRole("button", { name: "改玩随机挑战" })).toBeVisible();
+});
+
 test("opens an easy challenge with a map and completes a valid path", async ({ page }) => {
   await page.context().grantPermissions(["clipboard-read", "clipboard-write"]);
   await page.goto("/?challenge=P1-G6-A2-E-002N9C");
@@ -62,6 +75,18 @@ test("opens an easy challenge with a map and completes a valid path", async ({ p
   await expect(page.locator(".current-stage")).toHaveCount(0);
   await expect(page.locator(".pokemon-summary")).toHaveCount(2);
   await expect(page.locator(".pokemon-summary").first().locator("strong")).toHaveText(startName);
+  const compassAlignment = await page.evaluate(() => {
+    const images = [...document.querySelectorAll<HTMLElement>(".pokemon-summary > img")];
+    const arrow = document.querySelector<HTMLElement>(".compass-arrow")!;
+    const left = images[0].getBoundingClientRect();
+    const right = images[1].getBoundingClientRect();
+    const arrowBounds = arrow.getBoundingClientRect();
+    return {
+      imageMidpoint: (left.left + left.width / 2 + right.left + right.width / 2) / 2,
+      arrowCenter: arrowBounds.left + arrowBounds.width / 2,
+    };
+  });
+  expect(Math.abs(compassAlignment.imageMidpoint - compassAlignment.arrowCenter)).toBeLessThanOrEqual(1);
   const map = page.locator(".path-map__canvas");
   await expect(map).toBeVisible();
   await expect(map).toHaveAttribute("data-node-count", String(pokemon.length));
@@ -69,7 +94,7 @@ test("opens an easy challenge with a map and completes a valid path", async ({ p
   await expect(map).toHaveAttribute("data-current-id", String(route[0]));
   await expect(map).toHaveAttribute("data-target-id", String(pokemonByName.get(targetName)!));
   await expect(map).toHaveAttribute("data-visited-count", "0");
-  await expect(map).toHaveAttribute("data-layout", "anchored-force");
+  await expect(map).toHaveAttribute("data-layout", "fitted-anchored-force");
   await expect(map).toHaveAttribute("data-motion", "elastic");
   await page.locator(".pokemon-summary").first().hover();
   await expect(page.locator(".header-pokemon-preview")).toBeVisible();
@@ -101,11 +126,50 @@ test("opens an easy challenge with a map and completes a valid path", async ({ p
     await expect(map).toHaveAttribute("data-pulse-node", String(id));
   }
 
-  await expect(page.getByText("路径完成")).toBeVisible();
   await expect(page.getByRole("heading", { name: new RegExp(targetName) })).toBeVisible();
+  await expect(page.locator(".result-endpoint--start > strong")).toHaveText(startName);
+  await expect(page.locator(".result-endpoint--start img")).toHaveAttribute("alt", startName);
+  await expect(page.locator(".result-endpoint--target > h1")).toHaveText(targetName);
+  await expect(page.locator(".result-endpoint--target img")).toHaveAttribute("alt", targetName);
+  await expect(page.locator(".result-endpoint--target img")).toBeVisible();
+  await expect(page.locator(".result-journey > strong")).toHaveText((route.length - 1) + " 步");
+  await expect(page.locator(".result-journey > small")).toContainText("最短");
+  expect(await page.locator(".result-endpoint--target > h1").evaluate(
+    (element) => getComputedStyle(element).whiteSpace,
+  )).toBe("nowrap");
+  const completedRoute = page.locator(".result-route__node");
+  await expect(completedRoute).toHaveCount(route.length);
+  await expect(completedRoute.first()).toContainText("起点");
+  await expect(completedRoute.first()).toContainText(startName);
+  await expect(completedRoute.last()).toContainText("第 " + (route.length - 1) + " 步 · 目标");
+  await expect(completedRoute.last()).toContainText(targetName);
+  await expect(page.locator(".result-route__figure img")).toHaveCount(route.length);
+  const resultLayout = await page.evaluate(() => {
+    const panel = document.querySelector<HTMLElement>(".result-panel")!.getBoundingClientRect();
+    const trail = document.querySelector<HTMLElement>(".result-route__trail")!.getBoundingClientRect();
+    const firstImage = document.querySelector<HTMLElement>(".result-route__figure")!.getBoundingClientRect();
+    return {
+      panelTop: Math.round(panel.top),
+      panelBottom: Math.round(panel.bottom),
+      trailTop: Math.round(trail.top),
+      trailBottom: Math.round(trail.bottom),
+      firstImageTop: Math.round(firstImage.top),
+      firstImageBottom: Math.round(firstImage.bottom),
+    };
+  });
+  expect(resultLayout.trailTop).toBeGreaterThanOrEqual(resultLayout.panelTop);
+  expect(resultLayout.trailBottom).toBeLessThanOrEqual(resultLayout.panelBottom);
+  expect(resultLayout.firstImageTop).toBeGreaterThanOrEqual(resultLayout.trailTop);
+  expect(resultLayout.firstImageBottom).toBeLessThanOrEqual(resultLayout.trailBottom);
   await expect(map).toBeVisible();
   await expect(map).toHaveAttribute("data-current-id", String(route.at(-1)!));
   await expect(map).toHaveAttribute("data-visited-count", String(route.length - 1));
+  await page.getByRole("button", { name: "复制完整路径" }).click();
+  await expect(page.getByText("完整路径已复制")).toBeVisible();
+  const copiedPath = await page.evaluate(() => navigator.clipboard.readText());
+  expect(copiedPath).toBe(
+    route.map((id) => pokemonById.get(id)!.name).join("->"),
+  );
   await page.getByRole("button", { name: "复制挑战链接" }).click();
   await expect(page.getByText("通关结果与挑战链接已复制")).toBeVisible();
   const completedShare = await page.evaluate(() => navigator.clipboard.readText());

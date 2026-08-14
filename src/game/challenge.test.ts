@@ -1,5 +1,10 @@
 import { describe, expect, it } from "vitest";
-import { generateChallenge, randomIdentity } from "./challenge";
+import {
+  dailyChallengeDate,
+  dailyChallengeIdentity,
+  generateChallenge,
+  randomIdentity,
+} from "./challenge";
 import { neighbors } from "./data";
 
 function shortestDistance(startId: number, targetId: number): number {
@@ -37,5 +42,21 @@ describe("challenge generation", () => {
       expect(challenge.startId).not.toBe(challenge.targetId);
       expect(challenge.distances[challenge.startId]).toBeGreaterThanOrEqual(3);
     }
+  });
+
+  it("creates one stable easy challenge per Beijing calendar date", () => {
+    const beforeMidnight = new Date("2026-08-14T15:59:59.000Z");
+    const afterMidnight = new Date("2026-08-14T16:00:00.000Z");
+
+    expect(dailyChallengeDate(beforeMidnight)).toBe("2026-08-14");
+    expect(dailyChallengeDate(afterMidnight)).toBe("2026-08-15");
+    expect(dailyChallengeIdentity(beforeMidnight)).toEqual(
+      dailyChallengeIdentity(new Date("2026-08-14T01:00:00.000Z")),
+    );
+    expect(dailyChallengeIdentity(beforeMidnight).mode).toBe("E");
+    expect(dailyChallengeIdentity(afterMidnight).seed)
+      .not.toBe(dailyChallengeIdentity(beforeMidnight).seed);
+    expect(generateChallenge(dailyChallengeIdentity(beforeMidnight)).distances)
+      .toBeDefined();
   });
 });

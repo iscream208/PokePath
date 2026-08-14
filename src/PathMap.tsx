@@ -55,6 +55,28 @@ const forceLinks: MapLink[] = pokemon.flatMap((item) =>
   })),
 );
 
+function fitPreparedLayout(margin = 0.045) {
+  const resolved = nodes.map((node) => ({
+    node,
+    x: Number.isFinite(node.x) ? node.x! : node.anchorX,
+    y: Number.isFinite(node.y) ? node.y! : node.anchorY,
+  }));
+  const minX = Math.min(...resolved.map(({ x }) => x));
+  const maxX = Math.max(...resolved.map(({ x }) => x));
+  const minY = Math.min(...resolved.map(({ y }) => y));
+  const maxY = Math.max(...resolved.map(({ y }) => y));
+  const width = Math.max(maxX - minX, Number.EPSILON);
+  const height = Math.max(maxY - minY, Number.EPSILON);
+  const available = 1 - margin * 2;
+
+  for (const { node, x, y } of resolved) {
+    node.x = margin + ((x - minX) / width) * available;
+    node.y = margin + ((y - minY) / height) * available;
+    node.vx = 0;
+    node.vy = 0;
+  }
+}
+
 function prepareBalancedLayout() {
   const simulation = forceSimulation(nodes)
     .randomSource(() => 0.5)
@@ -76,12 +98,7 @@ function prepareBalancedLayout() {
     .stop();
 
   for (let index = 0; index < 140; index += 1) simulation.tick();
-  for (const node of nodes) {
-    node.x = Math.min(0.985, Math.max(0.015, node.x ?? node.anchorX));
-    node.y = Math.min(0.985, Math.max(0.015, node.y ?? node.anchorY));
-    node.vx = 0;
-    node.vy = 0;
-  }
+  fitPreparedLayout();
 }
 
 prepareBalancedLayout();
@@ -288,7 +305,7 @@ export default function PathMap({ path, targetId }: PathMapProps) {
           data-current-id={currentId}
           data-target-id={targetId}
           data-visited-count={Math.max(0, path.length - 1)}
-          data-layout="anchored-force"
+          data-layout="fitted-anchored-force"
           data-motion={window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "reduced" : "elastic"}
           data-pulse-node={currentId}
         />

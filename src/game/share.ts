@@ -6,6 +6,10 @@ interface ChallengeShareTextOptions {
   url: string;
 }
 
+export function buildPathShareText(names: string[]): string {
+  return names.join("->");
+}
+
 export function buildChallengeShareText({
   startName,
   targetName,
