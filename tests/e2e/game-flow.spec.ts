@@ -65,7 +65,7 @@ test("opens an easy challenge with a map and completes a valid path", async ({ p
   const map = page.locator(".path-map__canvas");
   await expect(map).toBeVisible();
   await expect(map).toHaveAttribute("data-node-count", String(pokemon.length));
-  await expect(map).toHaveAttribute("data-edge-count", "20500");
+  await expect(map).toHaveAttribute("data-edge-count", "25625");
   await expect(map).toHaveAttribute("data-current-id", String(route[0]));
   await expect(map).toHaveAttribute("data-target-id", String(pokemonByName.get(targetName)!));
   await expect(map).toHaveAttribute("data-visited-count", "0");
@@ -77,9 +77,9 @@ test("opens an easy challenge with a map and completes a valid path", async ({ p
   await page.mouse.move(0, 0);
   await expect(page.locator(".header-pokemon-preview")).toHaveCount(0);
   const firstNeighborCount = Math.min(neighbors[String(route[0])].length, 5);
-  expect(neighbors[String(route[0])]).toHaveLength(20);
+  expect(neighbors[String(route[0])]).toHaveLength(25);
   await expect(page.locator(".neighbor-choice")).toHaveCount(firstNeighborCount);
-  await expect(page.locator(".neighbor-page-status")).toContainText("/ 20 个相似节点");
+  await expect(page.locator(".neighbor-page-status")).toContainText("/ 25 个相似节点");
   await expect(page.locator(".neighbor-description")).toHaveCount(firstNeighborCount);
   await expect(page.locator(".neighbor-meta .type-list")).toHaveCount(0);
   await page.locator(".next-heading-actions").getByRole("button", { name: "复制挑战链接" }).click();
@@ -162,7 +162,7 @@ test("shows all five choices in one mobile viewport", async ({ page }) => {
   expect(layout.nextBottom).toBeLessThanOrEqual(layout.viewportHeight);
   expect(layout.documentHeight).toBe(layout.viewportHeight);
 
-  for (let pageIndex = 0; pageIndex < 4; pageIndex += 1) {
+  for (let pageIndex = 0; pageIndex < 5; pageIndex += 1) {
     const descriptions = await page.locator(".neighbor-description").evaluateAll((elements) => (
       elements.map((element) => ({
         clientHeight: element.clientHeight,
@@ -175,6 +175,6 @@ test("shows all five choices in one mobile viewport", async ({ page }) => {
     expect(descriptions.every(({ text }) => !/属性的.*宝可梦/.test(text))).toBe(true);
     expect(descriptions.every(({ clientHeight, scrollHeight }) => scrollHeight <= clientHeight + 1)).toBe(true);
 
-    if (pageIndex < 3) await page.locator(".neighbor-next").click();
+    if (pageIndex < 4) await page.locator(".neighbor-next").click();
   }
 });

@@ -275,7 +275,7 @@ export default function PathMap({ path, targetId }: PathMapProps) {
     <section className="path-map" aria-label="完整宝可梦关系图">
       <header className="path-map__header">
         <span>弹性关系图</span>
-        <strong>1025 节点 · 20500 连接</strong>
+        <strong>{nodes.length} 节点 · {allLinks.length} 连接</strong>
       </header>
       <div className="path-map__field">
         <canvas

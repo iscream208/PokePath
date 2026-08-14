@@ -159,7 +159,12 @@ def score_matrices(
     return total, matrices
 
 
-def nearest_neighbors(scores: np.ndarray, k: int = 20) -> list[list[int]]:
+NEIGHBORS_PER_POKEMON = 25
+
+
+def nearest_neighbors(
+    scores: np.ndarray, k: int = NEIGHBORS_PER_POKEMON
+) -> list[list[int]]:
     if k <= 0 or k >= len(scores):
         raise ValueError("Neighbor count must be between 1 and node count minus 1")
     return [
