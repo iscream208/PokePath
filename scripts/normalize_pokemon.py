@@ -9,6 +9,7 @@ from scripts.pipeline_config import (
     DATASET_VERSION,
     PROCESSED_ROOT,
     RAW_ROOT,
+    TRANSLATION_ROOT,
     ensure_directories,
 )
 
@@ -61,12 +62,44 @@ def resource_id(resource: dict[str, Any] | None) -> int | None:
     return int(match.group(1)) if match else None
 
 
-def normalize_record(pokemon: dict[str, Any], species: dict[str, Any]) -> dict[str, Any]:
+def translated_flavor_texts(
+    pokemon_id: int,
+    english_descriptions: list[str],
+    translations: dict[str, Any] | None,
+) -> list[str]:
+    if not translations:
+        return []
+    record = translations.get("pokemon", {}).get(str(pokemon_id))
+    if not record:
+        return []
+    by_source = {
+        entry.get("source"): clean_text(str(entry.get("translation", "")))
+        for entry in record.get("entries", [])
+        if isinstance(entry, dict)
+    }
+    translated = [by_source.get(source, "") for source in english_descriptions]
+    if len(translated) != len(english_descriptions) or not all(translated):
+        return []
+    if not all(re.search(r"[\u3400-\u9fff]", value) for value in translated):
+        return []
+    return translated
+
+
+def normalize_record(
+    pokemon: dict[str, Any],
+    species: dict[str, Any],
+    translations: dict[str, Any] | None = None,
+) -> dict[str, Any]:
     names = species["names"]
     genera = species["genera"]
     genus_zh = localized_genus(genera, "zh-hans")
     descriptions_zh = flavor_texts(species["flavor_text_entries"], "zh-hans")
     descriptions_en = flavor_texts(species["flavor_text_entries"], "en")
+    translated_descriptions = translated_flavor_texts(
+        int(species["id"]),
+        descriptions_en,
+        translations,
+    )
     image = pokemon["sprites"].get("other", {}).get("official-artwork", {}).get(
         "front_default"
     ) or pokemon["sprites"].get("front_default")
@@ -79,8 +112,17 @@ def normalize_record(pokemon: dict[str, Any], species: dict[str, Any]) -> dict[s
         "nameJa": localized_name(names, "ja"),
         "genus": genus_zh or localized_genus(genera, "en"),
         "genusLanguage": "zh-hans" if genus_zh else "en",
-        "descriptions": descriptions_zh or descriptions_en,
-        "descriptionLanguage": "zh-hans" if descriptions_zh else "en",
+        "descriptions": descriptions_zh or translated_descriptions or descriptions_en,
+        "descriptionLanguage": (
+            "zh-hans" if descriptions_zh or translated_descriptions else "en"
+        ),
+        "descriptionSource": (
+            "pokeapi"
+            if descriptions_zh
+            else "machine-translation"
+            if translated_descriptions
+            else "pokeapi"
+        ),
         "image": image,
         "types": [entry["type"]["name"] for entry in pokemon["types"]],
         "abilities": [entry["ability"]["name"] for entry in pokemon["abilities"]],
@@ -109,6 +151,12 @@ def build_dataset(limit: int | None = None) -> dict[str, Any]:
     )
     if limit is not None:
         species_files = species_files[:limit]
+    translation_path = TRANSLATION_ROOT / "description-zh-hans.json"
+    translations = (
+        json.loads(translation_path.read_text(encoding="utf-8"))
+        if translation_path.exists()
+        else None
+    )
 
     records: list[dict[str, Any]] = []
     for species_path in species_files:
@@ -117,7 +165,7 @@ def build_dataset(limit: int | None = None) -> dict[str, Any]:
             continue
         species = json.loads(species_path.read_text(encoding="utf-8"))
         pokemon = json.loads(pokemon_path.read_text(encoding="utf-8"))
-        records.append(normalize_record(pokemon, species))
+        records.append(normalize_record(pokemon, species, translations))
 
     return {
         "datasetVersion": DATASET_VERSION,

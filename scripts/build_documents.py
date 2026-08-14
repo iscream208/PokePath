@@ -136,6 +136,10 @@ def main() -> None:
         "chineseDescriptionCount": sum(
             item["descriptionLanguage"] == "zh-hans" for item in dataset["pokemon"]
         ),
+        "machineTranslatedDescriptionCount": sum(
+            item.get("descriptionSource") == "machine-translation"
+            for item in dataset["pokemon"]
+        ),
         "missing": missing,
     }
     (REPORT_ROOT / "data-quality.json").write_text(

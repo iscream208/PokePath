@@ -15,8 +15,18 @@ npm run dev
 
 ```powershell
 uv sync --all-extras
-uv run python -m scripts.fetch_pokemon --limit 10
+uv run python -m scripts.fetch_pokemon
+uv run python -m scripts.normalize_pokemon
+uv run python -m scripts.translate_descriptions_zh
+uv run python -m scripts.normalize_pokemon
+uv run python -m scripts.build_documents
+uv run python -m scripts.build_embeddings
 uv run python -m scripts.build_graph
 ```
+
+`translate_descriptions_zh` 使用已登录的本机 OpenAI Codex，把 PokeAPI
+缺失中文的英文图鉴逐条翻译并保存到
+`data/translations/description-zh-hans.json`。脚本支持中断续跑；规范化流程会依次
+优先采用 PokeAPI 原生中文、已保存的 Codex 译文，最后才回退英文。
 
 完整产品与算法方案见 `Pokemon-Synonymy-方案.md`。

@@ -168,6 +168,100 @@ def nearest_neighbors(scores: np.ndarray, k: int = 20) -> list[list[int]]:
     ]
 
 
+def directed_graph(neighbors: list[list[int]]) -> nx.DiGraph:
+    graph = nx.DiGraph()
+    graph.add_nodes_from(range(len(neighbors)))
+    for left, closest in enumerate(neighbors):
+        graph.add_edges_from((left, right) for right in closest)
+    return graph
+
+
+def ensure_strong_connectivity(
+    neighbors: list[list[int]],
+    scores: np.ndarray,
+) -> tuple[list[list[int]], list[dict[str, int | float]]]:
+    """Add the fewest high-similarity bridge edges while preserving row sizes."""
+    connected = [list(row) for row in neighbors]
+    original_count = len(connected[0])
+    bridge_pairs: list[tuple[int, int]] = []
+
+    while True:
+        graph = directed_graph(connected)
+        if nx.is_strongly_connected(graph):
+            break
+        if not nx.is_weakly_connected(graph):
+            raise RuntimeError("Nearest-neighbor graph is not weakly connected")
+
+        components = list(nx.strongly_connected_components(graph))
+        component_by_node = {
+            node: component_index
+            for component_index, component in enumerate(components)
+            for node in component
+        }
+        condensation = nx.DiGraph()
+        condensation.add_nodes_from(range(len(components)))
+        condensation.add_edges_from(
+            (component_by_node[left], component_by_node[right])
+            for left, right in graph.edges()
+            if component_by_node[left] != component_by_node[right]
+        )
+        sources = [node for node, degree in condensation.in_degree() if degree == 0]
+        sinks = [node for node, degree in condensation.out_degree() if degree == 0]
+
+        candidates: list[tuple[float, int, int]] = []
+        for source_component in sources:
+            for sink_component in sinks:
+                if source_component == sink_component:
+                    continue
+                if not nx.has_path(condensation, source_component, sink_component):
+                    continue
+                for left in components[sink_component]:
+                    for right in components[source_component]:
+                        if right not in connected[left]:
+                            candidates.append((float(scores[left, right]), left, right))
+        if not candidates:
+            raise RuntimeError("Could not find a bridge that reduces strong components")
+        _, left, right = max(candidates)
+        connected[left].append(right)
+        bridge_pairs.append((left, right))
+
+    bridge_records: list[dict[str, int | float]] = []
+    for left, right in bridge_pairs:
+        removable = sorted(
+            (
+                candidate
+                for candidate in connected[left]
+                if candidate != right and (left, candidate) not in bridge_pairs
+            ),
+            key=lambda candidate: float(scores[left, candidate]),
+        )
+        replaced: int | None = None
+        for candidate in removable:
+            connected[left].remove(candidate)
+            if nx.is_strongly_connected(directed_graph(connected)):
+                replaced = candidate
+                break
+            connected[left].append(candidate)
+        if replaced is None:
+            raise RuntimeError("Could not preserve neighbor count while retaining connectivity")
+        bridge_records.append(
+            {
+                "from": left,
+                "to": right,
+                "replaced": replaced,
+                "score": float(scores[left, right]),
+            }
+        )
+
+    for left, row in enumerate(connected):
+        row.sort(key=lambda right: float(scores[left, right]), reverse=True)
+        if len(row) != original_count:
+            raise RuntimeError("Bridge repair changed the neighbor count")
+    if not nx.is_strongly_connected(directed_graph(connected)):
+        raise RuntimeError("Bridge repair did not produce a strongly connected graph")
+    return connected, bridge_records
+
+
 def normalize_layout(embedding: np.ndarray) -> np.ndarray:
     """Normalize an Nx2 embedding into stable 0..1 drawing coordinates."""
     minimum = embedding.min(axis=0)
@@ -246,13 +340,9 @@ def main() -> None:
         description_available,
     )
     layout = graph_layout(scores)
-    directed = nearest_neighbors(scores)
-    graph = nx.DiGraph()
-    graph.add_nodes_from(range(len(pokemon)))
-    for left, closest in enumerate(directed):
-        graph.add_edges_from((left, right) for right in closest)
-    if not nx.is_strongly_connected(graph):
-        raise RuntimeError("Top-20 directed neighbor graph is not strongly connected")
+    directed, bridges = ensure_strong_connectivity(nearest_neighbors(scores), scores)
+    graph = directed_graph(directed)
+    bridge_pairs = {(int(item["from"]), int(item["to"])) for item in bridges}
 
     output: dict[str, list[dict[str, Any]]] = {}
     for left, closest in enumerate(directed):
@@ -262,7 +352,7 @@ def main() -> None:
                 {
                     "id": pokemon[right]["id"],
                     "score": round(float(scores[left, right]), 4),
-                    "bridge": False,
+                    "bridge": (left, right) in bridge_pairs,
                     "reasons": edge_reasons(
                         pokemon[left],
                         pokemon[right],
@@ -336,7 +426,24 @@ def main() -> None:
             "minimum": layout.min(axis=0).tolist(),
             "maximum": layout.max(axis=0).tolist(),
         },
-        "bridgesAdded": [],
+        "bridgesAdded": [
+            {
+                "from": {
+                    "id": pokemon[int(item["from"])]["id"],
+                    "name": pokemon[int(item["from"])]["name"],
+                },
+                "to": {
+                    "id": pokemon[int(item["to"])]["id"],
+                    "name": pokemon[int(item["to"])]["name"],
+                },
+                "replaced": {
+                    "id": pokemon[int(item["replaced"])]["id"],
+                    "name": pokemon[int(item["replaced"])]["name"],
+                },
+                "score": round(float(item["score"]), 4),
+            }
+            for item in bridges
+        ],
         "outDegree": {
             "min": min(out_degrees),
             "max": max(out_degrees),

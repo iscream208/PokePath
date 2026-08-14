@@ -1,4 +1,10 @@
-from scripts.normalize_pokemon import clean_text, flavor_texts, localized_genus, localized_name
+from scripts.normalize_pokemon import (
+    clean_text,
+    flavor_texts,
+    localized_genus,
+    localized_name,
+    translated_flavor_texts,
+)
 
 
 def test_clean_text_removes_game_control_whitespace() -> None:
@@ -29,3 +35,22 @@ def test_flavor_texts_prefers_latest_unique_entries() -> None:
         {"flavor_text": "新 描述", "language": {"name": "zh-hans"}},
     ]
     assert flavor_texts(entries, "zh-hans") == ["新 描述", "旧描述"]
+
+
+def test_translated_flavor_texts_requires_complete_source_match() -> None:
+    translations = {
+        "pokemon": {
+            "276": {
+                "entries": [
+                    {"source": "English one.", "translation": "中文一。"},
+                    {"source": "English two.", "translation": "中文二。"},
+                ]
+            }
+        }
+    }
+    assert translated_flavor_texts(
+        276,
+        ["English one.", "English two."],
+        translations,
+    ) == ["中文一。", "中文二。"]
+    assert translated_flavor_texts(276, ["Changed source."], translations) == []

@@ -1,6 +1,9 @@
+import networkx as nx
 import numpy as np
 
 from scripts.build_graph import (
+    directed_graph,
+    ensure_strong_connectivity,
     name_similarity_matrix,
     nearest_neighbors,
     normalize_layout,
@@ -74,6 +77,26 @@ def test_nearest_neighbors_returns_exact_sorted_count() -> None:
         dtype=np.float32,
     )
     assert nearest_neighbors(scores, k=2) == [[2, 3], [3, 2], [0, 1], [1, 0]]
+
+
+def test_connectivity_repair_adds_one_bridge_and_preserves_neighbor_count() -> None:
+    neighbors = [
+        [1, 2],
+        [0, 2],
+        [0, 1],
+        [4, 0],
+        [3, 5],
+        [3, 4],
+    ]
+    scores = np.full((6, 6), 0.1, dtype=np.float32)
+    np.fill_diagonal(scores, -1)
+    scores[2, 3] = 0.9
+
+    repaired, bridges = ensure_strong_connectivity(neighbors, scores)
+
+    assert nx.is_strongly_connected(directed_graph(repaired))
+    assert all(len(row) == 2 for row in repaired)
+    assert [(item["from"], item["to"]) for item in bridges] == [(2, 3)]
 
 
 def test_normalize_layout_fits_unit_square() -> None:

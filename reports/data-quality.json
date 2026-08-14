@@ -2,9 +2,10 @@
   "datasetVersion": 1,
   "count": 1025,
   "profileDocumentCount": 1025,
-  "descriptionDocumentCount": 3477,
-  "duplicateDescriptionsRemoved": 0,
-  "chineseDescriptionCount": 722,
+  "descriptionDocumentCount": 3468,
+  "duplicateDescriptionsRemoved": 9,
+  "chineseDescriptionCount": 1025,
+  "machineTranslatedDescriptionCount": 303,
   "missing": {
     "name": [],
     "image": [],
