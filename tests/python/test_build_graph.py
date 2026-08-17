@@ -57,6 +57,38 @@ def test_missing_description_pair_reassigns_semantic_weight_to_profile() -> None
     assert np.isclose(fallback_scores[0, 1], 0.54)
 
 
+def test_no_eggs_does_not_create_egg_group_similarity() -> None:
+    pokemon = [pokemon_fixture(1), pokemon_fixture(2)]
+    pokemon[0]["eggGroups"] = ["no-eggs"]
+    pokemon[1]["eggGroups"] = ["no-eggs"]
+    embeddings = np.asarray([[1.0, 0.0], [0.0, 1.0]], dtype=np.float32)
+
+    _, matrices = score_matrices(
+        pokemon,
+        embeddings,
+        embeddings,
+        np.asarray([True, True]),
+    )
+
+    assert matrices["eggGroups"][0, 1] == 0
+
+
+def test_regular_shared_egg_group_still_creates_similarity() -> None:
+    pokemon = [pokemon_fixture(1), pokemon_fixture(2)]
+    pokemon[0]["eggGroups"] = ["humanshape"]
+    pokemon[1]["eggGroups"] = ["humanshape"]
+    embeddings = np.asarray([[1.0, 0.0], [0.0, 1.0]], dtype=np.float32)
+
+    _, matrices = score_matrices(
+        pokemon,
+        embeddings,
+        embeddings,
+        np.asarray([True, True]),
+    )
+
+    assert matrices["eggGroups"][0, 1] == 1
+
+
 def test_name_similarity_rewards_rare_shared_chinese_characters() -> None:
     names = ["惊角鹿", "四季鹿", "小火龙", "小拉达", "小拳石", "小磁怪"]
     pokemon = [{"name": name} for name in names]

@@ -59,9 +59,9 @@ test("opens the stable Beijing-date daily challenge in easy mode", async ({ page
 
 test("opens an easy challenge with a map and completes a valid path", async ({ page }) => {
   await page.context().grantPermissions(["clipboard-read", "clipboard-write"]);
-  await page.goto("/?challenge=P1-G6-A2-E-002N9C");
+  await page.goto("/?challenge=P1-G7-A2-E-002N9C");
   await expect(page.getByRole("heading", { name: /从一只宝可梦/ })).toBeVisible();
-  await expect(page.locator("#challenge-code")).toHaveValue("P1-G6-A2-E-002N9C");
+  await expect(page.locator("#challenge-code")).toHaveValue("P1-G7-A2-E-002N9C");
   await page.getByRole("button", { name: "进入挑战" }).click();
   await expect(page.getByText("本局路线")).toBeVisible();
   await expect(page.getByText("简单模式", { exact: true })).toBeVisible();
@@ -111,7 +111,7 @@ test("opens an easy challenge with a map and completes a valid path", async ({ p
   await expect(page.getByText("当前进度与挑战链接已复制")).toBeVisible();
   const inProgressShare = await page.evaluate(() => navigator.clipboard.readText());
   expect(inProgressShare).toBe(
-    `【${startName}】走到【${targetName}】，我花了0步还没有走到，（如果愿意的话）请试试看：https://iscream208.github.io/PokePath/?challenge=P1-G6-A2-E-002N9C`,
+    `【${startName}】走到【${targetName}】，我花了0步还没有走到，（如果愿意的话）请试试看：https://iscream208.github.io/PokePath/?challenge=P1-G7-A2-E-002N9C`,
   );
   if (neighbors[String(route[0])].length > 5) {
     await expect(page.locator(".neighbor-next")).toBeEnabled();
@@ -174,13 +174,13 @@ test("opens an easy challenge with a map and completes a valid path", async ({ p
   await expect(page.getByText("通关结果与挑战链接已复制")).toBeVisible();
   const completedShare = await page.evaluate(() => navigator.clipboard.readText());
   expect(completedShare).toBe(
-    `我从【${startName}】走到【${targetName}】花了${route.length - 1}步，（如果愿意的话）请试试看：https://iscream208.github.io/PokePath/?challenge=P1-G6-A2-E-002N9C`,
+    `我从【${startName}】走到【${targetName}】花了${route.length - 1}步，（如果愿意的话）请试试看：https://iscream208.github.io/PokePath/?challenge=P1-G7-A2-E-002N9C`,
   );
 });
 
 test("opens a hard challenge without creating the map", async ({ page }) => {
-  await page.goto("/?challenge=P1-G6-A2-H-002N9C");
-  await expect(page.locator("#challenge-code")).toHaveValue("P1-G6-A2-H-002N9C");
+  await page.goto("/?challenge=P1-G7-A2-H-002N9C");
+  await expect(page.locator("#challenge-code")).toHaveValue("P1-G7-A2-H-002N9C");
   await page.getByRole("button", { name: "进入挑战" }).click();
   await expect(page.getByText("困难模式", { exact: true })).toBeVisible();
   await expect(page.getByText("游玩时不显示关系地图")).toBeVisible();
@@ -198,7 +198,7 @@ test("opens a hard challenge without creating the map", async ({ page }) => {
 
 test("shows all five choices in one mobile viewport", async ({ page }) => {
   await page.setViewportSize({ width: 393, height: 737 });
-  await page.goto("/?challenge=P1-G6-A2-E-002N9C");
+  await page.goto("/?challenge=P1-G7-A2-E-002N9C");
   await page.getByRole("button", { name: "进入挑战" }).click();
   await page.getByRole("button", { name: "从这里出发" }).click();
 

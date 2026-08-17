@@ -35,6 +35,16 @@ def test_profile_document_is_stable_and_excludes_descriptions() -> None:
     assert "Charizard" not in document
 
 
+def test_profile_document_excludes_no_eggs_instead_of_marking_it_unknown() -> None:
+    fixture = pokemon_fixture()
+    fixture["eggGroups"] = ["no-eggs"]
+
+    document = build_profile_document(fixture)
+
+    assert "no-eggs" not in document
+    assert "蛋群：" not in document
+
+
 def test_description_normalization_and_exact_deduplication() -> None:
     descriptions = [
         "  会在空中\n飞翔。  ",

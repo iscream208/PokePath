@@ -27,8 +27,8 @@
 {"id": 27, "text": "passage: 宝可梦结构化档案。 分类：鼠宝可梦。 形态：upright。 栖息地：rough-terrain。 蛋群：ground。 特性：sand-veil、sand-rush。 图鉴颜色：yellow。", "sha256": "3c83703ef69a58b240680fe3fdcf6a040abee425126812dfb5bcabd1b60deb0f"}
 {"id": 28, "text": "passage: 宝可梦结构化档案。 分类：鼠宝可梦。 形态：upright。 栖息地：rough-terrain。 蛋群：ground。 特性：sand-veil、sand-rush。 图鉴颜色：yellow。", "sha256": "3c83703ef69a58b240680fe3fdcf6a040abee425126812dfb5bcabd1b60deb0f"}
 {"id": 29, "text": "passage: 宝可梦结构化档案。 分类：毒针宝可梦。 形态：quadruped。 栖息地：grassland。 蛋群：monster、ground。 特性：poison-point、rivalry、hustle。 图鉴颜色：blue。", "sha256": "cd6a585474cf69f7afe68f2de70c7224b1f60364340881f1503e339c371eff86"}
-{"id": 30, "text": "passage: 宝可梦结构化档案。 分类：毒针宝可梦。 形态：quadruped。 栖息地：grassland。 蛋群：no-eggs。 特性：poison-point、rivalry、hustle。 图鉴颜色：blue。", "sha256": "36e1503d387f64fb5da159033912bb653f3e07138557e9be2699cfac994b2b41"}
-{"id": 31, "text": "passage: 宝可梦结构化档案。 分类：钻锥宝可梦。 形态：upright。 栖息地：grassland。 蛋群：no-eggs。 特性：poison-point、rivalry、sheer-force。 图鉴颜色：blue。", "sha256": "2cca2133bb4df3863773ba500c91202dabe1395513a117d5ebc8e7a7d2c85437"}
+{"id": 30, "text": "passage: 宝可梦结构化档案。 分类：毒针宝可梦。 形态：quadruped。 栖息地：grassland。 特性：poison-point、rivalry、hustle。 图鉴颜色：blue。", "sha256": "76a886eddf756dd257b02f3e7cb42c72baed1b0271fe592b6ede8887b6d4a2ca"}
+{"id": 31, "text": "passage: 宝可梦结构化档案。 分类：钻锥宝可梦。 形态：upright。 栖息地：grassland。 特性：poison-point、rivalry、sheer-force。 图鉴颜色：blue。", "sha256": "2067002fecc70812dc58eeb55add78e623af812c0dd2d31cd616d3299e2f15c9"}
 {"id": 32, "text": "passage: 宝可梦结构化档案。 分类：毒针宝可梦。 形态：quadruped。 栖息地：grassland。 蛋群：monster、ground。 特性：poison-point、rivalry、hustle。 图鉴颜色：purple。", "sha256": "7452557583a7fe1b8187bdc215f311b4471b7bb4fa59ebb6e4ed5debe50fd0c9"}
 {"id": 33, "text": "passage: 宝可梦结构化档案。 分类：毒针宝可梦。 形态：quadruped。 栖息地：grassland。 蛋群：monster、ground。 特性：poison-point、rivalry、hustle。 图鉴颜色：purple。", "sha256": "7452557583a7fe1b8187bdc215f311b4471b7bb4fa59ebb6e4ed5debe50fd0c9"}
 {"id": 34, "text": "passage: 宝可梦结构化档案。 分类：钻锥宝可梦。 形态：upright。 栖息地：grassland。 蛋群：monster、ground。 特性：poison-point、rivalry、sheer-force。 图鉴颜色：purple。", "sha256": "08dd75407e2be671706cf0be1114e5116ec911df89a41059f95b685708c9f280"}
@@ -141,14 +141,14 @@
 {"id": 141, "text": "passage: 宝可梦结构化档案。 分类：甲壳宝可梦。 形态：upright。 栖息地：sea。 蛋群：water1、water3。 特性：swift-swim、battle-armor、weak-armor。 图鉴颜色：brown。", "sha256": "6549696e54b623e6e70e030c6cd177bec5f47651bc52115110ba940c4c63a598"}
 {"id": 142, "text": "passage: 宝可梦结构化档案。 分类：化石宝可梦。 形态：wings。 栖息地：mountain。 蛋群：flying。 特性：rock-head、pressure、unnerve。 图鉴颜色：purple。", "sha256": "06e3c51c6db720037813001a6b734507a064925a69f9e66ffaff4dc2e9817a11"}
 {"id": 143, "text": "passage: 宝可梦结构化档案。 分类：瞌睡宝可梦。 形态：humanoid。 栖息地：mountain。 蛋群：monster。 特性：immunity、thick-fat、gluttony。 图鉴颜色：black。", "sha256": "0547ccaf3ae8a2e71e2b2ae4e80dc8696c5754805594039f515b8bba0c14d458"}
-{"id": 144, "text": "passage: 宝可梦结构化档案。 分类：冰冻宝可梦。 形态：wings。 栖息地：rare。 蛋群：no-eggs。 特性：pressure、snow-cloak。 图鉴颜色：blue。 特殊分类：传说的宝可梦。", "sha256": "5a79b37a59caf45f1c2e3617585618b66b23c55f6e318eb42f35b0d34735574e"}
-{"id": 145, "text": "passage: 宝可梦结构化档案。 分类：电击宝可梦。 形态：wings。 栖息地：rare。 蛋群：no-eggs。 特性：pressure、static。 图鉴颜色：yellow。 特殊分类：传说的宝可梦。", "sha256": "891d48927e795557e9ab8d69d76e0dfc97bf9f06e7d95d84bb5ee5acff427ef2"}
-{"id": 146, "text": "passage: 宝可梦结构化档案。 分类：火焰宝可梦。 形态：wings。 栖息地：rare。 蛋群：no-eggs。 特性：pressure、flame-body。 图鉴颜色：yellow。 特殊分类：传说的宝可梦。", "sha256": "231a0ee5dfb01cccb5e16f5cfc1cd6e976f30642c15bb3e2920a2e992e6a6004"}
+{"id": 144, "text": "passage: 宝可梦结构化档案。 分类：冰冻宝可梦。 形态：wings。 栖息地：rare。 特性：pressure、snow-cloak。 图鉴颜色：blue。 特殊分类：传说的宝可梦。", "sha256": "6fa143e62ba340728250879336c110d70e641f3e2a3d98a0ede894852f10f4d6"}
+{"id": 145, "text": "passage: 宝可梦结构化档案。 分类：电击宝可梦。 形态：wings。 栖息地：rare。 特性：pressure、static。 图鉴颜色：yellow。 特殊分类：传说的宝可梦。", "sha256": "ec124e6ec57614e56760b3b5e916849ce2bb9555eacbd821e752f9b3e41f6af7"}
+{"id": 146, "text": "passage: 宝可梦结构化档案。 分类：火焰宝可梦。 形态：wings。 栖息地：rare。 特性：pressure、flame-body。 图鉴颜色：yellow。 特殊分类：传说的宝可梦。", "sha256": "e6a45cb6136fbb170654bc522a0952aeac66de2b3a58dbc03d2d4430c4c63e27"}
 {"id": 147, "text": "passage: 宝可梦结构化档案。 分类：龙宝可梦。 形态：squiggle。 栖息地：waters-edge。 蛋群：water1、dragon。 特性：shed-skin、marvel-scale。 图鉴颜色：blue。", "sha256": "19bf2e1d4ea0e08478f37fa3b5791743550913ee00f99c1f3a8ebd8a0c55073c"}
 {"id": 148, "text": "passage: 宝可梦结构化档案。 分类：龙宝可梦。 形态：squiggle。 栖息地：waters-edge。 蛋群：water1、dragon。 特性：shed-skin、marvel-scale。 图鉴颜色：blue。", "sha256": "19bf2e1d4ea0e08478f37fa3b5791743550913ee00f99c1f3a8ebd8a0c55073c"}
 {"id": 149, "text": "passage: 宝可梦结构化档案。 分类：龙宝可梦。 形态：upright。 栖息地：waters-edge。 蛋群：water1、dragon。 特性：inner-focus、multiscale。 图鉴颜色：brown。", "sha256": "3c63b47c5473e89fa857ccfbc0f8f1249830f6ff4b580c8a28233cb43de461be"}
-{"id": 150, "text": "passage: 宝可梦结构化档案。 分类：基因宝可梦。 形态：upright。 栖息地：rare。 蛋群：no-eggs。 特性：pressure、unnerve。 图鉴颜色：purple。 特殊分类：传说的宝可梦。", "sha256": "36e3ec6abf5afc0c4f80232dc70fcc80a5e7a2655908d28b4144b47da017032c"}
-{"id": 151, "text": "passage: 宝可梦结构化档案。 分类：新种宝可梦。 形态：upright。 栖息地：rare。 蛋群：no-eggs。 特性：synchronize。 图鉴颜色：pink。 特殊分类：幻之宝可梦。", "sha256": "34af0802434e23902cc6e485863efeb86f70ea992eed4bf6a758c86237f3112c"}
+{"id": 150, "text": "passage: 宝可梦结构化档案。 分类：基因宝可梦。 形态：upright。 栖息地：rare。 特性：pressure、unnerve。 图鉴颜色：purple。 特殊分类：传说的宝可梦。", "sha256": "d6ea42c65ec2414e191e42a61a91d135b68f1eb2fd94cebed809f018782aadeb"}
+{"id": 151, "text": "passage: 宝可梦结构化档案。 分类：新种宝可梦。 形态：upright。 栖息地：rare。 特性：synchronize。 图鉴颜色：pink。 特殊分类：幻之宝可梦。", "sha256": "e8afca39cd8f36ab3a29d8b54810dc11010fb274923db5ce79e7bcc547a5186a"}
 {"id": 152, "text": "passage: 宝可梦结构化档案。 分类：叶子宝可梦。 形态：quadruped。 栖息地：grassland。 蛋群：monster、plant。 特性：overgrow、leaf-guard。 图鉴颜色：green。", "sha256": "c8b278da2e51beaec7ff0749dae8a3b43be3c246d4a761f510d95c59cc8d28e4"}
 {"id": 153, "text": "passage: 宝可梦结构化档案。 分类：叶子宝可梦。 形态：quadruped。 栖息地：grassland。 蛋群：monster、plant。 特性：overgrow、leaf-guard。 图鉴颜色：green。", "sha256": "c8b278da2e51beaec7ff0749dae8a3b43be3c246d4a761f510d95c59cc8d28e4"}
 {"id": 154, "text": "passage: 宝可梦结构化档案。 分类：芳草宝可梦。 形态：quadruped。 栖息地：grassland。 蛋群：monster、plant。 特性：overgrow、leaf-guard。 图鉴颜色：green。", "sha256": "bce6b328c86bcfea4194ecc4de2e0440d7edff842ebb4357578deb50abcb21da"}
@@ -169,10 +169,10 @@
 {"id": 169, "text": "passage: 宝可梦结构化档案。 分类：蝙蝠宝可梦。 形态：bug-wings。 栖息地：cave。 蛋群：flying。 特性：inner-focus、infiltrator。 图鉴颜色：purple。", "sha256": "27e92f65ab5820943fd861f6b1fb928a2541a20a31fa3dd6ec65fa35d3442910"}
 {"id": 170, "text": "passage: 宝可梦结构化档案。 分类：琵琶鱼宝可梦。 形态：fish。 栖息地：sea。 蛋群：water2。 特性：volt-absorb、illuminate、water-absorb。 图鉴颜色：blue。", "sha256": "ab8021bd919081a20e53d64328d33d0e377770ff6d4fa8f5d2f39800e4d816e6"}
 {"id": 171, "text": "passage: 宝可梦结构化档案。 分类：灯宝可梦。 形态：fish。 栖息地：sea。 蛋群：water2。 特性：volt-absorb、illuminate、water-absorb。 图鉴颜色：blue。", "sha256": "786937ad95b594c0be0019cb4584d1c910119715d6f38c885a89e0e56fa516ee"}
-{"id": 172, "text": "passage: 宝可梦结构化档案。 分类：小鼠宝可梦。 形态：quadruped。 栖息地：forest。 蛋群：no-eggs。 特性：static、lightning-rod。 图鉴颜色：yellow。 特殊分类：幼年宝可梦。", "sha256": "1b8d0fab658b729a4e187d3438c269359cc33821f8b2ac7ef6616af39c315647"}
-{"id": 173, "text": "passage: 宝可梦结构化档案。 分类：星形宝可梦。 形态：upright。 栖息地：mountain。 蛋群：no-eggs。 特性：cute-charm、magic-guard、friend-guard。 图鉴颜色：pink。 特殊分类：幼年宝可梦。", "sha256": "df690e49a21e5e4fc4ef27e89bc36b98b7c4122c219a8b2b68127780d122b1a8"}
-{"id": 174, "text": "passage: 宝可梦结构化档案。 分类：气球宝可梦。 形态：humanoid。 栖息地：grassland。 蛋群：no-eggs。 特性：cute-charm、competitive、friend-guard。 图鉴颜色：pink。 特殊分类：幼年宝可梦。", "sha256": "9d4e5ad6e7cd15cb3788746451200046ef4e11dee4b6d79b3a0b227d6e5e23d0"}
-{"id": 175, "text": "passage: 宝可梦结构化档案。 分类：针球宝可梦。 形态：humanoid。 栖息地：forest。 蛋群：no-eggs。 特性：hustle、serene-grace、super-luck。 图鉴颜色：white。 特殊分类：幼年宝可梦。", "sha256": "9f8f3bad7566273814e5a29361656e0a2440ab55dfc3c1639f40d8845e113e4e"}
+{"id": 172, "text": "passage: 宝可梦结构化档案。 分类：小鼠宝可梦。 形态：quadruped。 栖息地：forest。 特性：static、lightning-rod。 图鉴颜色：yellow。 特殊分类：幼年宝可梦。", "sha256": "46036121f7795ddca5035b21e523bddb69b862d099a1548192b9aa4437f95437"}
+{"id": 173, "text": "passage: 宝可梦结构化档案。 分类：星形宝可梦。 形态：upright。 栖息地：mountain。 特性：cute-charm、magic-guard、friend-guard。 图鉴颜色：pink。 特殊分类：幼年宝可梦。", "sha256": "001eb53cbf313e706b58757090aebe77da8c3475eb3bc5c43dee03d8156c54ae"}
+{"id": 174, "text": "passage: 宝可梦结构化档案。 分类：气球宝可梦。 形态：humanoid。 栖息地：grassland。 特性：cute-charm、competitive、friend-guard。 图鉴颜色：pink。 特殊分类：幼年宝可梦。", "sha256": "384e9b2dce8831f9c31ce0ea750339ad2ebef97eba9dc956d0dfee6eba4cc522"}
+{"id": 175, "text": "passage: 宝可梦结构化档案。 分类：针球宝可梦。 形态：humanoid。 栖息地：forest。 特性：hustle、serene-grace、super-luck。 图鉴颜色：white。 特殊分类：幼年宝可梦。", "sha256": "451fff07ec0fa76b113fea7396cc5e4a91cf3c17aba9a86612f2483653d7b978"}
 {"id": 176, "text": "passage: 宝可梦结构化档案。 分类：幸福宝可梦。 形态：humanoid。 栖息地：forest。 蛋群：flying、fairy。 特性：hustle、serene-grace、super-luck。 图鉴颜色：white。", "sha256": "897f647395644999e82ed69d9e778b2854e904a6479db68517dbc1389c95307b"}
 {"id": 177, "text": "passage: 宝可梦结构化档案。 分类：小鸟宝可梦。 形态：wings。 栖息地：forest。 蛋群：flying。 特性：synchronize、early-bird、magic-bounce。 图鉴颜色：green。", "sha256": "7630a4ba8627902c960dffc2d7d57e91133c8a59d232615c566f11ede29adb78"}
 {"id": 178, "text": "passage: 宝可梦结构化档案。 分类：神秘宝可梦。 形态：wings。 栖息地：forest。 蛋群：flying。 特性：synchronize、early-bird、magic-bounce。 图鉴颜色：green。", "sha256": "3dd825c69cbe13235dfeab67c159179885c3368f2102d557ee3a3710a38371a2"}
@@ -198,7 +198,7 @@
 {"id": 198, "text": "passage: 宝可梦结构化档案。 分类：黑暗宝可梦。 形态：wings。 栖息地：forest。 蛋群：flying。 特性：insomnia、super-luck、prankster。 图鉴颜色：black。", "sha256": "1804cc984d6748f0fd1117a48ff2be04394d8fe99482dd402076a9759d94a144"}
 {"id": 199, "text": "passage: 宝可梦结构化档案。 分类：王者宝可梦。 形态：upright。 栖息地：waters-edge。 蛋群：monster、water1。 特性：oblivious、own-tempo、regenerator。 图鉴颜色：pink。", "sha256": "80c1c3b896e5b37328ed0a1d404ac455e4f1ad8b110f85b6bcbbd0e6fbd73ddb"}
 {"id": 200, "text": "passage: 宝可梦结构化档案。 分类：夜啼宝可梦。 形态：ball。 栖息地：cave。 蛋群：indeterminate。 特性：levitate。 图鉴颜色：gray。", "sha256": "c72bbde9995c821c552c07c3c39703e4c859881c783625a42e8e497cc6a9884d"}
-{"id": 201, "text": "passage: 宝可梦结构化档案。 分类：象征宝可梦。 形态：ball。 栖息地：rare。 蛋群：no-eggs。 特性：levitate。 图鉴颜色：black。", "sha256": "1d6d98a552fdaf3e4ca97994e80115daf1658fb8cd473e59610770d1b4db58d4"}
+{"id": 201, "text": "passage: 宝可梦结构化档案。 分类：象征宝可梦。 形态：ball。 栖息地：rare。 特性：levitate。 图鉴颜色：black。", "sha256": "89745155da425802c1de0f13a3670ce7d238e6649ddbaeabac9d249556788421"}
 {"id": 202, "text": "passage: 宝可梦结构化档案。 分类：忍耐宝可梦。 形态：blob。 栖息地：cave。 蛋群：indeterminate。 特性：shadow-tag、telepathy。 图鉴颜色：blue。", "sha256": "4cd7744da63af905c862b3e6d207645c1b64fff50642e09f29105af4f7ff1a44"}
 {"id": 203, "text": "passage: 宝可梦结构化档案。 分类：长颈宝可梦。 形态：quadruped。 栖息地：grassland。 蛋群：ground。 特性：inner-focus、early-bird、sap-sipper。 图鉴颜色：yellow。", "sha256": "e340bc97ee3ec0a6933db2d734fba143b086a445fe47675aae593f962b3c00c4"}
 {"id": 204, "text": "passage: 宝可梦结构化档案。 分类：蓑衣虫宝可梦。 形态：ball。 栖息地：forest。 蛋群：bug。 特性：sturdy、overcoat。 图鉴颜色：gray。", "sha256": "64cef86fb3542e62895bdc7c87cc12d37d5cb1964842c4a36134f8e4671c0d6a"}
@@ -233,22 +233,22 @@
 {"id": 233, "text": "passage: 宝可梦结构化档案。 分类：虚拟宝可梦。 形态：legs。 栖息地：urban。 蛋群：mineral。 特性：trace、download、analytic。 图鉴颜色：red。", "sha256": "203e78cf517fd19af5c103e15a2bc45f42b5aa270779899433f9a4b7e86c1dc5"}
 {"id": 234, "text": "passage: 宝可梦结构化档案。 分类：大角宝可梦。 形态：quadruped。 栖息地：forest。 蛋群：ground。 特性：intimidate、frisk、sap-sipper。 图鉴颜色：brown。", "sha256": "0da009191803c2e676b15f5f245cc54bd4c532601929c004818d0eb0e8be2081"}
 {"id": 235, "text": "passage: 宝可梦结构化档案。 分类：画画宝可梦。 形态：upright。 栖息地：urban。 蛋群：ground。 特性：own-tempo、technician、moody。 图鉴颜色：white。", "sha256": "1c600c8d212b47b703422f2a916658694130b771b06b0104f5a5e5c50922e663"}
-{"id": 236, "text": "passage: 宝可梦结构化档案。 分类：打斗宝可梦。 形态：humanoid。 栖息地：urban。 蛋群：no-eggs。 特性：guts、steadfast、vital-spirit。 图鉴颜色：purple。 特殊分类：幼年宝可梦。", "sha256": "21656edd3e70fbbb7fa3eceed46045bba7f4dbe5cc93b7907a1fc3a6b8b5a6df"}
+{"id": 236, "text": "passage: 宝可梦结构化档案。 分类：打斗宝可梦。 形态：humanoid。 栖息地：urban。 特性：guts、steadfast、vital-spirit。 图鉴颜色：purple。 特殊分类：幼年宝可梦。", "sha256": "c5bfda0459ae7e34a862c5bd659494590a363bcec6abf66f2e75acbc4f3cd958"}
 {"id": 237, "text": "passage: 宝可梦结构化档案。 分类：倒立宝可梦。 形态：upright。 栖息地：urban。 蛋群：humanshape。 特性：intimidate、technician、steadfast。 图鉴颜色：brown。", "sha256": "770efe0cf2ff37710a1d2316bb2e1d82f6dfd403d87f61488a2f9295cab22699"}
-{"id": 238, "text": "passage: 宝可梦结构化档案。 分类：亲吻宝可梦。 形态：humanoid。 栖息地：urban。 蛋群：no-eggs。 特性：oblivious、forewarn、hydration。 图鉴颜色：pink。 特殊分类：幼年宝可梦。", "sha256": "1c99eb5fd13dd753c00d3310b93486bbac64844d6dd7af2ebb23530dcfff8c81"}
-{"id": 239, "text": "passage: 宝可梦结构化档案。 分类：电气宝可梦。 形态：humanoid。 栖息地：grassland。 蛋群：no-eggs。 特性：static、vital-spirit。 图鉴颜色：yellow。 特殊分类：幼年宝可梦。", "sha256": "92cc057245875531480b05ef12a14f80e73b5d8c14a11906afaf81a035f25b26"}
-{"id": 240, "text": "passage: 宝可梦结构化档案。 分类：火种宝可梦。 形态：upright。 栖息地：mountain。 蛋群：no-eggs。 特性：flame-body、vital-spirit。 图鉴颜色：red。 特殊分类：幼年宝可梦。", "sha256": "92bc126133f170b7f7656d4c845d8f281eb768f7afb471892e9dbb733714a618"}
+{"id": 238, "text": "passage: 宝可梦结构化档案。 分类：亲吻宝可梦。 形态：humanoid。 栖息地：urban。 特性：oblivious、forewarn、hydration。 图鉴颜色：pink。 特殊分类：幼年宝可梦。", "sha256": "d5eef06ea192f656692c38a9a3e592cc6d5336455ca59feff48fae7e938456e3"}
+{"id": 239, "text": "passage: 宝可梦结构化档案。 分类：电气宝可梦。 形态：humanoid。 栖息地：grassland。 特性：static、vital-spirit。 图鉴颜色：yellow。 特殊分类：幼年宝可梦。", "sha256": "35237ecffeb4c8b914fb227d078207e2f1e798cd08f79fe34669d3a94bc9fd44"}
+{"id": 240, "text": "passage: 宝可梦结构化档案。 分类：火种宝可梦。 形态：upright。 栖息地：mountain。 特性：flame-body、vital-spirit。 图鉴颜色：red。 特殊分类：幼年宝可梦。", "sha256": "4c426f22df256f8ec2fb8ed000eeb321cf9191a1a50275e623d543864739c99e"}
 {"id": 241, "text": "passage: 宝可梦结构化档案。 分类：奶牛宝可梦。 形态：upright。 栖息地：grassland。 蛋群：ground。 特性：thick-fat、scrappy、sap-sipper。 图鉴颜色：pink。", "sha256": "c5210948fa8df5bfbb69eae6a4242e9b50b661f98835d23396005df2b962031e"}
 {"id": 242, "text": "passage: 宝可梦结构化档案。 分类：幸福宝可梦。 形态：humanoid。 栖息地：urban。 蛋群：fairy。 特性：natural-cure、serene-grace、healer。 图鉴颜色：pink。", "sha256": "4c019bff43ca1d9e0b7cd9f9d34db157f3fa67294c58799ef816abb56e2012f1"}
-{"id": 243, "text": "passage: 宝可梦结构化档案。 分类：天雷宝可梦。 形态：quadruped。 栖息地：grassland。 蛋群：no-eggs。 特性：pressure、inner-focus。 图鉴颜色：yellow。 特殊分类：传说的宝可梦。", "sha256": "4f0cf968b72542877677afea6645d04278616ba35bb97732b983e6c9b9862a0f"}
-{"id": 244, "text": "passage: 宝可梦结构化档案。 分类：火山宝可梦。 形态：quadruped。 栖息地：grassland。 蛋群：no-eggs。 特性：pressure、inner-focus。 图鉴颜色：brown。 特殊分类：传说的宝可梦。", "sha256": "f4ece21e9963df81c553db2d1bf698be749acd74264f66e983a558f677e96043"}
-{"id": 245, "text": "passage: 宝可梦结构化档案。 分类：极光宝可梦。 形态：quadruped。 栖息地：grassland。 蛋群：no-eggs。 特性：pressure、inner-focus。 图鉴颜色：blue。 特殊分类：传说的宝可梦。", "sha256": "a0d68f3658c66666f9560e2bb04a861228f5fd29f42b3055e0735a20de521703"}
+{"id": 243, "text": "passage: 宝可梦结构化档案。 分类：天雷宝可梦。 形态：quadruped。 栖息地：grassland。 特性：pressure、inner-focus。 图鉴颜色：yellow。 特殊分类：传说的宝可梦。", "sha256": "38ef8d1ad41dc52441e0c14b699f0aa60f360720215e821c0286d2769efa9e99"}
+{"id": 244, "text": "passage: 宝可梦结构化档案。 分类：火山宝可梦。 形态：quadruped。 栖息地：grassland。 特性：pressure、inner-focus。 图鉴颜色：brown。 特殊分类：传说的宝可梦。", "sha256": "e479ccc5d642b2ae29f39d4c119e64b567622eaf765ef2400195db14461e96d2"}
+{"id": 245, "text": "passage: 宝可梦结构化档案。 分类：极光宝可梦。 形态：quadruped。 栖息地：grassland。 特性：pressure、inner-focus。 图鉴颜色：blue。 特殊分类：传说的宝可梦。", "sha256": "6a3791f0d207d987e450a7a48e0e7d3bcaabfe67d7befa265bf951204d4e56b6"}
 {"id": 246, "text": "passage: 宝可梦结构化档案。 分类：岩石肤宝可梦。 形态：upright。 栖息地：mountain。 蛋群：monster。 特性：guts、sand-veil。 图鉴颜色：green。", "sha256": "696c838de90701cc4dc313ba1d7adc9d10e91cbb9db0f9f97b0e8ba2bd3a518c"}
 {"id": 247, "text": "passage: 宝可梦结构化档案。 分类：子弹宝可梦。 形态：squiggle。 栖息地：mountain。 蛋群：monster。 特性：shed-skin。 图鉴颜色：gray。", "sha256": "4cb7c58d205e6122cf8d1f14aa50860cf1c133783ad79c2106ba533cca26f42a"}
 {"id": 248, "text": "passage: 宝可梦结构化档案。 分类：铠甲宝可梦。 形态：upright。 栖息地：mountain。 蛋群：monster。 特性：sand-stream、unnerve。 图鉴颜色：green。", "sha256": "3f89f2f440f24370b3a2e4e1eb226c49af430465e9a447b3acba2ebd4022c04c"}
-{"id": 249, "text": "passage: 宝可梦结构化档案。 分类：潜水宝可梦。 形态：wings。 栖息地：rare。 蛋群：no-eggs。 特性：pressure、multiscale。 图鉴颜色：white。 特殊分类：传说的宝可梦。", "sha256": "8aa6f6e7d4ae5c2c5fa630304d9d7e6e1c87eff4b7080c91801f71c66122b3c4"}
-{"id": 250, "text": "passage: 宝可梦结构化档案。 分类：虹色宝可梦。 形态：wings。 栖息地：rare。 蛋群：no-eggs。 特性：pressure、regenerator。 图鉴颜色：red。 特殊分类：传说的宝可梦。", "sha256": "46bfebaed8917c39151efe173f583158cc2dab5817cac6e40fc29ce22272dea5"}
-{"id": 251, "text": "passage: 宝可梦结构化档案。 分类：时空穿越宝可梦。 形态：humanoid。 栖息地：forest。 蛋群：no-eggs。 特性：natural-cure。 图鉴颜色：green。 特殊分类：幻之宝可梦。", "sha256": "a6d7e9b467f1c3d67732298a18a9143c7761eba561ff37e32d7a33b8112f4137"}
+{"id": 249, "text": "passage: 宝可梦结构化档案。 分类：潜水宝可梦。 形态：wings。 栖息地：rare。 特性：pressure、multiscale。 图鉴颜色：white。 特殊分类：传说的宝可梦。", "sha256": "04d81efef7753b0f37cd6a2ab228b64b59ae133e2d53c9847c6b702907cf760f"}
+{"id": 250, "text": "passage: 宝可梦结构化档案。 分类：虹色宝可梦。 形态：wings。 栖息地：rare。 特性：pressure、regenerator。 图鉴颜色：red。 特殊分类：传说的宝可梦。", "sha256": "961322c3193dd67a626af342ce2b2ca6755289570b5d2db2609adab69bfd3ad2"}
+{"id": 251, "text": "passage: 宝可梦结构化档案。 分类：时空穿越宝可梦。 形态：humanoid。 栖息地：forest。 特性：natural-cure。 图鉴颜色：green。 特殊分类：幻之宝可梦。", "sha256": "511e1b9b298c5514482b08f034a524511f40b26fde1c32f9d595c2b43bbccf8a"}
 {"id": 252, "text": "passage: 宝可梦结构化档案。 分类：林蜥宝可梦。 形态：upright。 栖息地：forest。 蛋群：monster、dragon。 特性：overgrow、unburden。 图鉴颜色：green。", "sha256": "5f3b15e97c90ec2cb063bdb4e63a5c6933ef5ab77563417459c9dff525157649"}
 {"id": 253, "text": "passage: 宝可梦结构化档案。 分类：林蜥宝可梦。 形态：upright。 栖息地：forest。 蛋群：monster、dragon。 特性：overgrow、unburden。 图鉴颜色：green。", "sha256": "5f3b15e97c90ec2cb063bdb4e63a5c6933ef5ab77563417459c9dff525157649"}
 {"id": 254, "text": "passage: 宝可梦结构化档案。 分类：密林宝可梦。 形态：upright。 栖息地：forest。 蛋群：monster、dragon。 特性：overgrow、unburden。 图鉴颜色：green。", "sha256": "5a35c0fdf8f028d3c670b50492a9151ed6f72c98dcb34b0c34caaa23078c83b1"}
@@ -295,7 +295,7 @@
 {"id": 295, "text": "passage: 宝可梦结构化档案。 分类：噪音宝可梦。 形态：upright。 栖息地：cave。 蛋群：monster、ground。 特性：soundproof、scrappy。 图鉴颜色：blue。", "sha256": "689b1694390d6dc130deca120a9d95e95d8b0464bcea47195cfbf646768543a3"}
 {"id": 296, "text": "passage: 宝可梦结构化档案。 分类：毅力宝可梦。 形态：humanoid。 栖息地：mountain。 蛋群：humanshape。 特性：thick-fat、guts、sheer-force。 图鉴颜色：yellow。", "sha256": "ff29f21a74fbf1adcd8fb1bdd4c2a859893ef715330ffc2769e98114b2bdfdf8"}
 {"id": 297, "text": "passage: 宝可梦结构化档案。 分类：猛推宝可梦。 形态：humanoid。 栖息地：mountain。 蛋群：humanshape。 特性：thick-fat、guts、sheer-force。 图鉴颜色：brown。", "sha256": "e69bfb73d4d055cc599da533d1844ac71048fb7ced851478db3a84de09ca8b5f"}
-{"id": 298, "text": "passage: 宝可梦结构化档案。 分类：水珠宝可梦。 形态：legs。 栖息地：waters-edge。 蛋群：no-eggs。 特性：thick-fat、huge-power、sap-sipper。 图鉴颜色：blue。 特殊分类：幼年宝可梦。", "sha256": "ff47d76f9b228ffe49347d57fdcd462d7309518c6ae5d2ce46c0239cf109e276"}
+{"id": 298, "text": "passage: 宝可梦结构化档案。 分类：水珠宝可梦。 形态：legs。 栖息地：waters-edge。 特性：thick-fat、huge-power、sap-sipper。 图鉴颜色：blue。 特殊分类：幼年宝可梦。", "sha256": "504107ede571b8c0075680603cc41d7e51dc47d292f77f9b432277e5c95a4a21"}
 {"id": 299, "text": "passage: 宝可梦结构化档案。 分类：罗盘宝可梦。 形态：humanoid。 栖息地：cave。 蛋群：mineral。 特性：sturdy、magnet-pull、sand-force。 图鉴颜色：gray。", "sha256": "5f826726b5e26bb7e1a72b215d67f2aa3c04478fbba442e8d20cf9383edef8a8"}
 {"id": 300, "text": "passage: 宝可梦结构化档案。 分类：小猫宝可梦。 形态：quadruped。 栖息地：forest。 蛋群：ground、fairy。 特性：cute-charm、normalize、wonder-skin。 图鉴颜色：pink。", "sha256": "0ec06cb20c465168f285f16e1ec0395d651bbac2b40a8a6b1ce92d4ee446a486"}
 {"id": 301, "text": "passage: 宝可梦结构化档案。 分类：清高宝可梦。 形态：quadruped。 栖息地：forest。 蛋群：ground、fairy。 特性：cute-charm、normalize、wonder-skin。 图鉴颜色：purple。", "sha256": "4dfffa40f195faacec22c96fdadb3a16bb89a00d2a544b1ad8db88f5621f0b1f"}
@@ -357,7 +357,7 @@
 {"id": 357, "text": "passage: 宝可梦结构化档案。 分类：水果宝可梦。 形态：quadruped。 栖息地：forest。 蛋群：monster、plant。 特性：chlorophyll、solar-power、harvest。 图鉴颜色：green。", "sha256": "4a4e9d4b1eae25fdafe1a6dca4a581bcaaeaa114907211febdf463c4f45442a8"}
 {"id": 358, "text": "passage: 宝可梦结构化档案。 分类：风铃宝可梦。 形态：arms。 栖息地：grassland。 蛋群：indeterminate。 特性：levitate。 图鉴颜色：blue。", "sha256": "f47146ee1dfe44d117eaa8e7abd2d71705ab86ae870f96c882a24fde4afb7653"}
 {"id": 359, "text": "passage: 宝可梦结构化档案。 分类：灾祸宝可梦。 形态：quadruped。 栖息地：mountain。 蛋群：ground。 特性：pressure、super-luck、justified。 图鉴颜色：white。", "sha256": "653dbbc3e60ec7ae4dc2565bb6f3b1616c93c88a8d5fd40ab74f484aa9297c0c"}
-{"id": 360, "text": "passage: 宝可梦结构化档案。 分类：开朗宝可梦。 形态：upright。 栖息地：cave。 蛋群：no-eggs。 特性：shadow-tag、telepathy。 图鉴颜色：blue。 特殊分类：幼年宝可梦。", "sha256": "b03a90e4fdd1ce085cdd8ebe948554fc531070624b5086a07d703748a0585275"}
+{"id": 360, "text": "passage: 宝可梦结构化档案。 分类：开朗宝可梦。 形态：upright。 栖息地：cave。 特性：shadow-tag、telepathy。 图鉴颜色：blue。 特殊分类：幼年宝可梦。", "sha256": "6da31becbfa2dca14173d52c1b3eb45da98750304f4000d9a5bdbc3859a39a3b"}
 {"id": 361, "text": "passage: 宝可梦结构化档案。 分类：雪笠宝可梦。 形态：humanoid。 栖息地：cave。 蛋群：fairy、mineral。 特性：inner-focus、ice-body、moody。 图鉴颜色：gray。", "sha256": "0b7a92176878b77ef06fc97ddc01cb6b73a1181321fe00b392a02e0f9b5025e8"}
 {"id": 362, "text": "passage: 宝可梦结构化档案。 分类：脸面宝可梦。 形态：ball。 栖息地：cave。 蛋群：fairy、mineral。 特性：inner-focus、ice-body、moody。 图鉴颜色：gray。", "sha256": "efa289c353ced07edbfc8f62ce83203380f10f3c0bf801186936eb5e05c1bde5"}
 {"id": 363, "text": "passage: 宝可梦结构化档案。 分类：拍手宝可梦。 形态：fish。 栖息地：sea。 蛋群：water1、ground。 特性：thick-fat、ice-body、oblivious。 图鉴颜色：blue。", "sha256": "5870faac3241d9b2121225631adc068e1303c062a56fce50bc27c72728c82b57"}
@@ -374,16 +374,16 @@
 {"id": 374, "text": "passage: 宝可梦结构化档案。 分类：铁球宝可梦。 形态：blob。 栖息地：rough-terrain。 蛋群：mineral。 特性：clear-body、light-metal。 图鉴颜色：blue。", "sha256": "5fc14f755968778b027d48aaccbe1cb430ab8bad29a0cff9a15d8069797c31ed"}
 {"id": 375, "text": "passage: 宝可梦结构化档案。 分类：铁爪宝可梦。 形态：arms。 栖息地：rough-terrain。 蛋群：mineral。 特性：clear-body、light-metal。 图鉴颜色：blue。", "sha256": "a4d1868bf1d7510f20cb11b5680e8b846049eb294bd5f81671581c3b64635445"}
 {"id": 376, "text": "passage: 宝可梦结构化档案。 分类：铁足宝可梦。 形态：heads。 栖息地：rough-terrain。 蛋群：mineral。 特性：clear-body、light-metal。 图鉴颜色：blue。", "sha256": "61df858d7f7e6ce675fbdbbcf6e64f3ea05f48017f7de1c9b12bd0d0c963a373"}
-{"id": 377, "text": "passage: 宝可梦结构化档案。 分类：岩山宝可梦。 形态：humanoid。 栖息地：cave。 蛋群：no-eggs。 特性：clear-body、sturdy。 图鉴颜色：brown。 特殊分类：传说的宝可梦。", "sha256": "eb5e1c7996c9fab2f16a6326e8402b8ff5ab0037bee3127113fb483eda8208d1"}
-{"id": 378, "text": "passage: 宝可梦结构化档案。 分类：冰山宝可梦。 形态：humanoid。 栖息地：cave。 蛋群：no-eggs。 特性：clear-body、ice-body。 图鉴颜色：blue。 特殊分类：传说的宝可梦。", "sha256": "fe131f91f52e36a8a8fa6b04882be336bc48df8f8768828276b3613906b00aba"}
-{"id": 379, "text": "passage: 宝可梦结构化档案。 分类：黑金宝可梦。 形态：humanoid。 栖息地：cave。 蛋群：no-eggs。 特性：clear-body、light-metal。 图鉴颜色：gray。 特殊分类：传说的宝可梦。", "sha256": "8860a17078f3c4bd4d5743c5a0a715b3d783dbb860200cdfc88ba6ad527f7293"}
-{"id": 380, "text": "passage: 宝可梦结构化档案。 分类：无限宝可梦。 形态：wings。 栖息地：waters-edge。 蛋群：no-eggs。 特性：levitate。 图鉴颜色：red。 特殊分类：传说的宝可梦。", "sha256": "eb6f3debbedc2a8fe198e7f7406e951f6414c5bccb6e0c8c7d691b9720c8e80f"}
-{"id": 381, "text": "passage: 宝可梦结构化档案。 分类：无限宝可梦。 形态：wings。 栖息地：waters-edge。 蛋群：no-eggs。 特性：levitate。 图鉴颜色：blue。 特殊分类：传说的宝可梦。", "sha256": "cba32e809ccb52b16880afac2546faec209b3b8a595bef99d1e74c4e3cc10c43"}
-{"id": 382, "text": "passage: 宝可梦结构化档案。 分类：海底宝可梦。 形态：fish。 栖息地：sea。 蛋群：no-eggs。 特性：drizzle。 图鉴颜色：blue。 特殊分类：传说的宝可梦。", "sha256": "b2f5c46e96968e7c0d5edee8f2c80cdc9607cb730379e8ef47bd2428417cdd93"}
-{"id": 383, "text": "passage: 宝可梦结构化档案。 分类：大陆宝可梦。 形态：upright。 栖息地：rough-terrain。 蛋群：no-eggs。 特性：drought。 图鉴颜色：red。 特殊分类：传说的宝可梦。", "sha256": "324dda9af4b1dc0d654e79f054d0b5f389e739f7aac56de7a7b71061069a9a04"}
-{"id": 384, "text": "passage: 宝可梦结构化档案。 分类：天空宝可梦。 形态：squiggle。 栖息地：rare。 蛋群：no-eggs。 特性：air-lock。 图鉴颜色：green。 特殊分类：传说的宝可梦。", "sha256": "b130472fdedc04e3514fa41920a44baaae5d9347f23eb660ece68f1ace692825"}
-{"id": 385, "text": "passage: 宝可梦结构化档案。 分类：祈愿宝可梦。 形态：humanoid。 栖息地：mountain。 蛋群：no-eggs。 特性：serene-grace。 图鉴颜色：yellow。 特殊分类：幻之宝可梦。", "sha256": "55c11b71dbd2d4b4377523efe9aba7c2641f044c1d5ed5aa6437e83d120713d4"}
-{"id": 386, "text": "passage: 宝可梦结构化档案。 分类：ＤＮＡ宝可梦。 形态：humanoid。 栖息地：rare。 蛋群：no-eggs。 特性：pressure。 图鉴颜色：red。 特殊分类：幻之宝可梦。", "sha256": "e9a0a246a6b7c84150ee619ad25eaa16281c54665a0ed51cbf7265ffccc5fe6b"}
+{"id": 377, "text": "passage: 宝可梦结构化档案。 分类：岩山宝可梦。 形态：humanoid。 栖息地：cave。 特性：clear-body、sturdy。 图鉴颜色：brown。 特殊分类：传说的宝可梦。", "sha256": "8e4317229d29d2d9700cbc6a3b170b37bba61278f8458253096d424d02fdcb1f"}
+{"id": 378, "text": "passage: 宝可梦结构化档案。 分类：冰山宝可梦。 形态：humanoid。 栖息地：cave。 特性：clear-body、ice-body。 图鉴颜色：blue。 特殊分类：传说的宝可梦。", "sha256": "67bcfea77aa3ed2b1f965fcd1e22eab0765c663d8df8090ec68766217f6e6c3e"}
+{"id": 379, "text": "passage: 宝可梦结构化档案。 分类：黑金宝可梦。 形态：humanoid。 栖息地：cave。 特性：clear-body、light-metal。 图鉴颜色：gray。 特殊分类：传说的宝可梦。", "sha256": "cfab09ebfa218bec2874fa91fb46fd564de75b4080f88247747fbb0b0bfac77f"}
+{"id": 380, "text": "passage: 宝可梦结构化档案。 分类：无限宝可梦。 形态：wings。 栖息地：waters-edge。 特性：levitate。 图鉴颜色：red。 特殊分类：传说的宝可梦。", "sha256": "eedd0cc7fe8e92f23c4ac5b327c44fd711e63d0097b069c1aa14efc5ccf0669a"}
+{"id": 381, "text": "passage: 宝可梦结构化档案。 分类：无限宝可梦。 形态：wings。 栖息地：waters-edge。 特性：levitate。 图鉴颜色：blue。 特殊分类：传说的宝可梦。", "sha256": "8c893c0dd2de483b9bc70e689f12361811737b1dc2b004ea89261fbb8ba51463"}
+{"id": 382, "text": "passage: 宝可梦结构化档案。 分类：海底宝可梦。 形态：fish。 栖息地：sea。 特性：drizzle。 图鉴颜色：blue。 特殊分类：传说的宝可梦。", "sha256": "104d30a930d194a813bff7e67d99c69ba8f8b939dc429eb9809ee92eb34c1d05"}
+{"id": 383, "text": "passage: 宝可梦结构化档案。 分类：大陆宝可梦。 形态：upright。 栖息地：rough-terrain。 特性：drought。 图鉴颜色：red。 特殊分类：传说的宝可梦。", "sha256": "7c8ff20c4c08e2b7a999db12bec64a8fed56c2b6bb9f2fce1f0808c6f8e85bc7"}
+{"id": 384, "text": "passage: 宝可梦结构化档案。 分类：天空宝可梦。 形态：squiggle。 栖息地：rare。 特性：air-lock。 图鉴颜色：green。 特殊分类：传说的宝可梦。", "sha256": "fb53eb3875c21a45c21a4c0f769de5e27abfa4df6a5b508d1bdea59123c354ca"}
+{"id": 385, "text": "passage: 宝可梦结构化档案。 分类：祈愿宝可梦。 形态：humanoid。 栖息地：mountain。 特性：serene-grace。 图鉴颜色：yellow。 特殊分类：幻之宝可梦。", "sha256": "e7f6d46a80a249a91e60551936b49778aa8907c0fc11ba4606af118797011fc0"}
+{"id": 386, "text": "passage: 宝可梦结构化档案。 分类：ＤＮＡ宝可梦。 形态：humanoid。 栖息地：rare。 特性：pressure。 图鉴颜色：red。 特殊分类：幻之宝可梦。", "sha256": "14fae456bc444a3fc7fd1af132394d5c5a52839c6402a9e457cd122a6caea714"}
 {"id": 387, "text": "passage: 宝可梦结构化档案。 分类：嫩叶宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：monster、plant。 特性：overgrow、shell-armor。 图鉴颜色：green。", "sha256": "b69d4fe54b5ddf97471e12c23cbaed7fe33c303e9e8487b334b68d9d82cae1e4"}
 {"id": 388, "text": "passage: 宝可梦结构化档案。 分类：树丛宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：monster、plant。 特性：overgrow、shell-armor。 图鉴颜色：green。", "sha256": "c6e2745270a55d123eeca8b58404fc4e2d5f42e053ed66c486c54630efc2ea23"}
 {"id": 389, "text": "passage: 宝可梦结构化档案。 分类：大陆宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：monster、plant。 特性：overgrow、shell-armor。 图鉴颜色：green。", "sha256": "bd189a90745fb279ab26062d133f58f6b5d00ed32c91d881b3a3375828135a7d"}
@@ -403,7 +403,7 @@
 {"id": 403, "text": "passage: 宝可梦结构化档案。 分类：闪光宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：ground。 特性：rivalry、intimidate、guts。 图鉴颜色：blue。", "sha256": "0a8f811fb3d79f30350afebb65379fb43127276438feb78043023680e32e834b"}
 {"id": 404, "text": "passage: 宝可梦结构化档案。 分类：电光宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：ground。 特性：rivalry、intimidate、guts。 图鉴颜色：blue。", "sha256": "f08a5e13fc7076ddb9599d30371bd52c0bc0964d29c6bbdff666b7019c81790d"}
 {"id": 405, "text": "passage: 宝可梦结构化档案。 分类：目光宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：ground。 特性：rivalry、intimidate、guts。 图鉴颜色：blue。", "sha256": "5e20dff8228812e80d27ea523801e2894a8d41c0011cf19c97d8861a710b6409"}
-{"id": 406, "text": "passage: 宝可梦结构化档案。 分类：花苞宝可梦。 形态：humanoid。 栖息地：未知。 蛋群：no-eggs。 特性：natural-cure、poison-point、leaf-guard。 图鉴颜色：green。 特殊分类：幼年宝可梦。", "sha256": "a90180ec00f8eb1a5af9edad768f96ae4c0e9a214b3afa91b2140397c2472ba9"}
+{"id": 406, "text": "passage: 宝可梦结构化档案。 分类：花苞宝可梦。 形态：humanoid。 栖息地：未知。 特性：natural-cure、poison-point、leaf-guard。 图鉴颜色：green。 特殊分类：幼年宝可梦。", "sha256": "1b489dc052202ea0f9b94a88e0a84c770490179f06641d58158aa6f1f60509bf"}
 {"id": 407, "text": "passage: 宝可梦结构化档案。 分类：花束宝可梦。 形态：humanoid。 栖息地：未知。 蛋群：fairy、plant。 特性：natural-cure、poison-point、technician。 图鉴颜色：green。", "sha256": "115d934b92e3d470244e1a8c767ffc233cd3de65245d619cec575c7f41d20b52"}
 {"id": 408, "text": "passage: 宝可梦结构化档案。 分类：头锤宝可梦。 形态：upright。 栖息地：未知。 蛋群：monster。 特性：mold-breaker、sheer-force。 图鉴颜色：blue。", "sha256": "bf170df1b05b0704f5995ba6528300cffd1513e8d9f8f7bd6975cc044d9a9f4e"}
 {"id": 409, "text": "passage: 宝可梦结构化档案。 分类：头锤宝可梦。 形态：upright。 栖息地：未知。 蛋群：monster。 特性：mold-breaker、sheer-force。 图鉴颜色：blue。", "sha256": "bf170df1b05b0704f5995ba6528300cffd1513e8d9f8f7bd6975cc044d9a9f4e"}
@@ -430,21 +430,21 @@
 {"id": 430, "text": "passage: 宝可梦结构化档案。 分类：大头目宝可梦。 形态：wings。 栖息地：未知。 蛋群：flying。 特性：insomnia、super-luck、moxie。 图鉴颜色：black。", "sha256": "6b7e421a4412c3f11472eea373be20c7bc9da56bbc8493a790ae50265f553474"}
 {"id": 431, "text": "passage: 宝可梦结构化档案。 分类：装乖宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：ground。 特性：limber、own-tempo、keen-eye。 图鉴颜色：gray。", "sha256": "0077abdbe962f96c7f667f9dd4451539777f73fdc41de5487c3eee001eb00194"}
 {"id": 432, "text": "passage: 宝可梦结构化档案。 分类：虎斑猫宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：ground。 特性：thick-fat、own-tempo、defiant。 图鉴颜色：gray。", "sha256": "34187555f2ad7d8e8138362f912fa9ac0ac6573ba1b43eb2de1962af69e11038"}
-{"id": 433, "text": "passage: 宝可梦结构化档案。 分类：铃铛宝可梦。 形态：humanoid。 栖息地：未知。 蛋群：no-eggs。 特性：levitate。 图鉴颜色：yellow。 特殊分类：幼年宝可梦。", "sha256": "5768cf14eb3308fa9fd575e787113e985010fba075ffded17f4f523b7c864a1d"}
+{"id": 433, "text": "passage: 宝可梦结构化档案。 分类：铃铛宝可梦。 形态：humanoid。 栖息地：未知。 特性：levitate。 图鉴颜色：yellow。 特殊分类：幼年宝可梦。", "sha256": "38af69e4486be642eb68ceaa4dfdae86e48c586d2de77507cf47bff0a0be640f"}
 {"id": 434, "text": "passage: 宝可梦结构化档案。 分类：臭鼬宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：ground。 特性：stench、aftermath、keen-eye。 图鉴颜色：purple。", "sha256": "5c94c29670cf40e7923430cc3a9d96d9ddd1e2323d1f69133e8b383ea25a289e"}
 {"id": 435, "text": "passage: 宝可梦结构化档案。 分类：臭鼬宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：ground。 特性：stench、aftermath、keen-eye。 图鉴颜色：purple。", "sha256": "5c94c29670cf40e7923430cc3a9d96d9ddd1e2323d1f69133e8b383ea25a289e"}
 {"id": 436, "text": "passage: 宝可梦结构化档案。 分类：青铜宝可梦。 形态：ball。 栖息地：未知。 蛋群：mineral。 特性：levitate、heatproof、heavy-metal。 图鉴颜色：green。", "sha256": "b322427afd1f9dd6c44192b08288513455c90bd455093b245107ad3cbfe82cea"}
 {"id": 437, "text": "passage: 宝可梦结构化档案。 分类：铜钟宝可梦。 形态：arms。 栖息地：未知。 蛋群：mineral。 特性：levitate、heatproof、heavy-metal。 图鉴颜色：green。", "sha256": "3b1dde54cac689b4cc3699c18609c1df4db8f4cdf2b0da4d4b797f8c3975c457"}
-{"id": 438, "text": "passage: 宝可梦结构化档案。 分类：盆栽宝可梦。 形态：legs。 栖息地：未知。 蛋群：no-eggs。 特性：sturdy、rock-head、rattled。 图鉴颜色：brown。 特殊分类：幼年宝可梦。", "sha256": "0570293c0d63297fdd29a32144fda51b6a112141fc28991f2672f94c13b20236"}
-{"id": 439, "text": "passage: 宝可梦结构化档案。 分类：默剧宝可梦。 形态：humanoid。 栖息地：未知。 蛋群：no-eggs。 特性：soundproof、filter、technician。 图鉴颜色：pink。 特殊分类：幼年宝可梦。", "sha256": "d44b2b615879ff83a436dbbd0c44318a33e5a2d97b4252cf3c3b3588235ee623"}
-{"id": 440, "text": "passage: 宝可梦结构化档案。 分类：家家酒宝可梦。 形态：humanoid。 栖息地：未知。 蛋群：no-eggs。 特性：natural-cure、serene-grace、friend-guard。 图鉴颜色：pink。 特殊分类：幼年宝可梦。", "sha256": "1b44b3c11dbaf8771a4fbc1fccff03c07d446dec9fa6e531602641211318502a"}
+{"id": 438, "text": "passage: 宝可梦结构化档案。 分类：盆栽宝可梦。 形态：legs。 栖息地：未知。 特性：sturdy、rock-head、rattled。 图鉴颜色：brown。 特殊分类：幼年宝可梦。", "sha256": "448ebc888dbba580e1d9bf2599923afd42f87b0d3494a370b5523b4ae6d17044"}
+{"id": 439, "text": "passage: 宝可梦结构化档案。 分类：默剧宝可梦。 形态：humanoid。 栖息地：未知。 特性：soundproof、filter、technician。 图鉴颜色：pink。 特殊分类：幼年宝可梦。", "sha256": "f565a5ecf172be47efe8edd5ab863b9ad3b07cc97254bafd0167565552b4d638"}
+{"id": 440, "text": "passage: 宝可梦结构化档案。 分类：家家酒宝可梦。 形态：humanoid。 栖息地：未知。 特性：natural-cure、serene-grace、friend-guard。 图鉴颜色：pink。 特殊分类：幼年宝可梦。", "sha256": "0e5bac60429ffcfbc09cd5a07938aef54822c23c184679235a30521ec489947a"}
 {"id": 441, "text": "passage: 宝可梦结构化档案。 分类：音符宝可梦。 形态：wings。 栖息地：未知。 蛋群：flying。 特性：keen-eye、tangled-feet、big-pecks。 图鉴颜色：black。", "sha256": "194fa0d961937ab742cd88de0c8d9400ca5992116c052e4e416eb7218f355861"}
 {"id": 442, "text": "passage: 宝可梦结构化档案。 分类：封印宝可梦。 形态：blob。 栖息地：未知。 蛋群：indeterminate。 特性：pressure、infiltrator。 图鉴颜色：purple。", "sha256": "a9d2661b0ce7cadc54c0a9c7dbb9e7d04daf9a006ce039af85d94280316b6acb"}
 {"id": 443, "text": "passage: 宝可梦结构化档案。 分类：陆鲨宝可梦。 形态：upright。 栖息地：未知。 蛋群：monster、dragon。 特性：sand-veil、rough-skin。 图鉴颜色：blue。", "sha256": "c25c30bc858ebd4529baf2b801798c96b1a27303ed1371b6af98273c29da8d8f"}
 {"id": 444, "text": "passage: 宝可梦结构化档案。 分类：洞穴宝可梦。 形态：upright。 栖息地：未知。 蛋群：monster、dragon。 特性：sand-veil、rough-skin。 图鉴颜色：blue。", "sha256": "b17d5e618a479674677ce16d1afb8bcc5a123f299a08d49929960503390d4ddf"}
 {"id": 445, "text": "passage: 宝可梦结构化档案。 分类：音速宝可梦。 形态：upright。 栖息地：未知。 蛋群：monster、dragon。 特性：sand-veil、rough-skin。 图鉴颜色：blue。", "sha256": "59842dcca16f1f1aee431239c6bfff18ec8d294e7500d6b4a9eb40f39a64b809"}
-{"id": 446, "text": "passage: 宝可梦结构化档案。 分类：大胃王宝可梦。 形态：humanoid。 栖息地：未知。 蛋群：no-eggs。 特性：pickup、thick-fat、gluttony。 图鉴颜色：black。 特殊分类：幼年宝可梦。", "sha256": "dec13d57caf2178fe726cd2edb481528ca29478c2e7336c6e516ba6cd895d55f"}
-{"id": 447, "text": "passage: 宝可梦结构化档案。 分类：波纹宝可梦。 形态：upright。 栖息地：未知。 蛋群：no-eggs。 特性：steadfast、inner-focus、prankster。 图鉴颜色：blue。 特殊分类：幼年宝可梦。", "sha256": "2a292c7325b940d0775a448ca80277a115e3613b84dd118f24721268e2956cb4"}
+{"id": 446, "text": "passage: 宝可梦结构化档案。 分类：大胃王宝可梦。 形态：humanoid。 栖息地：未知。 特性：pickup、thick-fat、gluttony。 图鉴颜色：black。 特殊分类：幼年宝可梦。", "sha256": "721422268a1eb3446a7b096fd4b8191d4481f72f967d920c0331278d1eac9c6d"}
+{"id": 447, "text": "passage: 宝可梦结构化档案。 分类：波纹宝可梦。 形态：upright。 栖息地：未知。 特性：steadfast、inner-focus、prankster。 图鉴颜色：blue。 特殊分类：幼年宝可梦。", "sha256": "f8c91d4f7ae00f11913b7441c480925fb4eb68cb5b6fdf407be4064b5650c8b7"}
 {"id": 448, "text": "passage: 宝可梦结构化档案。 分类：波导宝可梦。 形态：upright。 栖息地：未知。 蛋群：ground、humanshape。 特性：steadfast、inner-focus、justified。 图鉴颜色：blue。", "sha256": "d226a7eb7448bdf18b3f4f17b99e806cd288ccdb8ba33a5513d4b2dc6d83b45a"}
 {"id": 449, "text": "passage: 宝可梦结构化档案。 分类：河马宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：ground。 特性：sand-stream、sand-force。 图鉴颜色：brown。", "sha256": "25fcfbe765678e8249756f84fcbf4a06138507b6536d5e8754f0e3cf90214ed3"}
 {"id": 450, "text": "passage: 宝可梦结构化档案。 分类：重量宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：ground。 特性：sand-stream、sand-force。 图鉴颜色：brown。", "sha256": "3626d908ab992846b891f743beade83f010b7e74f0ec1755eb26e317f16db479"}
@@ -455,7 +455,7 @@
 {"id": 455, "text": "passage: 宝可梦结构化档案。 分类：捕虫宝可梦。 形态：tentacles。 栖息地：未知。 蛋群：plant。 特性：levitate。 图鉴颜色：green。", "sha256": "c99903edcc308652d5335c3effda18a3c99b7b9dc72441c548564f8b0d98082b"}
 {"id": 456, "text": "passage: 宝可梦结构化档案。 分类：飞翅鱼宝可梦。 形态：fish。 栖息地：未知。 蛋群：water2。 特性：swift-swim、storm-drain、water-veil。 图鉴颜色：blue。", "sha256": "b48456552a15bda157133611fbadf467b7970bea532f232a8b76b51a0e14218a"}
 {"id": 457, "text": "passage: 宝可梦结构化档案。 分类：霓虹宝可梦。 形态：fish。 栖息地：未知。 蛋群：water2。 特性：swift-swim、storm-drain、water-veil。 图鉴颜色：blue。", "sha256": "60b7a7099f291e70c37f8910ed2bd2e9e8ea82b8a7eae3ef676aa22394ec19d9"}
-{"id": 458, "text": "passage: 宝可梦结构化档案。 分类：风筝宝可梦。 形态：wings。 栖息地：未知。 蛋群：no-eggs。 特性：swift-swim、water-absorb、water-veil。 图鉴颜色：blue。 特殊分类：幼年宝可梦。", "sha256": "37698c2d62f8e0bc23baba722d5478a66fa44cc88afae104a9ebe7a18cd5d336"}
+{"id": 458, "text": "passage: 宝可梦结构化档案。 分类：风筝宝可梦。 形态：wings。 栖息地：未知。 特性：swift-swim、water-absorb、water-veil。 图鉴颜色：blue。 特殊分类：幼年宝可梦。", "sha256": "7029df95ba2642d600c9b65213fd2c91707cbece7ac2ef62e4de3da18528fa2f"}
 {"id": 459, "text": "passage: 宝可梦结构化档案。 分类：树冰宝可梦。 形态：upright。 栖息地：未知。 蛋群：monster、plant。 特性：snow-warning、soundproof。 图鉴颜色：white。", "sha256": "438d8ff3a80af9382df9429392adacde369edb288b2a6981aed08215ac2c68cc"}
 {"id": 460, "text": "passage: 宝可梦结构化档案。 分类：树冰宝可梦。 形态：upright。 栖息地：未知。 蛋群：monster、plant。 特性：snow-warning、soundproof。 图鉴颜色：white。", "sha256": "438d8ff3a80af9382df9429392adacde369edb288b2a6981aed08215ac2c68cc"}
 {"id": 461, "text": "passage: 宝可梦结构化档案。 分类：钩爪宝可梦。 形态：upright。 栖息地：未知。 蛋群：ground。 特性：pressure、pickpocket。 图鉴颜色：black。", "sha256": "21ec100e2e5e55ac27c3d59eb796b4c6da57adb57db19a2a88207c12b491eadc"}
@@ -477,21 +477,21 @@
 {"id": 477, "text": "passage: 宝可梦结构化档案。 分类：抓握宝可梦。 形态：arms。 栖息地：未知。 蛋群：indeterminate。 特性：pressure、frisk。 图鉴颜色：black。", "sha256": "866c8c58020c8f2e70c74cb6f84d5a4e9de0190af01a7fb0b954e5134f321e8b"}
 {"id": 478, "text": "passage: 宝可梦结构化档案。 分类：雪国宝可梦。 形态：arms。 栖息地：未知。 蛋群：fairy、mineral。 特性：snow-cloak、cursed-body。 图鉴颜色：white。", "sha256": "830066ad033be74f5ad91d168a626caac3efa265881838002f2ac57db84d4853"}
 {"id": 479, "text": "passage: 宝可梦结构化档案。 分类：等离子宝可梦。 形态：ball。 栖息地：未知。 蛋群：indeterminate。 特性：levitate。 图鉴颜色：red。", "sha256": "24f1833a3afdca3e676c3a7841ad833ea7915c38a928b7a9dc06a8fd4e05515f"}
-{"id": 480, "text": "passage: 宝可梦结构化档案。 分类：知识宝可梦。 形态：upright。 栖息地：未知。 蛋群：no-eggs。 特性：levitate。 图鉴颜色：yellow。 特殊分类：传说的宝可梦。", "sha256": "9ebfe5a2dcfc91ab67df7f0651783ed50a3738dc408810333ce11647e5a3e291"}
-{"id": 481, "text": "passage: 宝可梦结构化档案。 分类：感情宝可梦。 形态：upright。 栖息地：未知。 蛋群：no-eggs。 特性：levitate。 图鉴颜色：pink。 特殊分类：传说的宝可梦。", "sha256": "778d89f159a1b8eed8638cd69ed0bf1e8bd9ed24296c43ac75777d8598a46a2c"}
-{"id": 482, "text": "passage: 宝可梦结构化档案。 分类：意志宝可梦。 形态：upright。 栖息地：未知。 蛋群：no-eggs。 特性：levitate。 图鉴颜色：blue。 特殊分类：传说的宝可梦。", "sha256": "1463c651d6fabe272d3c1c2fb120bfdba121701186c267983bc583443090f0e9"}
-{"id": 483, "text": "passage: 宝可梦结构化档案。 分类：时间宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：no-eggs。 特性：pressure、telepathy。 图鉴颜色：white。 特殊分类：传说的宝可梦。", "sha256": "a03f4894eec52fb971b651e1df36e8261d891ef30f1a5584104d31198bc1292b"}
-{"id": 484, "text": "passage: 宝可梦结构化档案。 分类：空间宝可梦。 形态：upright。 栖息地：未知。 蛋群：no-eggs。 特性：pressure、telepathy。 图鉴颜色：purple。 特殊分类：传说的宝可梦。", "sha256": "d52979d575b6dc556aa31991ba1d11104281f93b46f1b888d57c3dc2b8eee919"}
-{"id": 485, "text": "passage: 宝可梦结构化档案。 分类：火山口宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：no-eggs。 特性：flash-fire、flame-body。 图鉴颜色：brown。 特殊分类：传说的宝可梦。", "sha256": "41aa287029ebf001f904eb2e788c9d9492c0e73b285a451f783c157b6321b152"}
-{"id": 486, "text": "passage: 宝可梦结构化档案。 分类：巨大宝可梦。 形态：humanoid。 栖息地：未知。 蛋群：no-eggs。 特性：slow-start。 图鉴颜色：white。 特殊分类：传说的宝可梦。", "sha256": "7c6e3d0295ea6e52043c2a40793f3398d6c8d1bd12e1745e7251d629d4721dd4"}
-{"id": 487, "text": "passage: 宝可梦结构化档案。 分类：反抗宝可梦。 形态：tentacles。 栖息地：未知。 蛋群：no-eggs。 特性：pressure、telepathy。 图鉴颜色：black。 特殊分类：传说的宝可梦。", "sha256": "fd6f9aee359c154d389f7ff076c95deffc9f385b59d75743b45940541f0f3f67"}
-{"id": 488, "text": "passage: 宝可梦结构化档案。 分类：新月宝可梦。 形态：squiggle。 栖息地：未知。 蛋群：no-eggs。 特性：levitate。 图鉴颜色：yellow。 特殊分类：传说的宝可梦。", "sha256": "677b2231b633ffe34fcf48ab911a285ca10d2c2f26e032cdc76227e2d53acf8b"}
+{"id": 480, "text": "passage: 宝可梦结构化档案。 分类：知识宝可梦。 形态：upright。 栖息地：未知。 特性：levitate。 图鉴颜色：yellow。 特殊分类：传说的宝可梦。", "sha256": "ee01318bf30295185392be36310f0e79499d57be4b4a6d3a129c311a73be65b6"}
+{"id": 481, "text": "passage: 宝可梦结构化档案。 分类：感情宝可梦。 形态：upright。 栖息地：未知。 特性：levitate。 图鉴颜色：pink。 特殊分类：传说的宝可梦。", "sha256": "44222e1c9fec1e5201f2487cf1e749bccd5d361aed0c8b87d310e2c05edb5dae"}
+{"id": 482, "text": "passage: 宝可梦结构化档案。 分类：意志宝可梦。 形态：upright。 栖息地：未知。 特性：levitate。 图鉴颜色：blue。 特殊分类：传说的宝可梦。", "sha256": "8391b71a1c43c7eb1712ddb8b7370379c53745da2d35e6610c5d8d824c731be1"}
+{"id": 483, "text": "passage: 宝可梦结构化档案。 分类：时间宝可梦。 形态：quadruped。 栖息地：未知。 特性：pressure、telepathy。 图鉴颜色：white。 特殊分类：传说的宝可梦。", "sha256": "aa66b86b3d54dcf64f0047a1209ee04dede15b3d015411e5c6af8634c3cef149"}
+{"id": 484, "text": "passage: 宝可梦结构化档案。 分类：空间宝可梦。 形态：upright。 栖息地：未知。 特性：pressure、telepathy。 图鉴颜色：purple。 特殊分类：传说的宝可梦。", "sha256": "b3122edf2104311320618bf6aa58b5786317f6d11d5c7a4142cddee6e8f47e42"}
+{"id": 485, "text": "passage: 宝可梦结构化档案。 分类：火山口宝可梦。 形态：quadruped。 栖息地：未知。 特性：flash-fire、flame-body。 图鉴颜色：brown。 特殊分类：传说的宝可梦。", "sha256": "b625809267f68943782c1f8138f76750c5b10dd704ae0cee8e51ea51896475b4"}
+{"id": 486, "text": "passage: 宝可梦结构化档案。 分类：巨大宝可梦。 形态：humanoid。 栖息地：未知。 特性：slow-start。 图鉴颜色：white。 特殊分类：传说的宝可梦。", "sha256": "340fa89f1e7c84ebb44f9b45001f10975578e099e0607835b6b95f52589a1df9"}
+{"id": 487, "text": "passage: 宝可梦结构化档案。 分类：反抗宝可梦。 形态：tentacles。 栖息地：未知。 特性：pressure、telepathy。 图鉴颜色：black。 特殊分类：传说的宝可梦。", "sha256": "a001fc91fb93e2259c8f2c642289b746c8da91f2b40f6c9750a3bc8786e28133"}
+{"id": 488, "text": "passage: 宝可梦结构化档案。 分类：新月宝可梦。 形态：squiggle。 栖息地：未知。 特性：levitate。 图鉴颜色：yellow。 特殊分类：传说的宝可梦。", "sha256": "5a5c8067defbbb259a99bf64c32cee409fcbc0a4e0003b7a2d7b4663cb3dcf2a"}
 {"id": 489, "text": "passage: 宝可梦结构化档案。 分类：海洋宝可梦。 形态：arms。 栖息地：未知。 蛋群：water1、fairy。 特性：hydration。 图鉴颜色：blue。 特殊分类：幻之宝可梦。", "sha256": "47680432f6949718e91a2f1cfa67014150197c17e62722f3f4ec3ad095e386a3"}
 {"id": 490, "text": "passage: 宝可梦结构化档案。 分类：回游宝可梦。 形态：humanoid。 栖息地：未知。 蛋群：water1、fairy。 特性：hydration。 图鉴颜色：blue。 特殊分类：幻之宝可梦。", "sha256": "426abc59e148b0b8ceee5f67541c24e0c140f611cc1b346ffb511f01858e2b19"}
-{"id": 491, "text": "passage: 宝可梦结构化档案。 分类：暗黑宝可梦。 形态：humanoid。 栖息地：未知。 蛋群：no-eggs。 特性：bad-dreams。 图鉴颜色：black。 特殊分类：幻之宝可梦。", "sha256": "f9009df4dfdf9ae60d355a50e62c232ed5dc615e5be3815272eb5accc3fa2e91"}
-{"id": 492, "text": "passage: 宝可梦结构化档案。 分类：感谢宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：no-eggs。 特性：natural-cure。 图鉴颜色：green。 特殊分类：幻之宝可梦。", "sha256": "863495b85c6aa7c3e62b1055f9536968ef625794a1bd6e7cdb2390c9faf1ee13"}
-{"id": 493, "text": "passage: 宝可梦结构化档案。 分类：创造宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：no-eggs。 特性：multitype。 图鉴颜色：white。 特殊分类：幻之宝可梦。", "sha256": "336ee38caaa8c953f74d941c11870a430703c3220b14b1cba824c55d3738cad5"}
-{"id": 494, "text": "passage: 宝可梦结构化档案。 分类：胜利宝可梦。 形态：humanoid。 栖息地：未知。 蛋群：no-eggs。 特性：victory-star。 图鉴颜色：yellow。 特殊分类：幻之宝可梦。", "sha256": "954bfa842c502f6f7b1675a3b93201b7407f6746b7aca055d533c3d05e9e8a76"}
+{"id": 491, "text": "passage: 宝可梦结构化档案。 分类：暗黑宝可梦。 形态：humanoid。 栖息地：未知。 特性：bad-dreams。 图鉴颜色：black。 特殊分类：幻之宝可梦。", "sha256": "5418688e7ae1025f7173b05ebf475f74ccc27ba519bb390bb46bc5b26e922029"}
+{"id": 492, "text": "passage: 宝可梦结构化档案。 分类：感谢宝可梦。 形态：quadruped。 栖息地：未知。 特性：natural-cure。 图鉴颜色：green。 特殊分类：幻之宝可梦。", "sha256": "274889af32be0f2ee715f3513ee1b62059645d95b9f3a20294d99193db915998"}
+{"id": 493, "text": "passage: 宝可梦结构化档案。 分类：创造宝可梦。 形态：quadruped。 栖息地：未知。 特性：multitype。 图鉴颜色：white。 特殊分类：幻之宝可梦。", "sha256": "cd7d6054dcdc7f269a86f0b23f22a1188c53239f1380876d668e7a3aa668bbad"}
+{"id": 494, "text": "passage: 宝可梦结构化档案。 分类：胜利宝可梦。 形态：humanoid。 栖息地：未知。 特性：victory-star。 图鉴颜色：yellow。 特殊分类：幻之宝可梦。", "sha256": "36418783e6a8edbdbe582258690aead485877be874a880189fb4b3b1cfa32791"}
 {"id": 495, "text": "passage: 宝可梦结构化档案。 分类：草蛇宝可梦。 形态：upright。 栖息地：未知。 蛋群：ground、plant。 特性：overgrow、contrary。 图鉴颜色：green。", "sha256": "f6310502ba7703527395f7d7625252e9965eeee8fdfaf162b12b2bf4be05f6d8"}
 {"id": 496, "text": "passage: 宝可梦结构化档案。 分类：草蛇宝可梦。 形态：upright。 栖息地：未知。 蛋群：ground、plant。 特性：overgrow、contrary。 图鉴颜色：green。", "sha256": "f6310502ba7703527395f7d7625252e9965eeee8fdfaf162b12b2bf4be05f6d8"}
 {"id": 497, "text": "passage: 宝可梦结构化档案。 分类：皇家宝可梦。 形态：squiggle。 栖息地：未知。 蛋群：ground、plant。 特性：overgrow、contrary。 图鉴颜色：green。", "sha256": "4458de029c3effe13894bcbb0dbd727e5653602209821830666fb97b194d46fd"}
@@ -635,18 +635,18 @@
 {"id": 635, "text": "passage: 宝可梦结构化档案。 分类：凶暴宝可梦。 形态：upright。 栖息地：未知。 蛋群：dragon。 特性：levitate。 图鉴颜色：blue。", "sha256": "76e52c22188d707fded030db70524db66e18caad4b8476e6051c9ddf280d6af1"}
 {"id": 636, "text": "passage: 宝可梦结构化档案。 分类：火炬宝可梦。 形态：armor。 栖息地：未知。 蛋群：bug。 特性：flame-body、swarm。 图鉴颜色：white。", "sha256": "08b0a2d70480cb25244065c1a6a90e850f1299f75ffc0e1ba40d22a09b9be6c3"}
 {"id": 637, "text": "passage: 宝可梦结构化档案。 分类：太阳宝可梦。 形态：bug-wings。 栖息地：未知。 蛋群：bug。 特性：flame-body、swarm。 图鉴颜色：white。", "sha256": "243dfdaecaf6cbb7d4f1fe42f9c032f90426db4355fc03665504071e8526e4a1"}
-{"id": 638, "text": "passage: 宝可梦结构化档案。 分类：铁心宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：no-eggs。 特性：justified。 图鉴颜色：blue。 特殊分类：传说的宝可梦。", "sha256": "ef4cb1b77fb75a80c7e35b2f22926cef23b29be43f0310e1e62e665f50a3d920"}
-{"id": 639, "text": "passage: 宝可梦结构化档案。 分类：岩窟宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：no-eggs。 特性：justified。 图鉴颜色：gray。 特殊分类：传说的宝可梦。", "sha256": "e10a579379cf0f5bffe8390b6e07dc7ed61b00e7ee0bcaa967b12b63afc99e6d"}
-{"id": 640, "text": "passage: 宝可梦结构化档案。 分类：草原宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：no-eggs。 特性：justified。 图鉴颜色：green。 特殊分类：传说的宝可梦。", "sha256": "7bce8cb3907efe660014b00b57c636cbe5e6cb12f129e3edc17bca0d3c474401"}
-{"id": 641, "text": "passage: 宝可梦结构化档案。 分类：旋风宝可梦。 形态：arms。 栖息地：未知。 蛋群：no-eggs。 特性：prankster、defiant。 图鉴颜色：green。 特殊分类：传说的宝可梦。", "sha256": "779d11e7afdd810c344ea3c70df9604120f4c770bc4f2e81493dd7dd48e171ee"}
-{"id": 642, "text": "passage: 宝可梦结构化档案。 分类：雷击宝可梦。 形态：arms。 栖息地：未知。 蛋群：no-eggs。 特性：prankster、defiant。 图鉴颜色：blue。 特殊分类：传说的宝可梦。", "sha256": "cddd24d8ef08d39e6047f8307ef8b47403fe1e845869665149830c4094a87462"}
-{"id": 643, "text": "passage: 宝可梦结构化档案。 分类：白阳宝可梦。 形态：wings。 栖息地：未知。 蛋群：no-eggs。 特性：turboblaze。 图鉴颜色：white。 特殊分类：传说的宝可梦。", "sha256": "927689626cb84634d4b9d8d5c1f78194e3726c4c42e29a8473fafe06ec24fdc6"}
-{"id": 644, "text": "passage: 宝可梦结构化档案。 分类：黑阴宝可梦。 形态：upright。 栖息地：未知。 蛋群：no-eggs。 特性：teravolt。 图鉴颜色：black。 特殊分类：传说的宝可梦。", "sha256": "e3f0b78a59690dcfa7c3b089bb7f6f2233d22ef6b81ce8258d26a22129f4a5bf"}
-{"id": 645, "text": "passage: 宝可梦结构化档案。 分类：丰饶宝可梦。 形态：arms。 栖息地：未知。 蛋群：no-eggs。 特性：sand-force、sheer-force。 图鉴颜色：brown。 特殊分类：传说的宝可梦。", "sha256": "1f5cbcc92807a0ca6d325f94c21606d3bc35cdaf92813e19ddee46235b6e357c"}
-{"id": 646, "text": "passage: 宝可梦结构化档案。 分类：境界宝可梦。 形态：upright。 栖息地：未知。 蛋群：no-eggs。 特性：pressure。 图鉴颜色：gray。 特殊分类：传说的宝可梦。", "sha256": "4fc0c9268739b9e8cd7948a25c1b3c7f727a13da696e173ea0968b9d6bc99803"}
-{"id": 647, "text": "passage: 宝可梦结构化档案。 分类：幼马宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：no-eggs。 特性：justified。 图鉴颜色：yellow。 特殊分类：幻之宝可梦。", "sha256": "63bec091325993d0816531080abfd912908e0b28b456079768bc0ba389c1d756"}
-{"id": 648, "text": "passage: 宝可梦结构化档案。 分类：旋律宝可梦。 形态：humanoid。 栖息地：未知。 蛋群：no-eggs。 特性：serene-grace。 图鉴颜色：white。 特殊分类：幻之宝可梦。", "sha256": "bea036f1384e29890b4a6ab1aecb54e94ae386580e452fcffa97d171a903c5cd"}
-{"id": 649, "text": "passage: 宝可梦结构化档案。 分类：古生代宝可梦。 形态：humanoid。 栖息地：未知。 蛋群：no-eggs。 特性：download。 图鉴颜色：purple。 特殊分类：幻之宝可梦。", "sha256": "ac58ba5fb59a5775e83b2d5ccc6a83b8b998bfb2028ddf9fabf8bd8bef5dd2b6"}
+{"id": 638, "text": "passage: 宝可梦结构化档案。 分类：铁心宝可梦。 形态：quadruped。 栖息地：未知。 特性：justified。 图鉴颜色：blue。 特殊分类：传说的宝可梦。", "sha256": "fa7a0152574da8651d935370ca6cb58dfac8bacc1727cc5e342af49c31d8efa7"}
+{"id": 639, "text": "passage: 宝可梦结构化档案。 分类：岩窟宝可梦。 形态：quadruped。 栖息地：未知。 特性：justified。 图鉴颜色：gray。 特殊分类：传说的宝可梦。", "sha256": "a0f79682f469629318df887ab27be24c6ac25e782a98350e7ea0f4ab5920b3f8"}
+{"id": 640, "text": "passage: 宝可梦结构化档案。 分类：草原宝可梦。 形态：quadruped。 栖息地：未知。 特性：justified。 图鉴颜色：green。 特殊分类：传说的宝可梦。", "sha256": "fc8e6055fd9cf61eeab7baa160529e8f71f59b342f026b7bac08cc57652f56ec"}
+{"id": 641, "text": "passage: 宝可梦结构化档案。 分类：旋风宝可梦。 形态：arms。 栖息地：未知。 特性：prankster、defiant。 图鉴颜色：green。 特殊分类：传说的宝可梦。", "sha256": "77703ccede136128416fbfbefd7591f00d137fcc1ab1a27a05f1e7c7efcf96c8"}
+{"id": 642, "text": "passage: 宝可梦结构化档案。 分类：雷击宝可梦。 形态：arms。 栖息地：未知。 特性：prankster、defiant。 图鉴颜色：blue。 特殊分类：传说的宝可梦。", "sha256": "15dd6b1db88dc66dd3c5f07ab69de4b77d0de609093208f4295bfc027f9266db"}
+{"id": 643, "text": "passage: 宝可梦结构化档案。 分类：白阳宝可梦。 形态：wings。 栖息地：未知。 特性：turboblaze。 图鉴颜色：white。 特殊分类：传说的宝可梦。", "sha256": "2009f25e5e06e613e63320946b472c601af68a3c2c1d6f68de0c85050110cbd4"}
+{"id": 644, "text": "passage: 宝可梦结构化档案。 分类：黑阴宝可梦。 形态：upright。 栖息地：未知。 特性：teravolt。 图鉴颜色：black。 特殊分类：传说的宝可梦。", "sha256": "cfe7913b5a47476defed0105a3acd21b7d6f24842c67e3f44e203f71013ff219"}
+{"id": 645, "text": "passage: 宝可梦结构化档案。 分类：丰饶宝可梦。 形态：arms。 栖息地：未知。 特性：sand-force、sheer-force。 图鉴颜色：brown。 特殊分类：传说的宝可梦。", "sha256": "b95f96b4221e7ad492b976f6d35b2a882345b3a31b2191005055640ac52371cd"}
+{"id": 646, "text": "passage: 宝可梦结构化档案。 分类：境界宝可梦。 形态：upright。 栖息地：未知。 特性：pressure。 图鉴颜色：gray。 特殊分类：传说的宝可梦。", "sha256": "fda1f06731ee2f0bce85248ececf3b70d49763a2105d03e654b23010c2470e7d"}
+{"id": 647, "text": "passage: 宝可梦结构化档案。 分类：幼马宝可梦。 形态：quadruped。 栖息地：未知。 特性：justified。 图鉴颜色：yellow。 特殊分类：幻之宝可梦。", "sha256": "dcf8722117856ce8367ca1f4efde62bfcf72eb702afc6d5462d77c55244dc260"}
+{"id": 648, "text": "passage: 宝可梦结构化档案。 分类：旋律宝可梦。 形态：humanoid。 栖息地：未知。 特性：serene-grace。 图鉴颜色：white。 特殊分类：幻之宝可梦。", "sha256": "5d9cb904c9f13c5fdf8e01b7b5436e95d36c497ff7e50a31a6dd634512e235f8"}
+{"id": 649, "text": "passage: 宝可梦结构化档案。 分类：古生代宝可梦。 形态：humanoid。 栖息地：未知。 特性：download。 图鉴颜色：purple。 特殊分类：幻之宝可梦。", "sha256": "1a3e86ffca15fbef651e00b199772c6e4e7523ae586dfdeff1455fd0e45fe6f1"}
 {"id": 650, "text": "passage: 宝可梦结构化档案。 分类：刺栗宝可梦。 形态：upright。 栖息地：未知。 蛋群：ground。 特性：overgrow、bulletproof。 图鉴颜色：green。", "sha256": "5c8a2c4acda4409e082e4632bb3662246f832bd57aa8fb4f4a40d3c529c6552c"}
 {"id": 651, "text": "passage: 宝可梦结构化档案。 分类：刺铠宝可梦。 形态：upright。 栖息地：未知。 蛋群：ground。 特性：overgrow、bulletproof。 图鉴颜色：green。", "sha256": "1248e8f9744dd4d9e238ad6ced3131166c59af549a14b8cf425defda1467be90"}
 {"id": 652, "text": "passage: 宝可梦结构化档案。 分类：刺铠宝可梦。 形态：upright。 栖息地：未知。 蛋群：ground。 特性：overgrow、bulletproof。 图鉴颜色：green。", "sha256": "1248e8f9744dd4d9e238ad6ced3131166c59af549a14b8cf425defda1467be90"}
@@ -713,12 +713,12 @@
 {"id": 713, "text": "passage: 宝可梦结构化档案。 分类：冰山宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：monster、mineral。 特性：own-tempo、ice-body、sturdy。 图鉴颜色：blue。", "sha256": "040452f21d5273d5ef63f79086bfaa47230218bb17b34b4b326e208de3c2da6a"}
 {"id": 714, "text": "passage: 宝可梦结构化档案。 分类：音波宝可梦。 形态：wings。 栖息地：未知。 蛋群：flying、dragon。 特性：frisk、infiltrator、telepathy。 图鉴颜色：purple。", "sha256": "b6ef39d5bd269cba0805a291117bb6e09c861637298a54654be21337c05d090e"}
 {"id": 715, "text": "passage: 宝可梦结构化档案。 分类：音波宝可梦。 形态：wings。 栖息地：未知。 蛋群：flying、dragon。 特性：frisk、infiltrator、telepathy。 图鉴颜色：purple。", "sha256": "b6ef39d5bd269cba0805a291117bb6e09c861637298a54654be21337c05d090e"}
-{"id": 716, "text": "passage: 宝可梦结构化档案。 分类：生命宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：no-eggs。 特性：fairy-aura。 图鉴颜色：blue。 特殊分类：传说的宝可梦。", "sha256": "f3cd5b94f162d259dd363c31a28de4d89b251a645484cd7640ace5e2ad08f4e1"}
-{"id": 717, "text": "passage: 宝可梦结构化档案。 分类：破坏宝可梦。 形态：wings。 栖息地：未知。 蛋群：no-eggs。 特性：dark-aura。 图鉴颜色：red。 特殊分类：传说的宝可梦。", "sha256": "526e503186328ce5f78db8e11bafba0c4ee15b9c353fefeaaebed9009e379201"}
-{"id": 718, "text": "passage: 宝可梦结构化档案。 分类：秩序宝可梦。 形态：squiggle。 栖息地：未知。 蛋群：no-eggs。 特性：aura-break。 图鉴颜色：green。 特殊分类：传说的宝可梦。", "sha256": "f7f6abbec15c700e42b7a97282035d2205374264c5558fb5bce69a23999752c0"}
-{"id": 719, "text": "passage: 宝可梦结构化档案。 分类：宝石宝可梦。 形态：arms。 栖息地：未知。 蛋群：no-eggs。 特性：clear-body。 图鉴颜色：pink。 特殊分类：幻之宝可梦。", "sha256": "6b54620129eed3a895f36c22c43bb49a9794e64e2a9f0a7fd4eb521b4ab9a276"}
-{"id": 720, "text": "passage: 宝可梦结构化档案。 分类：顽童宝可梦。 形态：arms。 栖息地：未知。 蛋群：no-eggs。 特性：magician。 图鉴颜色：purple。 特殊分类：幻之宝可梦。", "sha256": "d7a262ed569695fcf7de4ced16ed1f3ffa503b6149f8a7835de5d9c0cd998aa7"}
-{"id": 721, "text": "passage: 宝可梦结构化档案。 分类：蒸汽宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：no-eggs。 特性：water-absorb。 图鉴颜色：brown。 特殊分类：幻之宝可梦。", "sha256": "c6907fcae0e0a214a67ac42111478d7c3842f0a64684a47627f5d0943662a4eb"}
+{"id": 716, "text": "passage: 宝可梦结构化档案。 分类：生命宝可梦。 形态：quadruped。 栖息地：未知。 特性：fairy-aura。 图鉴颜色：blue。 特殊分类：传说的宝可梦。", "sha256": "a8248029763bf8cc6fbb962297bb5f0b6e23644fe8f38c6deddd7707f1717299"}
+{"id": 717, "text": "passage: 宝可梦结构化档案。 分类：破坏宝可梦。 形态：wings。 栖息地：未知。 特性：dark-aura。 图鉴颜色：red。 特殊分类：传说的宝可梦。", "sha256": "717aa09bc1b90b736ae62aed9128b68bca108e1ccad1006c00f7fced0940611e"}
+{"id": 718, "text": "passage: 宝可梦结构化档案。 分类：秩序宝可梦。 形态：squiggle。 栖息地：未知。 特性：aura-break。 图鉴颜色：green。 特殊分类：传说的宝可梦。", "sha256": "798511cc1fa7b93445690563c035511695e642dbe1d126d19c475348a8bef353"}
+{"id": 719, "text": "passage: 宝可梦结构化档案。 分类：宝石宝可梦。 形态：arms。 栖息地：未知。 特性：clear-body。 图鉴颜色：pink。 特殊分类：幻之宝可梦。", "sha256": "6e29d731eb5644118788d01e1beb787588f55cd11362b680f5ad55c75a906436"}
+{"id": 720, "text": "passage: 宝可梦结构化档案。 分类：顽童宝可梦。 形态：arms。 栖息地：未知。 特性：magician。 图鉴颜色：purple。 特殊分类：幻之宝可梦。", "sha256": "323690527003d1f2c8e7b33038dbb9f21d4719fdf8dba3314de101592c574fde"}
+{"id": 721, "text": "passage: 宝可梦结构化档案。 分类：蒸汽宝可梦。 形态：quadruped。 栖息地：未知。 特性：water-absorb。 图鉴颜色：brown。 特殊分类：幻之宝可梦。", "sha256": "8f18da19a705c18eaf888b13f9f0bfdc15eeb52cdf4561b0884e67f57d9a31e9"}
 {"id": 722, "text": "passage: 宝可梦结构化档案。 分类：草羽宝可梦。 形态：wings。 栖息地：未知。 蛋群：flying。 特性：overgrow、long-reach。 图鉴颜色：brown。", "sha256": "2140f517d1ed91b0ad152e6ea195eba4b5f153a47a8d8b2d3febd52bedfab0d9"}
 {"id": 723, "text": "passage: 宝可梦结构化档案。 分类：刃羽宝可梦。 形态：wings。 栖息地：未知。 蛋群：flying。 特性：overgrow、long-reach。 图鉴颜色：brown。", "sha256": "07387a4a6ce57956bbac80bdec99a6e2139957ae7f6c1ce0dda0b5ec7a75cd74"}
 {"id": 724, "text": "passage: 宝可梦结构化档案。 分类：箭羽宝可梦。 形态：wings。 栖息地：未知。 蛋群：flying。 特性：overgrow、long-reach。 图鉴颜色：brown。", "sha256": "befd124716a9d668dbb8500b15f89db922733cd99192a92c773208a41f9baf98"}
@@ -769,8 +769,8 @@
 {"id": 769, "text": "passage: 宝可梦结构化档案。 分类：沙丘宝可梦。 形态：squiggle。 栖息地：未知。 蛋群：indeterminate。 特性：water-compaction、sand-veil。 图鉴颜色：brown。", "sha256": "f31bc1aafed2a61db576b9f1d82ad68e9e74dc2302efcbabf57fea657fe36c81"}
 {"id": 770, "text": "passage: 宝可梦结构化档案。 分类：沙堡宝可梦。 形态：squiggle。 栖息地：未知。 蛋群：indeterminate。 特性：water-compaction、sand-veil。 图鉴颜色：brown。", "sha256": "1b84a25fd24b5ddebd3f35616eed559a754c57e02abd76ab355b9aacfdfa4fae"}
 {"id": 771, "text": "passage: 宝可梦结构化档案。 分类：海参宝可梦。 形态：squiggle。 栖息地：未知。 蛋群：water1。 特性：innards-out、unaware。 图鉴颜色：black。", "sha256": "dc0ebcc267363f54a124faeea35b2f847bf4dd9a10ae438a52b434642639700e"}
-{"id": 772, "text": "passage: 宝可梦结构化档案。 分类：人工宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：no-eggs。 特性：battle-armor。 图鉴颜色：gray。 特殊分类：传说的宝可梦。", "sha256": "c17dab3a0f1d663d78bff2a31cf93e802fc0939f9a2fd287b2be42adea074021"}
-{"id": 773, "text": "passage: 宝可梦结构化档案。 分类：人工宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：no-eggs。 特性：rks-system。 图鉴颜色：gray。 特殊分类：传说的宝可梦。", "sha256": "b86eb7330e1feab5e3f32016ee2c284d29bdfc864247fc10d2a4c6c63a656d4c"}
+{"id": 772, "text": "passage: 宝可梦结构化档案。 分类：人工宝可梦。 形态：quadruped。 栖息地：未知。 特性：battle-armor。 图鉴颜色：gray。 特殊分类：传说的宝可梦。", "sha256": "72a7c86f6e76fd603ade022ea19f0a23c82ccaa09d6dbf7074f7323521a894ce"}
+{"id": 773, "text": "passage: 宝可梦结构化档案。 分类：人工宝可梦。 形态：quadruped。 栖息地：未知。 特性：rks-system。 图鉴颜色：gray。 特殊分类：传说的宝可梦。", "sha256": "4d7bb85c4a7fdfe7bd2bd1384914989b93186b2d2dfed48bcd22ff7bf5d19e46"}
 {"id": 774, "text": "passage: 宝可梦结构化档案。 分类：流星宝可梦。 形态：ball。 栖息地：未知。 蛋群：mineral。 特性：shields-down。 图鉴颜色：brown。", "sha256": "1dfefa3759c52d149d85fc717c5b7c254436b284485993060d6f69648e5017f8"}
 {"id": 775, "text": "passage: 宝可梦结构化档案。 分类：半梦半醒宝可梦。 形态：humanoid。 栖息地：未知。 蛋群：ground。 特性：comatose。 图鉴颜色：blue。", "sha256": "1dff29d36b095c3254b698645ea026725d02573714f3486b5a81f79039ace9ee"}
 {"id": 776, "text": "passage: 宝可梦结构化档案。 分类：爆炸龟宝可梦。 形态：upright。 栖息地：未知。 蛋群：monster、dragon。 特性：shell-armor。 图鉴颜色：red。", "sha256": "9a3ca7b2f20c92b7785f990fbb2e02574fb6d5eab296551b651221d0d4560ccb"}
@@ -782,31 +782,31 @@
 {"id": 782, "text": "passage: 宝可梦结构化档案。 分类：鳞片宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：dragon。 特性：bulletproof、soundproof、overcoat。 图鉴颜色：gray。", "sha256": "be7af9a78f5a42a08d88d996012e4b7224724f356612e9da70e41fd0d391e754"}
 {"id": 783, "text": "passage: 宝可梦结构化档案。 分类：鳞片宝可梦。 形态：upright。 栖息地：未知。 蛋群：dragon。 特性：bulletproof、soundproof、overcoat。 图鉴颜色：gray。", "sha256": "2827cc141aa0f8f09fb16702424a3d7c9dc5b718e0c8715b66f23ced5bedda0e"}
 {"id": 784, "text": "passage: 宝可梦结构化档案。 分类：鳞片宝可梦。 形态：upright。 栖息地：未知。 蛋群：dragon。 特性：bulletproof、soundproof、overcoat。 图鉴颜色：gray。", "sha256": "2827cc141aa0f8f09fb16702424a3d7c9dc5b718e0c8715b66f23ced5bedda0e"}
-{"id": 785, "text": "passage: 宝可梦结构化档案。 分类：土地神宝可梦。 形态：arms。 栖息地：未知。 蛋群：no-eggs。 特性：electric-surge、telepathy。 图鉴颜色：yellow。 特殊分类：传说的宝可梦。", "sha256": "f4a0ab764e142a402223f25d7561c98e26dbe2b21263e21217ad7ece7dc740fe"}
-{"id": 786, "text": "passage: 宝可梦结构化档案。 分类：土地神宝可梦。 形态：arms。 栖息地：未知。 蛋群：no-eggs。 特性：psychic-surge、telepathy。 图鉴颜色：pink。 特殊分类：传说的宝可梦。", "sha256": "5fbfbcfa7cab4681d5de4ccc3131a9c6eb1a6bcf1978081251d21c1a570b410c"}
-{"id": 787, "text": "passage: 宝可梦结构化档案。 分类：土地神宝可梦。 形态：arms。 栖息地：未知。 蛋群：no-eggs。 特性：grassy-surge、telepathy。 图鉴颜色：red。 特殊分类：传说的宝可梦。", "sha256": "441346a5fe7dcca7dc6fcdb9fff7ad906a55e8d42870e27c2eb261a240726ff4"}
-{"id": 788, "text": "passage: 宝可梦结构化档案。 分类：土地神宝可梦。 形态：arms。 栖息地：未知。 蛋群：no-eggs。 特性：misty-surge、telepathy。 图鉴颜色：purple。 特殊分类：传说的宝可梦。", "sha256": "0491d428278de85ea470c74e569f9c3e5ebc438e51c4daad061c2d36826f1e45"}
-{"id": 789, "text": "passage: 宝可梦结构化档案。 分类：星云宝可梦。 形态：ball。 栖息地：未知。 蛋群：no-eggs。 特性：unaware。 图鉴颜色：blue。 特殊分类：传说的宝可梦。", "sha256": "0fee426ae58945090798a7abc4e5fccf137a53806852a312a4ebbd1bc3443af5"}
-{"id": 790, "text": "passage: 宝可梦结构化档案。 分类：原始星宝可梦。 形态：ball。 栖息地：未知。 蛋群：no-eggs。 特性：sturdy。 图鉴颜色：blue。 特殊分类：传说的宝可梦。", "sha256": "18fdf9f315219df0df0aa0d95bcd0f4c3cda877434a06058f761c4e522b3c64f"}
-{"id": 791, "text": "passage: 宝可梦结构化档案。 分类：日轮宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：no-eggs。 特性：full-metal-body。 图鉴颜色：white。 特殊分类：传说的宝可梦。", "sha256": "e5321863dd43d35c8b6e6ce44d8fdf5ab4be38f9f7b1b81b343cdec9ce81c867"}
-{"id": 792, "text": "passage: 宝可梦结构化档案。 分类：月轮宝可梦。 形态：wings。 栖息地：未知。 蛋群：no-eggs。 特性：shadow-shield。 图鉴颜色：purple。 特殊分类：传说的宝可梦。", "sha256": "ef72f160079901130e09264a04c27d1205c70ed71a01eb367702470733e65492"}
-{"id": 793, "text": "passage: 宝可梦结构化档案。 分类：寄生宝可梦。 形态：tentacles。 栖息地：未知。 蛋群：no-eggs。 特性：beast-boost。 图鉴颜色：white。", "sha256": "cb294d7be9464d8936832fbfe8556d169014afaedbe74672fa0c878c4c07251a"}
-{"id": 794, "text": "passage: 宝可梦结构化档案。 分类：膨胀宝可梦。 形态：tentacles。 栖息地：未知。 蛋群：no-eggs。 特性：beast-boost。 图鉴颜色：red。", "sha256": "0f7bb8ce37b5bdf9bf714380bc8045745080d6e7e2494d2913f1edc5ec6a4af3"}
-{"id": 795, "text": "passage: 宝可梦结构化档案。 分类：美艳宝可梦。 形态：humanoid。 栖息地：未知。 蛋群：no-eggs。 特性：beast-boost。 图鉴颜色：white。", "sha256": "94d1dfc7c01df3b6512c343c96d4a54eb632895c52040eaca897011acb1b31ca"}
-{"id": 796, "text": "passage: 宝可梦结构化档案。 分类：灯饰宝可梦。 形态：upright。 栖息地：未知。 蛋群：no-eggs。 特性：beast-boost。 图鉴颜色：black。", "sha256": "ad6bec56a03f136e164bc10327e067b7e08d9ab29a60dab2fa0affd2568d7a55"}
-{"id": 797, "text": "passage: 宝可梦结构化档案。 分类：发射宝可梦。 形态：humanoid。 栖息地：未知。 蛋群：no-eggs。 特性：beast-boost。 图鉴颜色：green。", "sha256": "9feb76614321aa813c6cd1bf170d52c4d69cb26591dc14d935ac2f99194ab3e9"}
-{"id": 798, "text": "passage: 宝可梦结构化档案。 分类：拔刀宝可梦。 形态：humanoid。 栖息地：未知。 蛋群：no-eggs。 特性：beast-boost。 图鉴颜色：white。", "sha256": "28408d5d5dc06094a89869f5d441278219b6d8ee6508e40fe8ae555e170f1867"}
-{"id": 799, "text": "passage: 宝可梦结构化档案。 分类：异食宝可梦。 形态：upright。 栖息地：未知。 蛋群：no-eggs。 特性：beast-boost。 图鉴颜色：black。", "sha256": "085d367a99ffff2aed66cb7ead0652157a4419a87cf4e9121c21b48eed30db3c"}
-{"id": 800, "text": "passage: 宝可梦结构化档案。 分类：棱镜宝可梦。 形态：arms。 栖息地：未知。 蛋群：no-eggs。 特性：prism-armor。 图鉴颜色：black。 特殊分类：传说的宝可梦。", "sha256": "7c5e0cc01febc27da3a77f228cd93859c2b90d6df08e70e0e543dd0f2a4ed0c2"}
-{"id": 801, "text": "passage: 宝可梦结构化档案。 分类：人造宝可梦。 形态：humanoid。 栖息地：未知。 蛋群：no-eggs。 特性：soul-heart。 图鉴颜色：gray。 特殊分类：幻之宝可梦。", "sha256": "d29160afe8d7064af07eabbc394120fe2d6641d4c88a2c22082f42a321d5dea6"}
-{"id": 802, "text": "passage: 宝可梦结构化档案。 分类：栖影宝可梦。 形态：humanoid。 栖息地：未知。 蛋群：no-eggs。 特性：technician。 图鉴颜色：gray。 特殊分类：幻之宝可梦。", "sha256": "3f4f57a4e475d6575eaae8fe80a9cc5893dcb47d372d3c0f8d713140315e6884"}
-{"id": 803, "text": "passage: 宝可梦结构化档案。 分类：毒针宝可梦。 形态：upright。 栖息地：未知。 蛋群：no-eggs。 特性：beast-boost。 图鉴颜色：purple。", "sha256": "08a2998dcf339d48141823339b984d02878ca3a8d08517b79344233c65d39553"}
-{"id": 804, "text": "passage: 宝可梦结构化档案。 分类：毒针宝可梦。 形态：wings。 栖息地：未知。 蛋群：no-eggs。 特性：beast-boost。 图鉴颜色：purple。", "sha256": "95e673637df2ab906b5ee9d44de545436581a51521cca702cf07fbe69f2b2eb9"}
-{"id": 805, "text": "passage: 宝可梦结构化档案。 分类：石墙宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：no-eggs。 特性：beast-boost。 图鉴颜色：gray。", "sha256": "2abb710b763e19006c6e268a20a2b6e3b2d7bc716d89d22da942940eb412d24e"}
-{"id": 806, "text": "passage: 宝可梦结构化档案。 分类：烟火宝可梦。 形态：humanoid。 栖息地：未知。 蛋群：no-eggs。 特性：beast-boost。 图鉴颜色：white。", "sha256": "f50b60fb32595bdf87be688973021551743cf8ab3eaa2b3f9525b2940fe6b315"}
-{"id": 807, "text": "passage: 宝可梦结构化档案。 分类：奔雷宝可梦。 形态：humanoid。 栖息地：未知。 蛋群：no-eggs。 特性：volt-absorb。 图鉴颜色：yellow。 特殊分类：幻之宝可梦。", "sha256": "dbbec150d73c73fc560c77e7ce31bdde5c387f8063a3b925ae3e740357d94e5c"}
-{"id": 808, "text": "passage: 宝可梦结构化档案。 分类：螺帽宝可梦。 形态：ball。 栖息地：未知。 蛋群：no-eggs。 特性：magnet-pull。 图鉴颜色：gray。 特殊分类：幻之宝可梦。", "sha256": "650ca28a053e989f8b3635dab142812503260f6d696ceae1b6cb2d8fb56e16c2"}
-{"id": 809, "text": "passage: 宝可梦结构化档案。 分类：螺帽宝可梦。 形态：humanoid。 栖息地：未知。 蛋群：no-eggs。 特性：iron-fist。 图鉴颜色：gray。 特殊分类：幻之宝可梦。", "sha256": "82556e07423c0de33a78f6f8645da87ea796544ebf9e2f0486a5d6e0a41ab5fa"}
+{"id": 785, "text": "passage: 宝可梦结构化档案。 分类：土地神宝可梦。 形态：arms。 栖息地：未知。 特性：electric-surge、telepathy。 图鉴颜色：yellow。 特殊分类：传说的宝可梦。", "sha256": "9b8915bf5447c2b916de877388e8694e7eac8dc81033f651dc94b3653f4dbb5e"}
+{"id": 786, "text": "passage: 宝可梦结构化档案。 分类：土地神宝可梦。 形态：arms。 栖息地：未知。 特性：psychic-surge、telepathy。 图鉴颜色：pink。 特殊分类：传说的宝可梦。", "sha256": "82eabbddc4dd5aa7116a4bd6c9ea746bce89b31b2fefb1fed378711432f96842"}
+{"id": 787, "text": "passage: 宝可梦结构化档案。 分类：土地神宝可梦。 形态：arms。 栖息地：未知。 特性：grassy-surge、telepathy。 图鉴颜色：red。 特殊分类：传说的宝可梦。", "sha256": "c79703655ed763c323e1c9bdf5508ff07909a70f0bf09e2845ba768eb40a1424"}
+{"id": 788, "text": "passage: 宝可梦结构化档案。 分类：土地神宝可梦。 形态：arms。 栖息地：未知。 特性：misty-surge、telepathy。 图鉴颜色：purple。 特殊分类：传说的宝可梦。", "sha256": "c5e95e2fa7332aa9166bb61f5289dec50e4b73f17053de350954dbd3cdb6fb4c"}
+{"id": 789, "text": "passage: 宝可梦结构化档案。 分类：星云宝可梦。 形态：ball。 栖息地：未知。 特性：unaware。 图鉴颜色：blue。 特殊分类：传说的宝可梦。", "sha256": "866b87e1ddeef61b032e556c3818fb624efc2e9fd0863e4ba706a6b3b0c464db"}
+{"id": 790, "text": "passage: 宝可梦结构化档案。 分类：原始星宝可梦。 形态：ball。 栖息地：未知。 特性：sturdy。 图鉴颜色：blue。 特殊分类：传说的宝可梦。", "sha256": "91c62190278895a23965b61c41b3c1288d1e06b1220dbcc621399d1d9f122924"}
+{"id": 791, "text": "passage: 宝可梦结构化档案。 分类：日轮宝可梦。 形态：quadruped。 栖息地：未知。 特性：full-metal-body。 图鉴颜色：white。 特殊分类：传说的宝可梦。", "sha256": "c899c33101c1598c35e3267af001c9e7d685d19aa8e5aa4a2821b40e4a53ce6c"}
+{"id": 792, "text": "passage: 宝可梦结构化档案。 分类：月轮宝可梦。 形态：wings。 栖息地：未知。 特性：shadow-shield。 图鉴颜色：purple。 特殊分类：传说的宝可梦。", "sha256": "6a46fe17b0c8636328d0c96a9ec8bd6bf251dcf184a307496f29168b6a82992d"}
+{"id": 793, "text": "passage: 宝可梦结构化档案。 分类：寄生宝可梦。 形态：tentacles。 栖息地：未知。 特性：beast-boost。 图鉴颜色：white。", "sha256": "bfa1921b9e03b62950f59dc09f3cd5b4b430cd1356ae49f0da0f31d8da389cff"}
+{"id": 794, "text": "passage: 宝可梦结构化档案。 分类：膨胀宝可梦。 形态：tentacles。 栖息地：未知。 特性：beast-boost。 图鉴颜色：red。", "sha256": "e66c77bfc3b42f4c8ab5848d93b469724538a0e9eb5ab1443c70db13d268f39b"}
+{"id": 795, "text": "passage: 宝可梦结构化档案。 分类：美艳宝可梦。 形态：humanoid。 栖息地：未知。 特性：beast-boost。 图鉴颜色：white。", "sha256": "57251401316b309cfbcd1fc89892a0c386fd188bfeca3420414a1ed2c44a3c0e"}
+{"id": 796, "text": "passage: 宝可梦结构化档案。 分类：灯饰宝可梦。 形态：upright。 栖息地：未知。 特性：beast-boost。 图鉴颜色：black。", "sha256": "21d81d6e948fe50abb1246c3f8be9bc717547d73d42ff0a37827b43281c830c2"}
+{"id": 797, "text": "passage: 宝可梦结构化档案。 分类：发射宝可梦。 形态：humanoid。 栖息地：未知。 特性：beast-boost。 图鉴颜色：green。", "sha256": "d5dc9e92af4e2d92356778df1cefe88e5cd3bd9e202c035bfacf200afe796201"}
+{"id": 798, "text": "passage: 宝可梦结构化档案。 分类：拔刀宝可梦。 形态：humanoid。 栖息地：未知。 特性：beast-boost。 图鉴颜色：white。", "sha256": "4ce0eaff957ef4cd48108038c7fda1610ad0b56f6fac07e207e17008a96b4546"}
+{"id": 799, "text": "passage: 宝可梦结构化档案。 分类：异食宝可梦。 形态：upright。 栖息地：未知。 特性：beast-boost。 图鉴颜色：black。", "sha256": "6840c55437b7bb61053760c0228e241d1f10082d9338c88eab1ba15b96c6aed3"}
+{"id": 800, "text": "passage: 宝可梦结构化档案。 分类：棱镜宝可梦。 形态：arms。 栖息地：未知。 特性：prism-armor。 图鉴颜色：black。 特殊分类：传说的宝可梦。", "sha256": "aef108f92b4aa873ac6f053c12d76dc059a891c2507cdf25d3ff2c29cfe0fa00"}
+{"id": 801, "text": "passage: 宝可梦结构化档案。 分类：人造宝可梦。 形态：humanoid。 栖息地：未知。 特性：soul-heart。 图鉴颜色：gray。 特殊分类：幻之宝可梦。", "sha256": "39dda19178e3cbea3176ef918f33d270fdcec20d316bf5ae5d709babe7f264e0"}
+{"id": 802, "text": "passage: 宝可梦结构化档案。 分类：栖影宝可梦。 形态：humanoid。 栖息地：未知。 特性：technician。 图鉴颜色：gray。 特殊分类：幻之宝可梦。", "sha256": "5b0fba7ecbdf18841136775592e238335dd7ef8fff570b637b57aa302ea71477"}
+{"id": 803, "text": "passage: 宝可梦结构化档案。 分类：毒针宝可梦。 形态：upright。 栖息地：未知。 特性：beast-boost。 图鉴颜色：purple。", "sha256": "0f151e02c320a738eefe2dd20e5304ea57e450975d048d69b52dcf4c1d797a1f"}
+{"id": 804, "text": "passage: 宝可梦结构化档案。 分类：毒针宝可梦。 形态：wings。 栖息地：未知。 特性：beast-boost。 图鉴颜色：purple。", "sha256": "f3dd744d3bdb1f450143b8fc058e21cf194e501aa44805ec5954adb8822405b1"}
+{"id": 805, "text": "passage: 宝可梦结构化档案。 分类：石墙宝可梦。 形态：quadruped。 栖息地：未知。 特性：beast-boost。 图鉴颜色：gray。", "sha256": "0a4caba13866e79f6615e378676bdae82f1c46a2fdc9238ecb5cadf8ff2359d0"}
+{"id": 806, "text": "passage: 宝可梦结构化档案。 分类：烟火宝可梦。 形态：humanoid。 栖息地：未知。 特性：beast-boost。 图鉴颜色：white。", "sha256": "d9fc9256ff3b2cc97b826b2cd18103270611505b0c73a069732f4d36b145ffe7"}
+{"id": 807, "text": "passage: 宝可梦结构化档案。 分类：奔雷宝可梦。 形态：humanoid。 栖息地：未知。 特性：volt-absorb。 图鉴颜色：yellow。 特殊分类：幻之宝可梦。", "sha256": "f35fc70491e34479dc06abbc10f5b9b23f7f3e9df33bd407e214537b185154d3"}
+{"id": 808, "text": "passage: 宝可梦结构化档案。 分类：螺帽宝可梦。 形态：ball。 栖息地：未知。 特性：magnet-pull。 图鉴颜色：gray。 特殊分类：幻之宝可梦。", "sha256": "615a0213d920173507ba88ffb1106c93b352774c263d26f8c25b6d169750e8e1"}
+{"id": 809, "text": "passage: 宝可梦结构化档案。 分类：螺帽宝可梦。 形态：humanoid。 栖息地：未知。 特性：iron-fist。 图鉴颜色：gray。 特殊分类：幻之宝可梦。", "sha256": "d27f0de8b94e896768427eb840f11dad5e1d5811f317da6f748cdb9e7230033d"}
 {"id": 810, "text": "passage: 宝可梦结构化档案。 分类：小猴宝可梦。 形态：upright。 栖息地：未知。 蛋群：ground、plant。 特性：overgrow、grassy-surge。 图鉴颜色：green。", "sha256": "ed237abe41bc16b65d21c843e5979279023c41252de5eb2eeb3248b6b9e2130a"}
 {"id": 811, "text": "passage: 宝可梦结构化档案。 分类：节拍宝可梦。 形态：upright。 栖息地：未知。 蛋群：ground、plant。 特性：overgrow、grassy-surge。 图鉴颜色：green。", "sha256": "0419c98686dd71a2f8884b64c6709843ae98ba97991e67dec867afe37a1d19c4"}
 {"id": 812, "text": "passage: 宝可梦结构化档案。 分类：鼓手宝可梦。 形态：humanoid。 栖息地：未知。 蛋群：ground、plant。 特性：overgrow、grassy-surge。 图鉴颜色：green。", "sha256": "c35467e2ea3d511a58807b3df64691b0739e9fa57f8608d410d9dd5840ec3258"}
@@ -845,7 +845,7 @@
 {"id": 845, "text": "passage: 宝可梦结构化档案。 分类：一口吞宝可梦。 形态：wings。 栖息地：未知。 蛋群：water1、flying。 特性：gulp-missile。 图鉴颜色：blue。", "sha256": "bd1161082e1ec9171ab5a3ae303a4443483ef3e52c8df388d7bd289c40a8cb2e"}
 {"id": 846, "text": "passage: 宝可梦结构化档案。 分类：突击宝可梦。 形态：fish。 栖息地：未知。 蛋群：water2。 特性：swift-swim、propeller-tail。 图鉴颜色：brown。", "sha256": "28fbc818970873d0c5ca889162d408ed7225b2c226dbbd6deee28e6dc4fffdad"}
 {"id": 847, "text": "passage: 宝可梦结构化档案。 分类：穿刺宝可梦。 形态：fish。 栖息地：未知。 蛋群：water2。 特性：swift-swim、propeller-tail。 图鉴颜色：brown。", "sha256": "4ab86677704e543d3a888e2c2bc58536f755778d990ce7855e8bdbb6e56ceb03"}
-{"id": 848, "text": "passage: 宝可梦结构化档案。 分类：婴儿宝可梦。 形态：upright。 栖息地：未知。 蛋群：no-eggs。 特性：rattled、static、klutz。 图鉴颜色：purple。 特殊分类：幼年宝可梦。", "sha256": "bfa029d194a0361672d9e65f273a89607b817f60ee8c04316a351d631a3a5c61"}
+{"id": 848, "text": "passage: 宝可梦结构化档案。 分类：婴儿宝可梦。 形态：upright。 栖息地：未知。 特性：rattled、static、klutz。 图鉴颜色：purple。 特殊分类：幼年宝可梦。", "sha256": "e626bc3f1519aaf7da841b1f5f6f6951901c93802a6517fb9f25e4da43e422ce"}
 {"id": 849, "text": "passage: 宝可梦结构化档案。 分类：庞克宝可梦。 形态：upright。 栖息地：未知。 蛋群：humanshape。 特性：punk-rock、plus、technician。 图鉴颜色：purple。", "sha256": "21201003b045cb08f214462ba09150a7e5d4de872d71d1a32700fe49edc310e9"}
 {"id": 850, "text": "passage: 宝可梦结构化档案。 分类：发热宝可梦。 形态：tentacles。 栖息地：未知。 蛋群：bug。 特性：flash-fire、white-smoke、flame-body。 图鉴颜色：red。", "sha256": "93b0eb4872a0483b3c968ebb70f7dccf1f2fe3dbec13f934860320b5a782cb3e"}
 {"id": 851, "text": "passage: 宝可梦结构化档案。 分类：发热宝可梦。 形态：tentacles。 栖息地：未知。 蛋群：bug。 特性：flash-fire、white-smoke、flame-body。 图鉴颜色：red。", "sha256": "93b0eb4872a0483b3c968ebb70f7dccf1f2fe3dbec13f934860320b5a782cb3e"}
@@ -877,32 +877,32 @@
 {"id": 877, "text": "passage: 宝可梦结构化档案。 分类：双面宝可梦。 形态：humanoid。 栖息地：未知。 蛋群：ground、fairy。 特性：hunger-switch。 图鉴颜色：yellow。", "sha256": "a10e77894d7963e62c38563c375fe2eca98d22b829b65e630d87402b11e28175"}
 {"id": 878, "text": "passage: 宝可梦结构化档案。 分类：像铜宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：ground、mineral。 特性：sheer-force、heavy-metal。 图鉴颜色：yellow。", "sha256": "377abcf2805c45ddc8e9ce13e3f3b5b4cdd8feb7435a80ab29a017f6783a9ef2"}
 {"id": 879, "text": "passage: 宝可梦结构化档案。 分类：像铜宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：ground、mineral。 特性：sheer-force、heavy-metal。 图鉴颜色：green。", "sha256": "9396168754a9cec179e66d6230cd06e0ca7021a4ae54372e301df1880eeef283"}
-{"id": 880, "text": "passage: 宝可梦结构化档案。 分类：化石宝可梦。 形态：upright。 栖息地：未知。 蛋群：no-eggs。 特性：volt-absorb、hustle、sand-rush。 图鉴颜色：green。", "sha256": "ece54465455beaee829b2abb52989338a9a1a663395d244672b289f1861e56aa"}
-{"id": 881, "text": "passage: 宝可梦结构化档案。 分类：化石宝可梦。 形态：upright。 栖息地：未知。 蛋群：no-eggs。 特性：volt-absorb、static、slush-rush。 图鉴颜色：blue。", "sha256": "b7e70ded1ab95f859f9aefeaebcf7f4692d9bde831b99060887ce699a0b7dc22"}
-{"id": 882, "text": "passage: 宝可梦结构化档案。 分类：化石宝可梦。 形态：legs。 栖息地：未知。 蛋群：no-eggs。 特性：water-absorb、strong-jaw、sand-rush。 图鉴颜色：green。", "sha256": "fa5a3411ee73c56185f02794188258e0c8e38e0251ce71cbddc7a8bb75d6f309"}
-{"id": 883, "text": "passage: 宝可梦结构化档案。 分类：化石宝可梦。 形态：fish。 栖息地：未知。 蛋群：no-eggs。 特性：water-absorb、ice-body、slush-rush。 图鉴颜色：blue。", "sha256": "ce5c61adca5a66410ca5412783e38dc3b43a2cf8316939096ec14926ca94a48f"}
+{"id": 880, "text": "passage: 宝可梦结构化档案。 分类：化石宝可梦。 形态：upright。 栖息地：未知。 特性：volt-absorb、hustle、sand-rush。 图鉴颜色：green。", "sha256": "bdf442678d9857dfa328cf7ecf25cac52afeddc6077146ea200f3eafedb0738a"}
+{"id": 881, "text": "passage: 宝可梦结构化档案。 分类：化石宝可梦。 形态：upright。 栖息地：未知。 特性：volt-absorb、static、slush-rush。 图鉴颜色：blue。", "sha256": "391a449da4b79389e409904856ddf4cc06afd30278a820566e0b26714cf450eb"}
+{"id": 882, "text": "passage: 宝可梦结构化档案。 分类：化石宝可梦。 形态：legs。 栖息地：未知。 特性：water-absorb、strong-jaw、sand-rush。 图鉴颜色：green。", "sha256": "361ca4a3516ad426fa4d5f44c10328415e94ce6f73669087c6838f56ab23cb9c"}
+{"id": 883, "text": "passage: 宝可梦结构化档案。 分类：化石宝可梦。 形态：fish。 栖息地：未知。 特性：water-absorb、ice-body、slush-rush。 图鉴颜色：blue。", "sha256": "e49058f2fbb11ced3a47dc6ed7038a438fc12c39625b27f2456245e4daf36b39"}
 {"id": 884, "text": "passage: 宝可梦结构化档案。 分类：合金宝可梦。 形态：upright。 栖息地：未知。 蛋群：mineral、dragon。 特性：light-metal、heavy-metal、stalwart。 图鉴颜色：white。", "sha256": "54a9c8ee10ec4a9230330ccf2eb023caff7ae6f62ac8a36724b04a65656f28cb"}
 {"id": 885, "text": "passage: 宝可梦结构化档案。 分类：哀怨宝可梦。 形态：squiggle。 栖息地：未知。 蛋群：indeterminate、dragon。 特性：clear-body、infiltrator、cursed-body。 图鉴颜色：green。", "sha256": "9e330f905bc705b9f406d20e62b4dc9da818f2fbc90ee801a2c8a6a7fddeae00"}
 {"id": 886, "text": "passage: 宝可梦结构化档案。 分类：保姆宝可梦。 形态：arms。 栖息地：未知。 蛋群：indeterminate、dragon。 特性：clear-body、infiltrator、cursed-body。 图鉴颜色：green。", "sha256": "be3b46ad48366783aa68ebf742793fcc94ca369a84a040eb6eb19f7e2ab96865"}
 {"id": 887, "text": "passage: 宝可梦结构化档案。 分类：隐形宝可梦。 形态：upright。 栖息地：未知。 蛋群：indeterminate、dragon。 特性：clear-body、infiltrator、cursed-body。 图鉴颜色：green。", "sha256": "629766c579803bf7228e4e4d65694e4da21eb4301fd31510db866faa8485768f"}
-{"id": 888, "text": "passage: 宝可梦结构化档案。 分类：强者宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：no-eggs。 特性：intrepid-sword。 图鉴颜色：blue。 特殊分类：传说的宝可梦。", "sha256": "4032f0ff9f7a197464da15299a40e578e4b1df19141dfdccfc4a3aa8d1dcae9d"}
-{"id": 889, "text": "passage: 宝可梦结构化档案。 分类：强者宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：no-eggs。 特性：dauntless-shield。 图鉴颜色：red。 特殊分类：传说的宝可梦。", "sha256": "c3d11b9a3ee5488e3a458044a589a64468c41e9f3d7dfec6fb47d4ef18a1f19b"}
-{"id": 890, "text": "passage: 宝可梦结构化档案。 分类：超极巨宝可梦。 形态：wings。 栖息地：未知。 蛋群：no-eggs。 特性：pressure。 图鉴颜色：purple。 特殊分类：传说的宝可梦。", "sha256": "f169ee42365ada48f46bd73d7a0a2d30b2172cb9d146737a715493bd5e523410"}
-{"id": 891, "text": "passage: 宝可梦结构化档案。 分类：拳法宝可梦。 形态：upright。 栖息地：未知。 蛋群：no-eggs。 特性：inner-focus。 图鉴颜色：gray。 特殊分类：传说的宝可梦。", "sha256": "0ffe37749ccd246cbdd8395f8ecf3fd176a3aa03d2a8efa19995eae66b91678b"}
-{"id": 892, "text": "passage: 宝可梦结构化档案。 分类：拳法宝可梦。 形态：humanoid。 栖息地：未知。 蛋群：no-eggs。 特性：unseen-fist。 图鉴颜色：gray。 特殊分类：传说的宝可梦。", "sha256": "6d5667a471fa9331f627b093f3cbd1f5c8c0548d7cfe85e8e8fb813c5f5388f3"}
-{"id": 893, "text": "passage: 宝可梦结构化档案。 分类：恶猿宝可梦。 形态：upright。 栖息地：未知。 蛋群：no-eggs。 特性：leaf-guard。 图鉴颜色：green。 特殊分类：幻之宝可梦。", "sha256": "9669d1ab3f4a6f00c01c96da992391537288e7441b7456658b3a95fc6f3fd139"}
-{"id": 894, "text": "passage: 宝可梦结构化档案。 分类：电子宝可梦。 形态：humanoid。 栖息地：未知。 蛋群：no-eggs。 特性：transistor。 图鉴颜色：yellow。 特殊分类：传说的宝可梦。", "sha256": "3c85868d0f93064c969706614fdd81d895cce7b4bdc21f6884a71bfd44149f8a"}
-{"id": 895, "text": "passage: 宝可梦结构化档案。 分类：龙玉宝可梦。 形态：humanoid。 栖息地：未知。 蛋群：no-eggs。 特性：dragons-maw。 图鉴颜色：green。 特殊分类：传说的宝可梦。", "sha256": "d26f828c615c7a4fe80bbd40dfd84d96db93c547135089674d1314d5c567e634"}
-{"id": 896, "text": "passage: 宝可梦结构化档案。 分类：烈马宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：no-eggs。 特性：chilling-neigh。 图鉴颜色：white。 特殊分类：传说的宝可梦。", "sha256": "c55e1e989ffc847868da94544d7c44117e76863987d3d527c6c3bcf93b7d6943"}
-{"id": 897, "text": "passage: 宝可梦结构化档案。 分类：骏马宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：no-eggs。 特性：grim-neigh。 图鉴颜色：black。 特殊分类：传说的宝可梦。", "sha256": "c7cec219a1f6aa928ecf1a8504f67459a9d0866d6e25b81ddfbac87eb07fe0c4"}
-{"id": 898, "text": "passage: 宝可梦结构化档案。 分类：国王宝可梦。 形态：humanoid。 栖息地：未知。 蛋群：no-eggs。 特性：unnerve。 图鉴颜色：green。 特殊分类：传说的宝可梦。", "sha256": "697773ed2021cad120f6578c515bd12b7825bbb5ef470de568cdb851c127da70"}
+{"id": 888, "text": "passage: 宝可梦结构化档案。 分类：强者宝可梦。 形态：quadruped。 栖息地：未知。 特性：intrepid-sword。 图鉴颜色：blue。 特殊分类：传说的宝可梦。", "sha256": "67546eb14d18a837cc63ea9e15816a36908cf02a99a270dc9809bfb08d2f6ee2"}
+{"id": 889, "text": "passage: 宝可梦结构化档案。 分类：强者宝可梦。 形态：quadruped。 栖息地：未知。 特性：dauntless-shield。 图鉴颜色：red。 特殊分类：传说的宝可梦。", "sha256": "bde4f18631da1b6a4247ba6e7ca64b7b5be392d253b304bbbd77ddd577f6e2f5"}
+{"id": 890, "text": "passage: 宝可梦结构化档案。 分类：超极巨宝可梦。 形态：wings。 栖息地：未知。 特性：pressure。 图鉴颜色：purple。 特殊分类：传说的宝可梦。", "sha256": "cfdd4cbbbc70d7eacfa688648492a0c9181c026777baa0ace37c459cd78c77ed"}
+{"id": 891, "text": "passage: 宝可梦结构化档案。 分类：拳法宝可梦。 形态：upright。 栖息地：未知。 特性：inner-focus。 图鉴颜色：gray。 特殊分类：传说的宝可梦。", "sha256": "1a3135924fe81aa917305b28388765ec708f43e92fb58be6f1f5a11be09a0dba"}
+{"id": 892, "text": "passage: 宝可梦结构化档案。 分类：拳法宝可梦。 形态：humanoid。 栖息地：未知。 特性：unseen-fist。 图鉴颜色：gray。 特殊分类：传说的宝可梦。", "sha256": "f1d0ad94483056a9af63134955538fab01b84aa32baedcabb6aca45bb00e74f9"}
+{"id": 893, "text": "passage: 宝可梦结构化档案。 分类：恶猿宝可梦。 形态：upright。 栖息地：未知。 特性：leaf-guard。 图鉴颜色：green。 特殊分类：幻之宝可梦。", "sha256": "d16ca22acf1b455a42f14aa60f02f0ee4f60f522ef0e5bcbd71ce1ad2770c4e0"}
+{"id": 894, "text": "passage: 宝可梦结构化档案。 分类：电子宝可梦。 形态：humanoid。 栖息地：未知。 特性：transistor。 图鉴颜色：yellow。 特殊分类：传说的宝可梦。", "sha256": "a47c27b5252119c539d43858d53c254a9dd4cdfded7db1e631335ff17cada002"}
+{"id": 895, "text": "passage: 宝可梦结构化档案。 分类：龙玉宝可梦。 形态：humanoid。 栖息地：未知。 特性：dragons-maw。 图鉴颜色：green。 特殊分类：传说的宝可梦。", "sha256": "0c1480e013075cddf2bce038ef68e435580b988e889ffb35290465a4dc12f11d"}
+{"id": 896, "text": "passage: 宝可梦结构化档案。 分类：烈马宝可梦。 形态：quadruped。 栖息地：未知。 特性：chilling-neigh。 图鉴颜色：white。 特殊分类：传说的宝可梦。", "sha256": "9c83f9de49b2a1686798237ae4d7caff574406acd716f8eb036c5560321cd241"}
+{"id": 897, "text": "passage: 宝可梦结构化档案。 分类：骏马宝可梦。 形态：quadruped。 栖息地：未知。 特性：grim-neigh。 图鉴颜色：black。 特殊分类：传说的宝可梦。", "sha256": "f119f44d5e7a94666051c2e9a988d73b0dc1e32390022ed2bfc3282b3e8b0f37"}
+{"id": 898, "text": "passage: 宝可梦结构化档案。 分类：国王宝可梦。 形态：humanoid。 栖息地：未知。 特性：unnerve。 图鉴颜色：green。 特殊分类：传说的宝可梦。", "sha256": "d36765840889d5cd799ca047607705a3b3e290f2f4713d5b2000a68fafb3e48f"}
 {"id": 899, "text": "passage: 宝可梦结构化档案。 分类：大角宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：ground。 特性：intimidate、frisk、sap-sipper。 图鉴颜色：gray。", "sha256": "9551b72bf39cd30ff38ab5ef460d0686363b73cae7b403332964d4d92047a509"}
 {"id": 900, "text": "passage: 宝可梦结构化档案。 分类：斧钺宝可梦。 形态：bug-wings。 栖息地：未知。 蛋群：bug。 特性：swarm、sheer-force、sharpness。 图鉴颜色：brown。", "sha256": "ed20a80a8b0c2ec76aef86ed15acea67862a9d3992535c6cae0fa566e2cb7762"}
 {"id": 901, "text": "passage: 宝可梦结构化档案。 分类：泥炭宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：ground。 特性：guts、bulletproof、unnerve。 图鉴颜色：brown。", "sha256": "f02e7aeccb4ae841223386277846509f34ed8f9b823c78bfecd9405c0d759c36"}
 {"id": 902, "text": "passage: 宝可梦结构化档案。 分类：大鱼宝可梦。 形态：fish。 栖息地：未知。 蛋群：water2。 特性：swift-swim、adaptability、mold-breaker。 图鉴颜色：green。", "sha256": "c97cac54131e1d6dc6e331dc98fe047290efa799834375081ff963987170b1ee"}
 {"id": 903, "text": "passage: 宝可梦结构化档案。 分类：攀崖宝可梦。 形态：upright。 栖息地：未知。 蛋群：ground。 特性：pressure、unburden、poison-touch。 图鉴颜色：gray。", "sha256": "93b8df2122ad178a4daf7de2ac033cb01b72ad354be6b39f6caf6c61b352ee60"}
 {"id": 904, "text": "passage: 宝可梦结构化档案。 分类：剑山宝可梦。 形态：fish。 栖息地：未知。 蛋群：water2。 特性：poison-point、swift-swim、intimidate。 图鉴颜色：black。", "sha256": "8ad0ca2923a473c35cc6e0718249b89d4b9c3ae495b527236d4f145a3cf32348"}
-{"id": 905, "text": "passage: 宝可梦结构化档案。 分类：爱憎宝可梦。 形态：arms。 栖息地：未知。 蛋群：no-eggs。 特性：cute-charm、contrary。 图鉴颜色：pink。 特殊分类：传说的宝可梦。", "sha256": "76390ec854f35e89d0c8253ba66746a281700c2a783deb04fdaf9535b1804e4c"}
+{"id": 905, "text": "passage: 宝可梦结构化档案。 分类：爱憎宝可梦。 形态：arms。 栖息地：未知。 特性：cute-charm、contrary。 图鉴颜色：pink。 特殊分类：传说的宝可梦。", "sha256": "cb08e2ee89d4c2ac45f8cd33377f7b3a065217866b6dc84a4da1eb9a94739fda"}
 {"id": 906, "text": "passage: 宝可梦结构化档案。 分类：草猫宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：ground、plant。 特性：overgrow、protean。 图鉴颜色：green。", "sha256": "c92ca39f47d37083e52c64e76d98b410ec67b055b7f318f5f09d4f6a69230921"}
 {"id": 907, "text": "passage: 宝可梦结构化档案。 分类：草猫宝可梦。 形态：upright。 栖息地：未知。 蛋群：ground、plant。 特性：overgrow、protean。 图鉴颜色：green。", "sha256": "e96ec1a547998e8b9a2720f347b19fb3a4c7420fdc6051f05474384cf24c7432"}
 {"id": 908, "text": "passage: 宝可梦结构化档案。 分类：魔术师宝可梦。 形态：upright。 栖息地：未知。 蛋群：ground、plant。 特性：overgrow、protean。 图鉴颜色：green。", "sha256": "ca655fdf5850d01dffc2ce825c63535b74201e55b5672e40c4d3ae18f7078791"}
@@ -981,45 +981,45 @@
 {"id": 981, "text": "passage: 宝可梦结构化档案。 分类：长颈宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：ground。 特性：cud-chew、armor-tail、sap-sipper。 图鉴颜色：brown。", "sha256": "b82e4b96a53524e8441c7f979de26446af3432855dc3600757c56f5bc69138f0"}
 {"id": 982, "text": "passage: 宝可梦结构化档案。 分类：地蛇宝可梦。 形态：squiggle。 栖息地：未知。 蛋群：ground。 特性：serene-grace、run-away、rattled。 图鉴颜色：yellow。", "sha256": "1302c150c130f9f6a8e1f56564f7225c40942458fce404ffdfb0868f6e9895dd"}
 {"id": 983, "text": "passage: 宝可梦结构化档案。 分类：大刀宝可梦。 形态：humanoid。 栖息地：未知。 蛋群：humanshape。 特性：defiant、supreme-overlord、pressure。 图鉴颜色：black。", "sha256": "521a59a89e994f72889f60bfaa3aff072a169252e20297768c7fb9f94e58ac5f"}
-{"id": 984, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：no-eggs。 特性：protosynthesis。 图鉴颜色：purple。", "sha256": "5654a500d2a33a57e898e48a9c3cc97195a0ccc161f337a4ff53be0c07e06432"}
-{"id": 985, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：upright。 栖息地：未知。 蛋群：no-eggs。 特性：protosynthesis。 图鉴颜色：pink。", "sha256": "138c6d73e9877ed0b6797bccac4d095bf550a8966b11247b106093b419e079cf"}
-{"id": 986, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：no-eggs。 特性：protosynthesis。 图鉴颜色：gray。", "sha256": "3740355cf6cb2c6ce9489111e7d5f7ef4e92213973913d925c34bf1684a3d5d9"}
-{"id": 987, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：wings。 栖息地：未知。 蛋群：no-eggs。 特性：protosynthesis。 图鉴颜色：gray。", "sha256": "e37c382adc418d3c0ad50777f9892c5d93b3e2dcf06413a4c2b4d8cde60dabc9"}
-{"id": 988, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：no-eggs。 特性：protosynthesis。 图鉴颜色：red。", "sha256": "d10a04aa275afb6ee3c78c16bfa5dfdd3ff31d3fc7c50f2886fb01d9731061c2"}
-{"id": 989, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：no-eggs。 特性：protosynthesis。 图鉴颜色：gray。", "sha256": "3740355cf6cb2c6ce9489111e7d5f7ef4e92213973913d925c34bf1684a3d5d9"}
-{"id": 990, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：no-eggs。 特性：quark-drive。 图鉴颜色：gray。", "sha256": "45ac9fccea1542b3cb7b36288e86767a9b0cb9b342aeb553ad4f75412b0000fe"}
-{"id": 991, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：upright。 栖息地：未知。 蛋群：no-eggs。 特性：quark-drive。 图鉴颜色：red。", "sha256": "94a600f99e354cbea7af6aeef32d3d698139b035c9c56f8bed24ac4d70eb6a3e"}
-{"id": 992, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：humanoid。 栖息地：未知。 蛋群：no-eggs。 特性：quark-drive。 图鉴颜色：gray。", "sha256": "a71b7e17139c421fbe00d32935fec819a13471375d736fe2d3ec902eb9ff4157"}
-{"id": 993, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：upright。 栖息地：未知。 蛋群：no-eggs。 特性：quark-drive。 图鉴颜色：blue。", "sha256": "319469222aee147fddb0e8ee290146840ec90fdb661597f6d520b196d0eba64b"}
-{"id": 994, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：bug-wings。 栖息地：未知。 蛋群：no-eggs。 特性：quark-drive。 图鉴颜色：yellow。", "sha256": "26abb142e69a002de9959f395ed9821cdec4c97d8d8b15a151b499b3aa5f1c93"}
-{"id": 995, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：upright。 栖息地：未知。 蛋群：no-eggs。 特性：quark-drive。 图鉴颜色：green。", "sha256": "cb4fe5f094c39feafedeeeeb9c93bfcf8a781cc8d2440afb2de82c98a4a0f5c9"}
+{"id": 984, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：quadruped。 栖息地：未知。 特性：protosynthesis。 图鉴颜色：purple。", "sha256": "e4c80dbf78260597081e90fc21f7838d30ad82f5d98e15a09f3eec4ce5378123"}
+{"id": 985, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：upright。 栖息地：未知。 特性：protosynthesis。 图鉴颜色：pink。", "sha256": "85b841eeb3205e9bb4baa75991d9dd83d09eef36c4d8b73d996f677af0dc9901"}
+{"id": 986, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：quadruped。 栖息地：未知。 特性：protosynthesis。 图鉴颜色：gray。", "sha256": "7da2ac72dc06ba66817424a2b29a5f56167638a7c43aa23b918aa5377e64c2ac"}
+{"id": 987, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：wings。 栖息地：未知。 特性：protosynthesis。 图鉴颜色：gray。", "sha256": "6018718069d6ba1025263d68fa95f966fcbc68ed41854ce16681686b1dda97b3"}
+{"id": 988, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：quadruped。 栖息地：未知。 特性：protosynthesis。 图鉴颜色：red。", "sha256": "85edd19d63443b47ec0469714fc190fbe85bee14cda4f54db9ae830e5cea606d"}
+{"id": 989, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：quadruped。 栖息地：未知。 特性：protosynthesis。 图鉴颜色：gray。", "sha256": "7da2ac72dc06ba66817424a2b29a5f56167638a7c43aa23b918aa5377e64c2ac"}
+{"id": 990, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：quadruped。 栖息地：未知。 特性：quark-drive。 图鉴颜色：gray。", "sha256": "19131d0543cef5a310fbec8549556186758a7b46b396c0d531daf66fff3b6925"}
+{"id": 991, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：upright。 栖息地：未知。 特性：quark-drive。 图鉴颜色：red。", "sha256": "c603a1544b3ef458c58708209e487165991af1b01f1e7c24891b78049cbce892"}
+{"id": 992, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：humanoid。 栖息地：未知。 特性：quark-drive。 图鉴颜色：gray。", "sha256": "d5a2ee8b6b4a6699488a6f16ff6ecebffa219361b9707dba235b76428aff47bd"}
+{"id": 993, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：upright。 栖息地：未知。 特性：quark-drive。 图鉴颜色：blue。", "sha256": "61ab2c4cfd1278db0863547d60a2bb84087ebe6564f614631637c5aa53a2dce1"}
+{"id": 994, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：bug-wings。 栖息地：未知。 特性：quark-drive。 图鉴颜色：yellow。", "sha256": "4b6aa20ff7de423d61a97352546df970b1490cbda9688d4b62ddcd9324d58975"}
+{"id": 995, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：upright。 栖息地：未知。 特性：quark-drive。 图鉴颜色：green。", "sha256": "4a9494860795cf90e03473c507e588c912883f57e39876f8d61c50e7d92c1a16"}
 {"id": 996, "text": "passage: 宝可梦结构化档案。 分类：冰鳍宝可梦。 形态：upright。 栖息地：未知。 蛋群：dragon、mineral。 特性：thermal-exchange、ice-body。 图鉴颜色：gray。", "sha256": "d446174082ac8b537c0616c71daf9f214565f9dca76f6274e1dd8766d78ac9b4"}
 {"id": 997, "text": "passage: 宝可梦结构化档案。 分类：冰鳍宝可梦。 形态：upright。 栖息地：未知。 蛋群：dragon、mineral。 特性：thermal-exchange、ice-body。 图鉴颜色：gray。", "sha256": "d446174082ac8b537c0616c71daf9f214565f9dca76f6274e1dd8766d78ac9b4"}
 {"id": 998, "text": "passage: 宝可梦结构化档案。 分类：冰龙宝可梦。 形态：upright。 栖息地：未知。 蛋群：dragon、mineral。 特性：thermal-exchange、ice-body。 图鉴颜色：gray。", "sha256": "d2d624fe45325bb4047caa830cae26962ac9e66d173a0479e70a0ca1f7963225"}
-{"id": 999, "text": "passage: 宝可梦结构化档案。 分类：宝箱宝可梦。 形态：blob。 栖息地：未知。 蛋群：no-eggs。 特性：rattled。 图鉴颜色：brown。", "sha256": "97b0c5b31e2b5c2cdbf911e12556d9d7c3c3249e8daf04ea63c164de6a428fff"}
-{"id": 1000, "text": "passage: 宝可梦结构化档案。 分类：宝者宝可梦。 形态：humanoid。 栖息地：未知。 蛋群：no-eggs。 特性：good-as-gold。 图鉴颜色：yellow。", "sha256": "d316190784805949980760262b52e179c7c2f9c5c074e87860c78e7af9f7dbca"}
-{"id": 1001, "text": "passage: 宝可梦结构化档案。 分类：灾厄宝可梦。 形态：squiggle。 栖息地：未知。 蛋群：no-eggs。 特性：tablets-of-ruin。 图鉴颜色：brown。 特殊分类：传说的宝可梦。", "sha256": "dd7b26164f7e5e5d4bd1b96cdf0ea600309f1e96bcca51d6718c306e6114b3c6"}
-{"id": 1002, "text": "passage: 宝可梦结构化档案。 分类：灾厄宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：no-eggs。 特性：sword-of-ruin。 图鉴颜色：white。 特殊分类：传说的宝可梦。", "sha256": "363fe327ba62f72b34127f7dfa5c21dd05354f743c313685b9e600dc5fb60acf"}
-{"id": 1003, "text": "passage: 宝可梦结构化档案。 分类：灾厄宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：no-eggs。 特性：vessel-of-ruin。 图鉴颜色：brown。 特殊分类：传说的宝可梦。", "sha256": "42b8dcf77620a2e8c57c5f7dd67902b2250b1a3eeb5fa171ce9a27583d837bee"}
-{"id": 1004, "text": "passage: 宝可梦结构化档案。 分类：灾厄宝可梦。 形态：fish。 栖息地：未知。 蛋群：no-eggs。 特性：beads-of-ruin。 图鉴颜色：red。 特殊分类：传说的宝可梦。", "sha256": "42970a8f728ac2f971770abcd6407eaf59c8787a83824b7c2eadc13bfdae80de"}
-{"id": 1005, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：no-eggs。 特性：protosynthesis。 图鉴颜色：green。", "sha256": "13360b678eed7b62ef7fd216249fe979b27b95fe3eb82b07c2ef944b6816bece"}
-{"id": 1006, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：humanoid。 栖息地：未知。 蛋群：no-eggs。 特性：quark-drive。 图鉴颜色：white。", "sha256": "7653b4bc6f52bcec6684bda51353d58f58e2bd726e37d8d7e5e8dca00cbbf8ec"}
-{"id": 1007, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：upright。 栖息地：未知。 蛋群：no-eggs。 特性：orichalcum-pulse。 图鉴颜色：red。 特殊分类：传说的宝可梦。", "sha256": "b62ab121865f909a810103d376e15b727d193957658ff8900988c91a2651aa2e"}
-{"id": 1008, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：no-eggs。 特性：hadron-engine。 图鉴颜色：blue。 特殊分类：传说的宝可梦。", "sha256": "c7cc04ee6b86c798d729b980a1e50913fc18896212c63821a9026b4994028bfc"}
-{"id": 1009, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：upright。 栖息地：未知。 蛋群：no-eggs。 特性：protosynthesis。 图鉴颜色：blue。", "sha256": "7a149e92875528b5ed4270fcb25494a4e76bbdae1957d3e2587b06161e7ec94e"}
-{"id": 1010, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：quadruped。 栖息地：未知。 蛋群：no-eggs。 特性：quark-drive。 图鉴颜色：green。", "sha256": "9aeb0cc491c7c34352f6e70d2c0b76e0c22d65bd14a990b37c777344f7217f36"}
+{"id": 999, "text": "passage: 宝可梦结构化档案。 分类：宝箱宝可梦。 形态：blob。 栖息地：未知。 特性：rattled。 图鉴颜色：brown。", "sha256": "3acac4ba1acbccc2cfeac0b24b7ded97b23c0a34e5a9c453f782a49e81a9e53f"}
+{"id": 1000, "text": "passage: 宝可梦结构化档案。 分类：宝者宝可梦。 形态：humanoid。 栖息地：未知。 特性：good-as-gold。 图鉴颜色：yellow。", "sha256": "ae87557eb8e9bd53cbd5550a755e11967f386a95baa8dde0a7b32b428e86892c"}
+{"id": 1001, "text": "passage: 宝可梦结构化档案。 分类：灾厄宝可梦。 形态：squiggle。 栖息地：未知。 特性：tablets-of-ruin。 图鉴颜色：brown。 特殊分类：传说的宝可梦。", "sha256": "bdd8e1c1d3332b3a32812add72bf0b30b9203f96e566a9b68c78b33ce22abc2c"}
+{"id": 1002, "text": "passage: 宝可梦结构化档案。 分类：灾厄宝可梦。 形态：quadruped。 栖息地：未知。 特性：sword-of-ruin。 图鉴颜色：white。 特殊分类：传说的宝可梦。", "sha256": "88ec16a352f2acdb7c46df724a0f56f2b4e76ffb72e39ea439e9c57a0dba0555"}
+{"id": 1003, "text": "passage: 宝可梦结构化档案。 分类：灾厄宝可梦。 形态：quadruped。 栖息地：未知。 特性：vessel-of-ruin。 图鉴颜色：brown。 特殊分类：传说的宝可梦。", "sha256": "5162ea99bc19728e54f89dc6550ac560cbf48652b59f054e7b7155c602cf34b9"}
+{"id": 1004, "text": "passage: 宝可梦结构化档案。 分类：灾厄宝可梦。 形态：fish。 栖息地：未知。 特性：beads-of-ruin。 图鉴颜色：red。 特殊分类：传说的宝可梦。", "sha256": "85853292b87ae0ba5ba491de2a480c61fe2455ccb406decc956f12bf13f16941"}
+{"id": 1005, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：quadruped。 栖息地：未知。 特性：protosynthesis。 图鉴颜色：green。", "sha256": "8eedbdac9c6e1f9392123313f239c1d6faf4b25b43eef0d9b0c1aea470cc5a8e"}
+{"id": 1006, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：humanoid。 栖息地：未知。 特性：quark-drive。 图鉴颜色：white。", "sha256": "7bf0f6b6f36dac80808adca8309b6ac609907f85096db5f443168f941d85acff"}
+{"id": 1007, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：upright。 栖息地：未知。 特性：orichalcum-pulse。 图鉴颜色：red。 特殊分类：传说的宝可梦。", "sha256": "1112325a18dbd339d059a9bbb9d9d2442319ff74d37ed452cecc9e866248f333"}
+{"id": 1008, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：quadruped。 栖息地：未知。 特性：hadron-engine。 图鉴颜色：blue。 特殊分类：传说的宝可梦。", "sha256": "4fc0b74aac05aefc3ef6558bff46aec63314077738203c582ed8b8170a16f52d"}
+{"id": 1009, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：upright。 栖息地：未知。 特性：protosynthesis。 图鉴颜色：blue。", "sha256": "4cc535966ae90b09796a3e9bf3de70bf0fd2e11e090d3d9f6e1de9894aa687d2"}
+{"id": 1010, "text": "passage: 宝可梦结构化档案。 分类：悖谬宝可梦。 形态：quadruped。 栖息地：未知。 特性：quark-drive。 图鉴颜色：green。", "sha256": "e8b7535ce082b6d94f2a6db92803977abea13b9f2b9fde38d162d5e0c8e1d78b"}
 {"id": 1011, "text": "passage: 宝可梦结构化档案。 分类：Candy Apple Pokémon。 形态：heads。 栖息地：未知。 蛋群：plant、dragon。 特性：supersweet-syrup、gluttony、sticky-hold。 图鉴颜色：green。", "sha256": "912af5cb4a795e939f85675da24af6eb3d266c20760be6d6881908688c2b1f12"}
 {"id": 1012, "text": "passage: 宝可梦结构化档案。 分类：Matcha Pokémon。 形态：ball。 栖息地：未知。 蛋群：mineral、indeterminate。 特性：hospitality、heatproof。 图鉴颜色：green。", "sha256": "e08692744762f101dade325120c85838c4676350c2d5cb7961201afc2496af38"}
 {"id": 1013, "text": "passage: 宝可梦结构化档案。 分类：Matcha Pokémon。 形态：ball。 栖息地：未知。 蛋群：mineral、indeterminate。 特性：hospitality、heatproof。 图鉴颜色：green。", "sha256": "e08692744762f101dade325120c85838c4676350c2d5cb7961201afc2496af38"}
-{"id": 1014, "text": "passage: 宝可梦结构化档案。 分类：Retainer Pokémon。 形态：upright。 栖息地：未知。 蛋群：no-eggs。 特性：toxic-chain、guard-dog。 图鉴颜色：black。 特殊分类：传说的宝可梦。", "sha256": "ca6b78a1e37e54df2c604ca5173b07e3af48d7ab865e1ad628774703d2b33240"}
-{"id": 1015, "text": "passage: 宝可梦结构化档案。 分类：Retainer Pokémon。 形态：humanoid。 栖息地：未知。 蛋群：no-eggs。 特性：toxic-chain、frisk。 图鉴颜色：black。 特殊分类：传说的宝可梦。", "sha256": "8672dbf1a3f2a10e40487fff53a42c885d4f2633ccc34bba722e1be2ee55a6a0"}
-{"id": 1016, "text": "passage: 宝可梦结构化档案。 分类：Retainer Pokémon。 形态：wings。 栖息地：未知。 蛋群：no-eggs。 特性：toxic-chain、technician。 图鉴颜色：black。 特殊分类：传说的宝可梦。", "sha256": "7051b676f8d61fa261c2d61973ff2c3cd207bf54d36002d4b163068d64956635"}
-{"id": 1017, "text": "passage: 宝可梦结构化档案。 分类：Mask Pokémon。 形态：humanoid。 栖息地：未知。 蛋群：no-eggs。 特性：defiant。 图鉴颜色：green。 特殊分类：传说的宝可梦。", "sha256": "faa258a5920c91316f7f11acbe7d081ffe3a3281eb64ea01c3fd97c8f1e81865"}
+{"id": 1014, "text": "passage: 宝可梦结构化档案。 分类：Retainer Pokémon。 形态：upright。 栖息地：未知。 特性：toxic-chain、guard-dog。 图鉴颜色：black。 特殊分类：传说的宝可梦。", "sha256": "f1254fd219120ed6e90b4cc6235f7aeb20c0cb4c4378c693ba480b7b56f3851f"}
+{"id": 1015, "text": "passage: 宝可梦结构化档案。 分类：Retainer Pokémon。 形态：humanoid。 栖息地：未知。 特性：toxic-chain、frisk。 图鉴颜色：black。 特殊分类：传说的宝可梦。", "sha256": "b1c8948454c1c484c2561df597d78dbffe3df0dd7a5ca16da2e9b1369e9a9855"}
+{"id": 1016, "text": "passage: 宝可梦结构化档案。 分类：Retainer Pokémon。 形态：wings。 栖息地：未知。 特性：toxic-chain、technician。 图鉴颜色：black。 特殊分类：传说的宝可梦。", "sha256": "f1a156ec7dbcf88dd8905b62e77872ace5c3854cd54d3c0e6c438abff9db5889"}
+{"id": 1017, "text": "passage: 宝可梦结构化档案。 分类：Mask Pokémon。 形态：humanoid。 栖息地：未知。 特性：defiant。 图鉴颜色：green。 特殊分类：传说的宝可梦。", "sha256": "31c107b73775f57d9bb5ba9d1667b6a9b2e9ecfcbeede90c4600c2c560d8047d"}
 {"id": 1018, "text": "passage: 宝可梦结构化档案。 分类：Alloy Pokémon。 形态：upright。 栖息地：未知。 蛋群：mineral、dragon。 特性：stamina、sturdy、stalwart。 图鉴颜色：white。", "sha256": "83197a7b743c26d6e7805ce5360697dc4fcd2a0bfbf090e54c16c533f82785c2"}
 {"id": 1019, "text": "passage: 宝可梦结构化档案。 分类：Apple Hydra Pokémon。 形态：heads。 栖息地：未知。 蛋群：plant、dragon。 特性：supersweet-syrup、regenerator、sticky-hold。 图鉴颜色：green。", "sha256": "26bc778f07eeb9baa8cc6dfbe274b0996a8e7efeca306de42295ce779742bd29"}
-{"id": 1020, "text": "passage: 宝可梦结构化档案。 分类：Paradox Pokémon。 形态：quadruped。 栖息地：未知。 蛋群：no-eggs。 特性：protosynthesis。 图鉴颜色：brown。", "sha256": "00f1506338071ba326b85b92ff52d3a938c41183745093fad0d774089e647ed2"}
-{"id": 1021, "text": "passage: 宝可梦结构化档案。 分类：Paradox Pokémon。 形态：quadruped。 栖息地：未知。 蛋群：no-eggs。 特性：protosynthesis。 图鉴颜色：yellow。", "sha256": "3de95eddd82f8f84c1ba555a1b5cc7201b98c35c9e4833c279224ec7c26eb1d2"}
-{"id": 1022, "text": "passage: 宝可梦结构化档案。 分类：Paradox Pokémon。 形态：quadruped。 栖息地：未知。 蛋群：no-eggs。 特性：quark-drive。 图鉴颜色：gray。", "sha256": "39d314200e3a5ac5d5e5e1492bc08b0c2acc0d49f670105bf56cc66b3fe76197"}
-{"id": 1023, "text": "passage: 宝可梦结构化档案。 分类：Paradox Pokémon。 形态：quadruped。 栖息地：未知。 蛋群：no-eggs。 特性：quark-drive。 图鉴颜色：blue。", "sha256": "e8fc47c95758788c79b821b3cb8924a3e3a294be9681f04b271f2b9510fe11ff"}
-{"id": 1024, "text": "passage: 宝可梦结构化档案。 分类：Tera Pokémon。 形态：quadruped。 栖息地：未知。 蛋群：no-eggs。 特性：tera-shift。 图鉴颜色：blue。 特殊分类：传说的宝可梦。", "sha256": "62040297c87e0f66331b23e5608815ebf3ae7e075860b144cce703fcf37a62b2"}
-{"id": 1025, "text": "passage: 宝可梦结构化档案。 分类：Subjugation Pokémon。 形态：ball。 栖息地：未知。 蛋群：no-eggs。 特性：poison-puppeteer。 图鉴颜色：purple。 特殊分类：幻之宝可梦。", "sha256": "3062f51cd5f14d27ea048728354db44d91299d34f8216a7510657fc0ee8dfaf1"}
+{"id": 1020, "text": "passage: 宝可梦结构化档案。 分类：Paradox Pokémon。 形态：quadruped。 栖息地：未知。 特性：protosynthesis。 图鉴颜色：brown。", "sha256": "ae55a093ada4283a8eb4a61d1392a4841128c537e631d927f02ee40ffb97f112"}
+{"id": 1021, "text": "passage: 宝可梦结构化档案。 分类：Paradox Pokémon。 形态：quadruped。 栖息地：未知。 特性：protosynthesis。 图鉴颜色：yellow。", "sha256": "02eb8397f322aaabb73dfbf8ae1dc4181bb3bd28eb56587de096c657989d0aad"}
+{"id": 1022, "text": "passage: 宝可梦结构化档案。 分类：Paradox Pokémon。 形态：quadruped。 栖息地：未知。 特性：quark-drive。 图鉴颜色：gray。", "sha256": "91d04ace2afb485b91664ebe12e2ee4966af4179485d8ba61af83463b23c0b60"}
+{"id": 1023, "text": "passage: 宝可梦结构化档案。 分类：Paradox Pokémon。 形态：quadruped。 栖息地：未知。 特性：quark-drive。 图鉴颜色：blue。", "sha256": "ee20925bf7f079d08045e3b8390a7914c3bc534adb26fe706e2dd88feaa719f9"}
+{"id": 1024, "text": "passage: 宝可梦结构化档案。 分类：Tera Pokémon。 形态：quadruped。 栖息地：未知。 特性：tera-shift。 图鉴颜色：blue。 特殊分类：传说的宝可梦。", "sha256": "991174ff92caeb0fd1f783ebcbbbfd5242e2995eb8eee6fd0e5f5c515aec8a38"}
+{"id": 1025, "text": "passage: 宝可梦结构化档案。 分类：Subjugation Pokémon。 形态：ball。 栖息地：未知。 特性：poison-puppeteer。 图鉴颜色：purple。 特殊分类：幻之宝可梦。", "sha256": "1e3702147099f9f73c367c8e3baf05dc9afa747cf309c77f0c62922c9bb00b58"}

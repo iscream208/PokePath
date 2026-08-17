@@ -15,6 +15,7 @@ from scripts.pipeline_config import (
     PROCESSED_ROOT,
     REPORT_ROOT,
 )
+from scripts.similarity_features import EXCLUDED_EGG_GROUPS, similarity_egg_groups
 
 WEIGHTS = {
     "profileText": 0.13,
@@ -129,7 +130,10 @@ def score_matrices(
             values = {
                 "genus": equal_score(a["genus"], b["genus"]),
                 "types": jaccard(a["types"], b["types"]),
-                "eggGroups": jaccard(a["eggGroups"], b["eggGroups"]),
+                "eggGroups": jaccard(
+                    similarity_egg_groups(a["eggGroups"]),
+                    similarity_egg_groups(b["eggGroups"]),
+                ),
                 "habitat": equal_score(a["habitat"], b["habitat"]),
                 "shape": equal_score(a["shape"], b["shape"]),
                 "footprint": equal_score(a["footprint"], b["footprint"]),
@@ -311,7 +315,9 @@ def edge_reasons(
     shared_types = [TYPE_ZH.get(value, value) for value in set(a["types"]) & set(b["types"])]
     if shared_types:
         reasons.append("共同拥有" + "、".join(shared_types) + "属性")
-    if set(a["eggGroups"]) & set(b["eggGroups"]):
+    if set(similarity_egg_groups(a["eggGroups"])) & set(
+        similarity_egg_groups(b["eggGroups"])
+    ):
         reasons.append("属于相同蛋群")
     if a["evolutionChainId"] and a["evolutionChainId"] == b["evolutionChainId"]:
         reasons.append("来自同一进化链")
@@ -466,6 +472,7 @@ def main() -> None:
             )[:20]
         ],
         "weights": WEIGHTS,
+        "excludedEggGroups": sorted(EXCLUDED_EGG_GROUPS),
         "nameSimilarity": {
             "method": "cosine similarity of binary Chinese-character TF-IDF vectors",
             "reasonThreshold": 0.22,

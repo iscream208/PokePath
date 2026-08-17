@@ -8,7 +8,7 @@ import {
 
 const currentChallenge: ChallengeIdentity = {
   datasetVersion: 1,
-  graphVersion: 6,
+  graphVersion: 7,
   algorithmVersion: 2,
   mode: "E",
   seed: seedFromDate(new Date().toISOString().slice(0, 10)),
@@ -86,7 +86,7 @@ function App() {
               id="challenge-code"
               value={challengeCode}
               onChange={(event) => setChallengeCode(event.target.value)}
-              placeholder="例如：P1-G6-A2-E-002N9C"
+              placeholder="例如：P1-G7-A2-E-002N9C"
               spellCheck={false}
               autoComplete="off"
             />

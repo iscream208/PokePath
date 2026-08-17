@@ -19,7 +19,38 @@
       1.0
     ]
   },
-  "bridgesAdded": [],
+  "bridgesAdded": [
+    {
+      "from": {
+        "id": 92,
+        "name": "鬼斯"
+      },
+      "to": {
+        "id": 1025,
+        "name": "桃歹郎"
+      },
+      "replaced": {
+        "id": 577,
+        "name": "单卵细胞球"
+      },
+      "score": 0.5931
+    },
+    {
+      "from": {
+        "id": 903,
+        "name": "大狃拉"
+      },
+      "to": {
+        "id": 1014,
+        "name": "够赞狗"
+      },
+      "replaced": {
+        "id": 922,
+        "name": "布土拨"
+      },
+      "score": 0.5649
+    }
+  ],
   "outDegree": {
     "min": 25,
     "max": 25,
@@ -27,29 +58,44 @@
   },
   "inDegree": {
     "min": 1,
-    "max": 93,
+    "max": 99,
     "mean": 25.0
   },
   "topInDegree": [
     {
       "id": 20,
       "name": "拉达",
-      "degree": 93
+      "degree": 99
     },
     {
       "id": 162,
       "name": "大尾立",
-      "degree": 84
+      "degree": 88
     },
     {
       "id": 128,
       "name": "肯泰罗",
-      "degree": 81
+      "degree": 85
     },
     {
       "id": 133,
       "name": "伊布",
+      "degree": 82
+    },
+    {
+      "id": 506,
+      "name": "小约克",
+      "degree": 80
+    },
+    {
+      "id": 61,
+      "name": "蚊香君",
       "degree": 79
+    },
+    {
+      "id": 55,
+      "name": "哥达鸭",
+      "degree": 77
     },
     {
       "id": 10,
@@ -57,9 +103,14 @@
       "degree": 76
     },
     {
-      "id": 61,
-      "name": "蚊香君",
+      "id": 735,
+      "name": "猫鼬探长",
       "degree": 76
+    },
+    {
+      "id": 734,
+      "name": "猫鼬少",
+      "degree": 75
     },
     {
       "id": 736,
@@ -67,69 +118,49 @@
       "degree": 75
     },
     {
-      "id": 506,
-      "name": "小约克",
-      "degree": 74
-    },
-    {
-      "id": 735,
-      "name": "猫鼬探长",
-      "degree": 72
-    },
-    {
-      "id": 55,
-      "name": "哥达鸭",
-      "degree": 71
-    },
-    {
-      "id": 734,
-      "name": "猫鼬少",
-      "degree": 70
-    },
-    {
       "id": 549,
       "name": "裙儿小姐",
-      "degree": 69
+      "degree": 73
     },
     {
       "id": 234,
       "name": "惊角鹿",
-      "degree": 67
-    },
-    {
-      "id": 265,
-      "name": "刺尾虫",
-      "degree": 66
+      "degree": 71
     },
     {
       "id": 60,
       "name": "蚊香蝌蚪",
-      "degree": 65
+      "degree": 69
+    },
+    {
+      "id": 265,
+      "name": "刺尾虫",
+      "degree": 67
     },
     {
       "id": 548,
       "name": "百合根娃娃",
-      "degree": 65
-    },
-    {
-      "id": 507,
-      "name": "哈约克",
-      "degree": 64
-    },
-    {
-      "id": 53,
-      "name": "猫老大",
-      "degree": 62
-    },
-    {
-      "id": 432,
-      "name": "东施喵",
-      "degree": 62
+      "degree": 67
     },
     {
       "id": 52,
       "name": "喵喵",
-      "degree": 61
+      "degree": 66
+    },
+    {
+      "id": 53,
+      "name": "猫老大",
+      "degree": 66
+    },
+    {
+      "id": 507,
+      "name": "哈约克",
+      "degree": 66
+    },
+    {
+      "id": 182,
+      "name": "美丽花",
+      "degree": 64
     }
   ],
   "weights": {
@@ -147,6 +178,9 @@
     "evolution": 0.04,
     "stats": 0.03
   },
+  "excludedEggGroups": [
+    "no-eggs"
+  ],
   "nameSimilarity": {
     "method": "cosine similarity of binary Chinese-character TF-IDF vectors",
     "reasonThreshold": 0.22

@@ -18,9 +18,9 @@ describe("challenge identity", () => {
   });
 
   it("accepts the easy-mode challenge code shown in the interface", () => {
-    expect(decodeChallenge("P1-G6-A2-E-002N9C")).toEqual({
+    expect(decodeChallenge("P1-G7-A2-E-002N9C")).toEqual({
       datasetVersion: 1,
-      graphVersion: 6,
+      graphVersion: 7,
       algorithmVersion: 2,
       mode: "E",
       seed: Number.parseInt("002N9C", 36),
@@ -28,7 +28,7 @@ describe("challenge identity", () => {
   });
 
   it("rejects retired N-mode challenge codes", () => {
-    expect(decodeChallenge("P1-G6-A2-N-002N9C")).toBeNull();
+    expect(decodeChallenge("P1-G7-A2-N-002N9C")).toBeNull();
   });
 });
 

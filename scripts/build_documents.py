@@ -7,6 +7,7 @@ import unicodedata
 from typing import Any
 
 from scripts.pipeline_config import PROCESSED_ROOT, REPORT_ROOT, ensure_directories
+from scripts.similarity_features import similarity_egg_groups
 
 TYPE_ZH = {
     "normal": "一般",
@@ -67,10 +68,16 @@ def build_profile_document(pokemon: dict[str, Any]) -> str:
         "分类：" + str(pokemon["genus"] or "未知") + "。",
         "形态：" + str(pokemon["shape"] or "未知") + "。",
         "栖息地：" + str(pokemon["habitat"] or "未知") + "。",
-        "蛋群：" + join_values(pokemon["eggGroups"]) + "。",
-        "特性：" + join_values(pokemon["abilities"]) + "。",
-        "图鉴颜色：" + str(pokemon["color"] or "未知") + "。",
     ]
+    egg_groups = similarity_egg_groups(pokemon["eggGroups"])
+    if egg_groups:
+        sections.append("蛋群：" + join_values(egg_groups) + "。")
+    sections.extend(
+        [
+            "特性：" + join_values(pokemon["abilities"]) + "。",
+            "图鉴颜色：" + str(pokemon["color"] or "未知") + "。",
+        ]
+    )
     if traits:
         sections.append("特殊分类：" + "、".join(traits) + "。")
     return " ".join(sections)

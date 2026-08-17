@@ -254,7 +254,7 @@ function App() {
             <form onSubmit={submitCode}>
               <label htmlFor="challenge-code">输入挑战码</label>
               <div className="code-entry">
-                <input id="challenge-code" value={challengeCode} onChange={(event) => setChallengeCode(event.target.value)} placeholder="例如：P1-G6-A2-E-002N9C" />
+                <input id="challenge-code" value={challengeCode} onChange={(event) => setChallengeCode(event.target.value)} placeholder="例如：P1-G7-A2-E-002N9C" />
                 <button className="action dark" type="submit">进入挑战</button>
               </div>
               <p className="error-text" aria-live="polite">{error}</p>
